@@ -1,0 +1,6 @@
+-e git+git@github.com:tarbell-project/tarbell.git#egg=tarbell
+
+dataset
+feedparser
+opengraph
+requests

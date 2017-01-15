@@ -1,0 +1,11 @@
+common:
+    database: sqlite:///blog.db
+
+exports:
+
+    - query: "SELECT * FROM links"
+      filename: links.json
+      indent: 2
+
+    - query: "SELECT * FROM links"
+      filename: links.csv
