@@ -1,9 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <title>{{ title }}</title>
+        <title>{{ og.title }}</title>
     </head>
+        {% block css %}
+        {% endblock css %}
+
+        {% block head %}
+        {% endblock head %}
     <body>
-        
+        {% block content %}
+        {% endblock content %}
+
+        {% block js %}
+        {% endblock js %}
     </body>
 </html>

@@ -1,1 +1,15 @@
 {% extends "_base.html" %}
+
+{% block content %}
+{% for link in links %}
+    <div class="link">
+        <h2>{{ link.title }}</h2>
+        <div class="description">
+            {{ link.description|d('', True)|striptags|truncate|markdown }}
+        </div>
+        <p>
+            <a href="{{ link.url }}">More</a>
+        </p>
+    </div>
+{% endfor %}
+{% endblock content %}

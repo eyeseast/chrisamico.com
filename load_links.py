@@ -44,8 +44,8 @@ class LinkLoader(object):
 
         for entry in feed.entries:
             # bail here if we already have this URL
-            if self.table.find_one(_url=entry.link):
-                continue
+            #if self.table.find_one(_url=entry.link):
+            #    continue
 
             if 'published_parsed' in entry:
                 date = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
@@ -53,6 +53,8 @@ class LinkLoader(object):
                 date = datetime.datetime.now()
 
             og = self.handle_link(entry.link, 
+                title=entry.get('title'),
+                description=entry.get('description'),
                 url=entry.link,
                 date=date,
                 feed=name)
