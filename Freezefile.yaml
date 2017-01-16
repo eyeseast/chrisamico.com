@@ -5,7 +5,9 @@ exports:
 
     - query: "SELECT * FROM links"
       filename: links.json
+      format: json
       indent: 2
 
     - query: "SELECT * FROM links"
       filename: links.csv
+      format: csv
