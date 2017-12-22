@@ -43,7 +43,7 @@ def add_to_context():
 
     context = {
         'og': OG,
-        'links': links,
+        'links': links.find(order_by='-date'),
     }
 
     return context

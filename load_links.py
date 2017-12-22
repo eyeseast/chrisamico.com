@@ -11,7 +11,6 @@ import requests
 
 from opengraph import OpenGraph
 from sqlalchemy import types
-from tarbell_config import FEEDS, DATABASE_URL, LINK_TABLE
 
 
 class LinkLoader(object):
@@ -34,8 +33,7 @@ class LinkLoader(object):
         "Do the whole download"
         for name, url in self.feeds:
             for link in self.handle_feed(name, url):
-                if self.table.upsert(link, ['url'], types=self.TYPES):
-                    print(link['url'])
+                self.table.upsert(link, ['url'], types=self.TYPES)
 
     def handle_feed(self, name, url):
         "Parse feed URL, yield links reading for the database"
@@ -47,14 +45,11 @@ class LinkLoader(object):
             #if self.table.find_one(_url=entry.link):
             #    continue
 
-            if 'published_parsed' in entry:
-                date = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
-            else:
-                date = datetime.datetime.now()
+            date = get_entry_date(entry)
 
             og = self.handle_link(entry.link, 
                 title=entry.get('title'),
-                description=entry.get('description'),
+                #description=entry.get('description'),
                 url=entry.link,
                 date=date,
                 feed=name)
@@ -73,10 +68,24 @@ class LinkLoader(object):
             return defaults
 
 
+def get_entry_date(entry):
+    "Get one of many possible date fields on a feed entry"
+    date_fields = ['published_parsed', 'updated_parsed', 'created_parsed']
+    for field in date_fields:
+        if field in entry and entry[field]:
+            return datetime.datetime.fromtimestamp(time.mktime(entry[field]))
+
+    else:
+        print('No date for entry. Using now().\n{link}'.format(**entry))
+        return datetime.datetime.now()
+
+
 def main():
     """
     Run a LinkLoader
     """
+    from tarbell_config import FEEDS, DATABASE_URL, LINK_TABLE
+
     LinkLoader(DATABASE_URL, LINK_TABLE, FEEDS).run()
 
 

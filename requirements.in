@@ -1,6 +1,6 @@
 -e git+git@github.com:tarbell-project/tarbell.git#egg=tarbell
 
+bs4
 dataset
 feedparser
-opengraph
 requests
