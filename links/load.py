@@ -9,7 +9,7 @@ import dataset
 import feedparser
 import requests
 
-from opengraph import OpenGraph
+from .opengraph import OpenGraph
 from sqlalchemy import types
 
 
@@ -79,15 +79,3 @@ def get_entry_date(entry):
         print('No date for entry. Using now().\n{link}'.format(**entry))
         return datetime.datetime.now()
 
-
-def main():
-    """
-    Run a LinkLoader
-    """
-    from tarbell_config import FEEDS, DATABASE_URL, LINK_TABLE
-
-    LinkLoader(DATABASE_URL, LINK_TABLE, FEEDS).run()
-
-
-if __name__ == '__main__':
-    main()
