@@ -1,5 +1,6 @@
 common:
     database: sqlite:///blog.db
+    prefix: static/
 
 exports:
 
