@@ -22,12 +22,24 @@ FEEDS = (
 FREEZER_RELATIVE_URLS = True
 FREEZER_DESTINATION = "_site"
 
+TEMPLATES_AUTO_RELOAD = True
+
 OG = {
-    'title': 'This is my website',
+    'title': 'Chris Amico, journalist & programmer',
     'type': 'website',
 }
 
+CONTACT = {
+    'twitter': 'https://twitter.com/eyeseast',
+    'github': 'https://github.com/eyeseast',
+    'linkedin': 'https://www.linkedin.com/in/chrisamico/',
+    'name': 'Chris Amico',
+    'tagline': 'Journalist & programmer'
+}
+
 app = Flask(__name__)
+app.config.from_object(__name__)
+
 freezer = Freezer(app)
 
 def get_db():
@@ -45,6 +57,11 @@ def close_connection(exception):
         db.engine.dispose()
 
 
+@app.template_filter('date')
+def date(d, format="%b %d, %Y"):
+    return d.strftime(format)
+
+
 @app.template_filter('markdown')
 def markdown(s):
     return md(s)
@@ -53,12 +70,10 @@ def markdown(s):
 @app.context_processor
 def add_to_context():
     "Default context"
-    db = get_db()
-    links = db[LINK_TABLE]
 
     context = {
-        'og': OG,
-        'links': links.find(order_by='-date'),
+        'OG': OG,
+        'CONTACT': CONTACT
     }
 
     return context
@@ -66,7 +81,12 @@ def add_to_context():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    db = get_db()
+    links = db[LINK_TABLE]
+
+    links = links.find(order_by='-date', _limit=20)
+
+    return render_template('index.html', links=links)
 
 
 if __name__ == '__main__':
