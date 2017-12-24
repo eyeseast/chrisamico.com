@@ -1,0 +1,22 @@
+{
+  "name": "chrisamico.com",
+  "version": "1.0.0",
+  "description": "My personal site",
+  "main": "app.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyeseast/chrisamico.com.git"
+  },
+  "author": "Chris Amico",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/eyeseast/chrisamico.com/issues"
+  },
+  "homepage": "https://github.com/eyeseast/chrisamico.com#readme",
+  "dependencies": {
+    "skeleton-css": "^2.0.4"
+  }
+}
