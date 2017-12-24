@@ -1,5 +1,5 @@
 flask
-flask-frozen
+frozen-flask
 bs4
 dataset
 feedparser
