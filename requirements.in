@@ -1,6 +1,7 @@
--e git+git@github.com:tarbell-project/tarbell.git#egg=tarbell
-
+flask
+flask-frozen
 bs4
 dataset
 feedparser
+markdown
 requests

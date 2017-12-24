@@ -5,11 +5,9 @@
     <div class="link">
         <h2><a href="{{ link.url }}">{{ link.title }}</a></h2>
         <div class="description">
-            {{ link.description|d('', True)|striptags|truncate|markdown }}
-        </div>
-        <p>
+            {{ link.description|d('', True)|striptags|truncate|safe }}
             <a href="{{ link.url }}">More &rarr;</a>
-        </p>
+        </div>
     </div>
 {% endfor %}
 {% endblock content %}
