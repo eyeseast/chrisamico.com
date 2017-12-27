@@ -26,7 +26,6 @@ class LinkLoader(object):
     }
 
     def __init__(self, database_url, table_name, feeds):
-        self.local = curio.Local()
 
         self.database_url = database_url
         self.table_name = table_name
@@ -38,19 +37,12 @@ class LinkLoader(object):
         self.feeds = feeds
         self.queue = curio.Queue()
 
-    @property
-    def table(self):
-        return self.local.db[self.table_name]
-
     def run(self):
         "Run with curio"
         curio.run(self.main())
 
     async def main(self):
         "Do the whole download"
-
-        # do the connection here
-        # self.local.db = dataset.connect()
 
         prod_task = await curio.spawn(self.producer())
         cons_task = await curio.spawn(self.consumer())
