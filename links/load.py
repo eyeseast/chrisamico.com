@@ -5,12 +5,13 @@ Useful things
 import datetime
 import time
 
+import curio
 import dataset
 import feedparser
 import requests
 
-from .opengraph import OpenGraph
 from sqlalchemy import types
+from .opengraph import OpenGraph
 
 
 class LinkLoader(object):
@@ -25,19 +26,62 @@ class LinkLoader(object):
     }
 
     def __init__(self, database_url, table_name, feeds):
-        self.db = dataset.connect(database_url)
-        self.table = self.db[table_name]
+        self.local = curio.Local()
+
+        self.database_url = database_url
+        self.table_name = table_name
+
+        # ensure a table
+        db = dataset.connect(database_url)
+        db[table_name]
+
         self.feeds = feeds
+        self.queue = curio.Queue()
+
+    @property
+    def table(self):
+        return self.local.db[self.table_name]
 
     def run(self):
-        "Do the whole download"
-        for name, url in self.feeds:
-            for link in self.handle_feed(name, url):
-                self.table.upsert(link, ['url'], types=self.TYPES)
+        "Run with curio"
+        curio.run(self.main())
 
-    def handle_feed(self, name, url):
-        "Parse feed URL, yield links reading for the database"
-        r = requests.get(url)
+    async def main(self):
+        "Do the whole download"
+
+        # do the connection here
+        # self.local.db = dataset.connect()
+
+        prod_task = await curio.spawn(self.producer())
+        cons_task = await curio.spawn(self.consumer())
+
+        await prod_task.join()
+        await cons_task.cancel()
+
+    async def producer(self):
+        async with curio.TaskGroup() as f:
+            for name, url in self.feeds:
+                await f.spawn(self.handle_feed(name, url))
+
+        await self.queue.join()
+
+    async def consumer(self):
+        while True:
+            link = await self.queue.get()
+            await curio.run_in_thread(self.save, link)
+            print('Saved link: {url}'.format(**link))
+
+            await self.queue.task_done()
+
+    # run this in a thread
+    def save(self, link):
+        with dataset.connect(self.database_url) as t:
+            table = t[self.table_name]
+            table.upsert(link, ['url'], types=self.TYPES)
+
+    async def handle_feed(self, name, url):
+        "Parse feed URL, enqueue links reading for the database"
+        r = await curio.run_in_thread(requests.get, url)
         feed = feedparser.parse(r.content)
 
         for entry in feed.entries:
@@ -47,7 +91,7 @@ class LinkLoader(object):
 
             date = get_entry_date(entry)
 
-            og = self.handle_link(entry.link, 
+            og = await self.handle_link(entry.link, 
                 title=entry.get('title'),
                 #description=entry.get('description'),
                 url=entry.link,
@@ -55,11 +99,11 @@ class LinkLoader(object):
                 feed=name)
 
             if og:
-                yield og
+                await self.queue.put(og)
 
-    def handle_link(self, link, **defaults):
+    async def handle_link(self, link, **defaults):
         "Fetch OG data and return a dict ready for the db"
-        r = requests.get(link)
+        r = await curio.run_in_thread(requests.get, link)
         if r.ok:
             og = OpenGraph(html=r.content)
             defaults.update(og)

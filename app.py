@@ -4,14 +4,17 @@ import os
 import sys
 
 import dataset
+from dotenv import load_dotenv, find_dotenv
 from flask import Flask, g, render_template
 from flask_frozen import Freezer
 from markdown import markdown as md
 
 from links.load import LinkLoader
 
+load_dotenv(find_dotenv())
 
-DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///blog.db')
+
+DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://localhost/chrisamico.com')
 LINK_TABLE = "links"
 
 FEEDS = (
