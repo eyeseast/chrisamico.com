@@ -2,6 +2,7 @@
 
 import os
 import sys
+from urllib import parse
 
 import dataset
 from dotenv import load_dotenv, find_dotenv
@@ -69,6 +70,13 @@ def date(d, format="%b %d, %Y"):
 @app.template_filter('markdown')
 def markdown(s):
     return md(s)
+
+
+@app.template_filter('urlparse')
+def urlparse(url, part='netloc'):
+    "Parse a URL and return part of it"
+    u = parse.urlparse(url)
+    return getattr(u, part, None)
 
 
 @app.context_processor

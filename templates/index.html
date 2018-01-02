@@ -53,7 +53,12 @@ ul.social li {
         <div class="link">
             <h4><a href="{{ link.url }}">{{ link.title }}</a></h4>
             <div class="date quiet">
-                {{ link.date|date }}
+                {{ link.date|date }} | 
+                {% if link.site_name %}
+                    {{ link.site_name }}
+                {% else %}
+                    {{ link.url|urlparse }}
+                {% endif %}
             </div>
             <div class="description">
                 {{ link.description|d('', True)|striptags|truncate }}
