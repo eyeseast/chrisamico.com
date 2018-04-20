@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
-python app.py update
-datafreeze Freezefile.yaml
+pipenv run ./app.py update
+pipenv run datafreeze Freezefile.yaml
 
-python app.py freeze
+pipenv run ./app.py freeze
 
 git commit -am "Updated: `date +%Y-%m-%d`"
 git push origin master
