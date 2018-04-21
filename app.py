@@ -6,7 +6,7 @@ from urllib import parse
 
 import dataset
 from dotenv import load_dotenv, find_dotenv
-from flask import Flask, g, render_template
+from flask import Flask, g, render_template, send_from_directory
 from flask_frozen import Freezer
 from markdown import markdown as md
 
@@ -99,6 +99,19 @@ def index():
     links = links.find(order_by='-date', _limit=20)
 
     return render_template('index.html', links=links)
+
+
+@app.route('/<name>.txt')
+def textfile(name):
+    "Send a text file"
+    filename = f'{name}.txt'
+    return send_from_directory('./txt', filename)
+
+
+@freezer.register_generator
+def txt_urls():
+    for filename in os.listdir('./txt'):
+        yield 'textfile', {'name': os.path.splitext(filename)[0]}
 
 
 if __name__ == '__main__':

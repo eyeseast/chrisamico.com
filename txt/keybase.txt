@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/chrisamico
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chrisamico.com
+  * I am chrisamico (https://keybase.io/chrisamico) on keybase.
+  * I have a public key ASAFLVqaoDDo7YgzgfSRaQVocAoSIaAFE03RPaYBbu6vCAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120052d5a9aa030e8ed883381f491690568700a1221a005134dd13da6016eeeaf080a",
+      "host": "keybase.io",
+      "kid": "0120052d5a9aa030e8ed883381f491690568700a1221a005134dd13da6016eeeaf080a",
+      "uid": "a3e7f34a043f691d4762b62d5057c419",
+      "username": "chrisamico"
+    },
+    "merkle_root": {
+      "ctime": 1524272363,
+      "hash": "730483e53c2985bc70d3ce49023b79f22d344459504260ab31ee7f064d4b9975699d64909f4237e2b3edc13293477d0d103c1b51ff07af3c38f00e9343100056",
+      "hash_meta": "4aafd16cee69460862bdd29ddd8d0e9b08207461e1ea1f9e655ae20e9d429551",
+      "seqno": 2421925
+    },
+    "service": {
+      "entropy": "c/5s4Njj/d25pbq1XT5S0dWA",
+      "hostname": "chrisamico.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1524272379,
+  "expire_in": 504576000,
+  "prev": "9f705552f2b1e41258422143c66092f2b63f2050a58c153ce33cd4816a9ceefb",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgBS1amqAw6O2IM4H0kWkFaHAKEiGgBRNN0T2mAW7urwgKp3BheWxvYWTESpcCEcQgn3BVUvKx5BJYQiFDxmCS8rY/IFCljBU84zzUgWqc7vvEII5Qep3v84Jf9Hr+26zkGCCoe4iy1dB8UA3zZs4JrHRKAgHCo3NpZ8RAAJFr7ycpFZ/A3Vto2x0O2SMWQy4o11xKCoC6RKpvVH7kt9P0wN9e/ZVXmvTOVJRYmOOSGcJPal9xXUTbIAHHAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICIqo4RlhauevJbrosP9dLHq680OYedvbZjsfmFrx8iOo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chrisamico
+
+==================================================================
