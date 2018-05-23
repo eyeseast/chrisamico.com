@@ -1,5 +1,5 @@
 common:
-    database: sqlite:///blog.db
+    database: postgresql://localhost/chrisamico.com
     prefix: static/
 
 exports:
