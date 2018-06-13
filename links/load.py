@@ -25,6 +25,10 @@ class LinkLoader(object):
         'longitude': types.Float,
     }
 
+    DB_OPTS = {
+        'engine_kwargs': {'pool_recycle': 3600}
+    }
+
     def __init__(self, database_url, table_name, feeds):
 
         self.database_url = database_url
@@ -37,9 +41,9 @@ class LinkLoader(object):
         self.feeds = feeds
         self.queue = curio.Queue()
 
-    def run(self):
+    def run(self, **kwargs):
         "Run with curio"
-        curio.run(self.main())
+        curio.run(self.main(), **kwargs)
 
     async def main(self):
         "Do the whole download"
@@ -53,27 +57,37 @@ class LinkLoader(object):
     async def producer(self):
         async with curio.TaskGroup() as f:
             for name, url in self.feeds:
-                await f.spawn(self.handle_feed(name, url))
+                try:
+                    await f.spawn(self.handle_feed(name, url))
+                except curio.TaskError as e:
+                    print(e)
 
         await self.queue.join()
 
     async def consumer(self):
         while True:
             link = await self.queue.get()
-            await curio.run_in_thread(self.save, link)
-            print('Saved link: {url}'.format(**link))
+            try:
+                async with curio.timeout_after(10):
+                    await curio.run_in_thread(self.save, link)
+                    print('{feed}: {url}'.format(**link))
+
+            except curio.TaskTimeout as e:
+                print('Timed out: {feed}, {url}'.format(**link))
 
             await self.queue.task_done()
 
     # run this in a thread
     def save(self, link):
-        with dataset.connect(self.database_url) as t:
+        with dataset.connect(self.database_url, **self.DB_OPTS) as t:
             table = t[self.table_name]
             table.upsert(link, ['url'], types=self.TYPES)
 
     async def handle_feed(self, name, url):
         "Parse feed URL, enqueue links reading for the database"
         r = await curio.run_in_thread(requests.get, url)
+
+        print(f"Loading {name}")
         feed = feedparser.parse(r.content)
 
         for entry in feed.entries:
@@ -83,15 +97,20 @@ class LinkLoader(object):
 
             date = get_entry_date(entry)
 
-            og = await self.handle_link(entry.link, 
-                title=entry.get('title'),
-                #description=entry.get('description'),
-                url=entry.link,
-                date=date,
-                feed=name)
+            try:
+                og = await self.handle_link(entry.link, 
+                    title=entry.get('title'),
+                    #description=entry.get('description'),
+                    url=entry.link,
+                    date=date,
+                    feed=name)
 
-            if og:
-                await self.queue.put(og)
+                if og:
+                    await self.queue.put(og)
+
+            except Exception as e:
+                print(e)
+
 
     async def handle_link(self, link, **defaults):
         "Fetch OG data and return a dict ready for the db"

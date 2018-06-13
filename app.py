@@ -117,7 +117,7 @@ def txt_urls():
 if __name__ == '__main__':
     if sys.argv[1:]:
         if sys.argv[1] == 'update':
-            LinkLoader(DATABASE_URL, LINK_TABLE, FEEDS).run()
+            LinkLoader(DATABASE_URL, LINK_TABLE, FEEDS).run(with_monitor=True)
 
         elif sys.argv[1] == 'freeze':
             freezer.freeze()
