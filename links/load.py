@@ -70,7 +70,6 @@ class LinkLoader(object):
             try:
                 async with curio.timeout_after(10):
                     await curio.run_in_thread(self.save, link)
-                    print('{feed}: {url}'.format(**link))
 
             except curio.TaskTimeout as e:
                 print('Timed out: {feed}, {url}'.format(**link))
@@ -82,6 +81,7 @@ class LinkLoader(object):
         with dataset.connect(self.database_url, **self.DB_OPTS) as t:
             table = t[self.table_name]
             table.upsert(link, ['url'], types=self.TYPES)
+            print('{feed}: {url}'.format(**link))
 
     async def handle_feed(self, name, url):
         "Parse feed URL, enqueue links reading for the database"
