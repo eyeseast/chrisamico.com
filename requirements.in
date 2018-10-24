@@ -2,6 +2,7 @@ flask
 frozen-flask
 bs4
 dataset
+datafreeze
 feedparser
 markdown
 requests
