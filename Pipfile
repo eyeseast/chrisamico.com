@@ -16,4 +16,4 @@ datafreeze = "*"
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
