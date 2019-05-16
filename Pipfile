@@ -1,19 +1,21 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
+
+[dev-packages]
 
 [packages]
-"bs4" = "*"
+bs4 = "*"
+curio = "*"
 dataset = "*"
+datafreeze = "*"
 feedparser = "*"
 requests = "*"
 Flask = "*"
 Frozen-Flask = "*"
 Markdown = "*"
-datafreeze = "*"
-
-[dev-packages]
+psycopg2 = "*"
 
 [requires]
 python_version = "3.7"
