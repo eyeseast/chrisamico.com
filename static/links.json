@@ -1,5 +1,5 @@
 {
-  "count": 289,
+  "count": 292,
   "results": [
     {
       "id": 13,
@@ -25,7 +25,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 5,
@@ -51,7 +52,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 17,
@@ -77,7 +79,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 15,
@@ -103,7 +106,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 18,
@@ -129,7 +133,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 9,
@@ -155,7 +160,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 19,
@@ -181,7 +187,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 1,
@@ -207,7 +214,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 12,
@@ -233,7 +241,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 8,
@@ -259,7 +268,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 11,
@@ -285,7 +295,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 7,
@@ -311,7 +322,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 3,
@@ -337,7 +349,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 6,
@@ -363,7 +376,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 14,
@@ -389,7 +403,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 10,
@@ -415,7 +430,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 16,
@@ -441,7 +457,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 20,
@@ -467,7 +484,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 31,
@@ -493,7 +511,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 85,
@@ -519,7 +538,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 25,
@@ -545,7 +565,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 24,
@@ -571,7 +592,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 26,
@@ -597,7 +619,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 29,
@@ -623,7 +646,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 30,
@@ -649,7 +673,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 27,
@@ -675,7 +700,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 32,
@@ -701,7 +727,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 21,
@@ -727,7 +754,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 33,
@@ -753,7 +781,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 22,
@@ -779,7 +808,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 34,
@@ -805,7 +835,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 28,
@@ -831,7 +862,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 46,
@@ -857,7 +889,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 38,
@@ -883,7 +916,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 40,
@@ -909,7 +943,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 42,
@@ -935,7 +970,8 @@
       "image:url": "https://lawfare.s3-us-west-2.amazonaws.com/staging/styles/thumbnail/s3/pictures/picture-16-1431624460.jpg?itok=EZ6k24MY",
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 36,
@@ -961,7 +997,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 44,
@@ -987,7 +1024,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 47,
@@ -1013,7 +1051,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 43,
@@ -1039,7 +1078,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 37,
@@ -1065,7 +1105,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 39,
@@ -1091,7 +1132,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 45,
@@ -1117,7 +1159,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 58,
@@ -1143,7 +1186,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 59,
@@ -1169,7 +1213,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 60,
@@ -1195,7 +1240,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 51,
@@ -1221,7 +1267,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 53,
@@ -1247,7 +1294,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 49,
@@ -1273,7 +1321,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 23,
@@ -1299,7 +1348,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 50,
@@ -1325,7 +1375,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 52,
@@ -1351,7 +1402,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 54,
@@ -1377,7 +1429,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 56,
@@ -1403,7 +1456,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 57,
@@ -1429,7 +1483,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 64,
@@ -1455,7 +1510,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 62,
@@ -1481,7 +1537,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 66,
@@ -1507,7 +1564,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 2,
@@ -1533,7 +1591,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 4,
@@ -1559,7 +1618,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 67,
@@ -1585,7 +1645,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 68,
@@ -1611,7 +1672,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 69,
@@ -1637,7 +1699,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 70,
@@ -1663,7 +1726,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 63,
@@ -1689,7 +1753,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 65,
@@ -1715,7 +1780,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 48,
@@ -1741,7 +1807,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 61,
@@ -1767,7 +1834,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 80,
@@ -1793,7 +1861,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 79,
@@ -1819,7 +1888,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 55,
@@ -1845,7 +1915,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 71,
@@ -1871,7 +1942,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 72,
@@ -1897,7 +1969,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 78,
@@ -1923,7 +1996,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 35,
@@ -1949,7 +2023,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 73,
@@ -1975,7 +2050,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 77,
@@ -2001,7 +2077,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 74,
@@ -2027,7 +2104,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 75,
@@ -2053,7 +2131,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 84,
@@ -2079,7 +2158,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 91,
@@ -2105,7 +2185,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 88,
@@ -2131,7 +2212,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 93,
@@ -2157,7 +2239,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 82,
@@ -2183,7 +2266,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 90,
@@ -2209,7 +2293,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 83,
@@ -2235,7 +2320,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 94,
@@ -2261,7 +2347,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 89,
@@ -2287,7 +2374,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 76,
@@ -2313,7 +2401,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 81,
@@ -2339,7 +2428,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 86,
@@ -2365,7 +2455,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 96,
@@ -2391,7 +2482,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 101,
@@ -2417,7 +2509,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 92,
@@ -2443,7 +2536,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 103,
@@ -2469,7 +2563,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 87,
@@ -2495,7 +2590,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 100,
@@ -2521,7 +2617,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 106,
@@ -2547,7 +2644,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 105,
@@ -2573,7 +2671,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 104,
@@ -2599,7 +2698,8 @@
       "image:url": null,
       "email": "tom@macwright.org",
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 97,
@@ -2625,7 +2725,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 98,
@@ -2651,7 +2752,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 102,
@@ -2677,7 +2779,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 110,
@@ -2703,7 +2806,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 111,
@@ -2729,7 +2833,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 114,
@@ -2755,7 +2860,8 @@
       "image:url": "https://lawfare.s3-us-west-2.amazonaws.com/staging/styles/thumbnail/s3/pictures/picture-2512-1484251079.jpg?itok=Jf9xKfB8",
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 128,
@@ -2781,7 +2887,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 108,
@@ -2807,7 +2914,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 117,
@@ -2833,7 +2941,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 189,
@@ -2859,7 +2968,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 112,
@@ -2885,7 +2995,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 122,
@@ -2911,7 +3022,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 113,
@@ -2937,7 +3049,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 121,
@@ -2963,7 +3076,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 109,
@@ -2989,7 +3103,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 119,
@@ -3015,7 +3130,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 124,
@@ -3041,7 +3157,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 99,
@@ -3067,7 +3184,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 118,
@@ -3093,7 +3211,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 115,
@@ -3119,7 +3238,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 116,
@@ -3145,7 +3265,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 95,
@@ -3171,7 +3292,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 123,
@@ -3197,7 +3319,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 193,
@@ -3223,7 +3346,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 41,
@@ -3249,7 +3373,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 129,
@@ -3275,7 +3400,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 136,
@@ -3301,7 +3427,8 @@
       "image:url": "https://lawfare.s3-us-west-2.amazonaws.com/staging/styles/thumbnail/s3/pictures/picture-16-1431624460.jpg?itok=EZ6k24MY",
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 139,
@@ -3327,7 +3454,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 132,
@@ -3353,7 +3481,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 131,
@@ -3379,7 +3508,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 137,
@@ -3405,7 +3535,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 134,
@@ -3431,7 +3562,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 130,
@@ -3457,7 +3589,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 126,
@@ -3483,7 +3616,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 133,
@@ -3509,7 +3643,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 135,
@@ -3535,7 +3670,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 138,
@@ -3561,7 +3697,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 125,
@@ -3587,7 +3724,8 @@
       "image:url": "https://lawfare.s3-us-west-2.amazonaws.com/staging/styles/thumbnail/s3/pictures/picture-435-1517246650.png?itok=uxeCJfHj",
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 142,
@@ -3613,7 +3751,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 151,
@@ -3639,7 +3778,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 140,
@@ -3665,7 +3805,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 147,
@@ -3691,7 +3832,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 143,
@@ -3717,7 +3859,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 152,
@@ -3743,7 +3886,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 141,
@@ -3769,7 +3913,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 144,
@@ -3795,7 +3940,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 153,
@@ -3821,7 +3967,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 145,
@@ -3847,7 +3994,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 149,
@@ -3873,7 +4021,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 127,
@@ -3899,7 +4048,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 150,
@@ -3925,7 +4075,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 154,
@@ -3951,7 +4102,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 194,
@@ -3977,7 +4129,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 183,
@@ -4003,7 +4156,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 155,
@@ -4029,7 +4183,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 156,
@@ -4055,7 +4210,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 158,
@@ -4081,7 +4237,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 172,
@@ -4107,7 +4264,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 146,
@@ -4133,7 +4291,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 148,
@@ -4159,7 +4318,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 184,
@@ -4185,7 +4345,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 196,
@@ -4211,7 +4372,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 190,
@@ -4237,7 +4399,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 187,
@@ -4263,7 +4426,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 215,
@@ -4289,7 +4453,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 173,
@@ -4315,7 +4480,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 167,
@@ -4341,7 +4507,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 191,
@@ -4367,7 +4534,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 181,
@@ -4393,7 +4561,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 201,
@@ -4419,7 +4588,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 195,
@@ -4445,7 +4615,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 197,
@@ -4471,7 +4642,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 212,
@@ -4497,7 +4669,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 213,
@@ -4523,7 +4696,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 209,
@@ -4549,7 +4723,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 162,
@@ -4575,7 +4750,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 163,
@@ -4601,7 +4777,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 159,
@@ -4627,7 +4804,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 160,
@@ -4653,7 +4831,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 161,
@@ -4679,7 +4858,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 182,
@@ -4705,7 +4885,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 120,
@@ -4731,7 +4912,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 107,
@@ -4757,7 +4939,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 169,
@@ -4783,7 +4966,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 198,
@@ -4809,7 +4993,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 177,
@@ -4835,7 +5020,8 @@
       "image:url": "https://lawfare.s3-us-west-2.amazonaws.com/staging/styles/thumbnail/s3/pictures/picture-435-1517246650.png?itok=uxeCJfHj",
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 210,
@@ -4861,7 +5047,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 276,
@@ -4887,7 +5074,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 157,
@@ -4913,7 +5101,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 186,
@@ -4939,7 +5128,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 166,
@@ -4965,7 +5155,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 185,
@@ -4991,7 +5182,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 170,
@@ -5017,7 +5209,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 171,
@@ -5043,7 +5236,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 165,
@@ -5069,7 +5263,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 164,
@@ -5095,7 +5290,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 175,
@@ -5121,7 +5317,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 188,
@@ -5147,7 +5344,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 179,
@@ -5173,7 +5371,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 174,
@@ -5199,7 +5398,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 178,
@@ -5225,7 +5425,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 168,
@@ -5251,7 +5452,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 199,
@@ -5277,7 +5479,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 176,
@@ -5303,7 +5506,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 203,
@@ -5329,7 +5533,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 200,
@@ -5355,7 +5560,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 180,
@@ -5381,7 +5587,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 208,
@@ -5407,7 +5614,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 192,
@@ -5433,7 +5641,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 207,
@@ -5459,7 +5668,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 205,
@@ -5485,7 +5695,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 214,
@@ -5511,7 +5722,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 206,
@@ -5537,7 +5749,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 219,
@@ -5563,7 +5776,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 220,
@@ -5589,7 +5803,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 222,
@@ -5615,7 +5830,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 224,
@@ -5641,7 +5857,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 225,
@@ -5667,7 +5884,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 226,
@@ -5693,7 +5911,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 227,
@@ -5719,7 +5938,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 228,
@@ -5745,7 +5965,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 229,
@@ -5771,7 +5992,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 217,
@@ -5797,7 +6019,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 218,
@@ -5823,7 +6046,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 221,
@@ -5849,7 +6073,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 230,
@@ -5875,33 +6100,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 231,
-      "title": "Why the Sun Herald is changing how it covers crime",
-      "url": "https://www.sunherald.com/opinion/article223016770.html",
-      "date": "2018-12-18T20:30:56",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "The Sun Herald is changing the way it covers crimes. Editor Blake Kaplan explains the reasoning behind the changes.",
-      "image": "https://www.sunherald.com/latest-news/7war1n/picture217515675/alternates/LANDSCAPE_1140/jail%20cell.JPG",
-      "_url": "https://www.sunherald.com/opinion/article223016770.html",
-      "site_name": "sunherald",
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 237,
@@ -5927,7 +6127,35 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 231,
+      "title": "Why the Sun Herald is changing how it covers crime",
+      "url": "https://www.sunherald.com/opinion/article223016770.html",
+      "date": "2018-12-18T20:30:56",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "The Sun Herald is changing the way it covers crimes. Editor Blake Kaplan explains the reasoning behind the changes.",
+      "image": "https://www.sunherald.com/latest-news/7war1n/picture217515675/alternates/LANDSCAPE_1140/jail%20cell.JPG",
+      "_url": "https://www.sunherald.com/opinion/article223016770.html",
+      "site_name": "sunherald",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 232,
@@ -5953,7 +6181,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 216,
@@ -5979,7 +6208,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 223,
@@ -6005,7 +6235,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 233,
@@ -6031,7 +6262,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 211,
@@ -6057,7 +6289,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 234,
@@ -6083,7 +6316,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 235,
@@ -6109,7 +6343,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 236,
@@ -6135,7 +6370,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 245,
@@ -6161,7 +6397,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 242,
@@ -6187,7 +6424,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 247,
@@ -6213,7 +6451,8 @@
       "image:url": "https://lawfare.s3-us-west-2.amazonaws.com/staging/styles/thumbnail/s3/pictures/picture-16-1431624460.jpg?itok=EZ6k24MY",
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 202,
@@ -6239,7 +6478,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 248,
@@ -6265,7 +6505,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 249,
@@ -6291,7 +6532,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 239,
@@ -6317,7 +6559,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 240,
@@ -6343,7 +6586,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 241,
@@ -6369,7 +6613,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 244,
@@ -6395,7 +6640,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 246,
@@ -6421,7 +6667,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 243,
@@ -6447,163 +6694,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 256,
-      "title": "How Islamic State lost Syria",
-      "url": "https://graphics.reuters.com/MIDEAST-CRISIS-ISLAMIC%20STATE/0100913M1H0/index.html",
-      "date": "2019-03-18T15:04:11",
-      "feed": "newsblur",
-      "type": null,
-      "description": "While battling each other for territory, forces in Syria have driven Islamic State back to its last.",
-      "image": "https://graphics.reuters.com/MIDEAST-CRISIS-ISLAMIC%20STATE/0100913M1H0/images/share-card.png",
-      "_url": "https://graphics.reuters.com/MIDEAST-CRISIS-ISLAMIC%20STATE/0100913M1H0/index.html",
-      "site_name": "Reuters",
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 250,
-      "title": "Jerry Brown",
-      "url": "https://talkingpointsmemo.com/edblog/jerry-brown",
-      "date": "2019-01-07T19:35:16",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "Late last night I saw this Twitter video clip of Gov. Jerry Brown (D-CA) leaving the governor&#8217;s office (presumably?) for...",
-      "image": "https://d15zn84cat5tp0.cloudfront.net/wp-content/uploads/2015/05/xvwwoqvdnwwoed89hrhh.jpg",
-      "_url": "https://talkingpointsmemo.com/edblog/jerry-brown",
-      "site_name": "TPM",
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": "https://d15zn84cat5tp0.cloudfront.net/wp-content/uploads/2015/05/xvwwoqvdnwwoed89hrhh.jpg",
-      "article:publisher": null
-    },
-    {
-      "id": 251,
-      "title": "Visualizing a Year of @realDonaldTrump",
-      "url": "http://thedailyviz.com/2019/01/01/visualizing-a-year-of-realdonaldtrump/",
-      "date": "2019-01-01T22:02:43",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "President Trump thumbed his way through another year in the White House on Twitter, compiling a good (great) collection of 2,930 touts, complaints, defenses and rants. He left 2018 with this perple\u2026",
-      "image": "https://i0.wp.com/thedailyviz.com/wp-content/uploads/2019/01/trump-twitter-2018-promo.jpg?fit=1100%2C500",
-      "_url": "http://thedailyviz.com/2019/01/01/visualizing-a-year-of-realdonaldtrump/",
-      "site_name": "The Daily Viz",
-      "image:width": "1100",
-      "image:height": "500",
-      "locale": "en_US",
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 204,
-      "title": "Boston\u2019s schools are becoming resegregated - The Boston Globe",
-      "url": "https://www.bostonglobe.com/metro/2018/08/04/boston-schools-are-becoming-resegregated/brwPhLuupRzkOtSa9Gi6nL/story.html",
-      "date": "2018-08-06T13:57:37",
-      "feed": "instapaper",
-      "type": "article",
-      "description": "An alarming pattern of racial segregation has re-emerged in the Boston Public School system over the last two decades, according to a Globe analysis, largely the consequence of steps taken by city and school officials to allow more students to attend schools in their neighborhoods as they  did prior to court-ordered busing.\nNearly 60 percent of the city\u2019s schools meet the definition of being intensely segregated \u2014 meaning students of color occupy at least 90 percent of the seats.",
-      "image": "https://www.bostonglobe.com/rf/image_585w/Boston/2011-2020/2018/08/04/BostonGlobe.com/Metro/Images/ryan_recess2_met.jpg",
-      "_url": "https://www.bostonglobe.com/metro/2018/08/04/boston-schools-are-becoming-resegregated/brwPhLuupRzkOtSa9Gi6nL/story.html",
-      "site_name": "BostonGlobe.com",
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 257,
-      "title": "Beto O\u2019Rourke\u2019s secret membership in America\u2019s oldest hacking group",
-      "url": "https://www.reuters.com/investigates/special-report/usa-politics-beto-orourke/",
-      "date": "2019-03-15T17:28:27",
-      "feed": "instapaper",
-      "type": "article",
-      "description": "As Beto O'Rourke starts his run for U.S. president, members of a group famous for \u201chactivism\u201d come forward for the first time to claim him as a former comrade.",
-      "image": "https://www.reuters.com/investigates/special-report/assets/usa-politics-beto-orourke/mastheads/share-beto-green.jpg?v=571914180319",
-      "_url": "https://www.reuters.com/investigates/special-report/usa-politics-beto-orourke/",
-      "site_name": "Reuters",
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": "specialreports"
-    },
-    {
-      "id": 254,
-      "title": "America\u2019s Cities Are Running on Software From the \u201980s",
-      "url": "https://www.bloomberg.com/news/articles/2019-02-28/america-s-cities-are-running-on-software-from-the-80s",
-      "date": "2019-03-07T18:18:25",
-      "feed": "instapaper",
-      "type": null,
-      "description": null,
-      "image": null,
-      "_url": "https://www.bloomberg.com/news/articles/2019-02-28/america-s-cities-are-running-on-software-from-the-80s",
-      "site_name": null,
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 260,
@@ -6629,71 +6721,20 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
-      "id": 259,
-      "title": "The 3 most important things I\u2019ve learned as a health care reporter",
-      "url": "https://www.vox.com/health-care/2019/5/6/18532253/sarah-kliff-health-care-doctor-questions-voxcare",
-      "date": "2019-05-07T01:26:22",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "What I\u2019ve discovered covering the health care system \u2014 and as a patient.",
-      "image": "https://cdn.vox-cdn.com/thumbor/-kh3C2FcrDSmQ182iI45QOzxouM=/0x251:3500x2083/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/16215346/457835346.jpg.jpg",
-      "_url": "https://www.vox.com/health-care/2019/5/6/18532253/sarah-kliff-health-care-doctor-questions-voxcare",
-      "site_name": "Vox",
-      "image:width": "1200",
-      "image:height": "630",
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 255,
-      "title": "You can't make your NY Times subscription online-only online",
-      "url": "http://johnkeefe.net/you-cant-make-your-ny-times-subscription-online-only-online",
-      "date": "2019-03-22T01:16:27",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "Our family believes in paying for good journalism, so we have a few subscriptions \u2013 including the New York Times.\n\nWhen we signed up, we got online access along with physical papers delivered on...",
-      "image": "https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2232524/ttgcQj9shDDO6LwecZ1rDqBtc7c/large_Screen_Shot_2019-03-21_at_1.22.35_PM.png",
-      "_url": "http://johnkeefe.net/you-cant-make-your-ny-times-subscription-online-only-online",
-      "site_name": "johnkeefe.net",
-      "image:width": "1126",
-      "image:height": "488",
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 252,
-      "title": "The More Important Problem",
-      "url": "http://thescoop.org/archives/2019/03/09/the-more-important-problem/",
-      "date": "2019-03-09T17:14:44",
+      "id": 256,
+      "title": "How Islamic State lost Syria",
+      "url": "https://graphics.reuters.com/MIDEAST-CRISIS-ISLAMIC%20STATE/0100913M1H0/index.html",
+      "date": "2019-03-18T15:04:11",
       "feed": "newsblur",
       "type": null,
-      "description": null,
-      "image": null,
-      "_url": "http://thescoop.org/archives/2019/03/09/the-more-important-problem/",
-      "site_name": null,
+      "description": "While battling each other for territory, forces in Syria have driven Islamic State back to its last.",
+      "image": "https://graphics.reuters.com/MIDEAST-CRISIS-ISLAMIC%20STATE/0100913M1H0/images/share-card.png",
+      "_url": "https://graphics.reuters.com/MIDEAST-CRISIS-ISLAMIC%20STATE/0100913M1H0/index.html",
+      "site_name": "Reuters",
       "image:width": null,
       "image:height": null,
       "locale": null,
@@ -6707,22 +6748,23 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
-      "id": 253,
-      "title": "Bill Burns: \u2018Chaos Serves Putin\u2019s Interest\u2019",
-      "url": "https://www.theatlantic.com/ideas/archive/2019/03/james-fallows-bill-burns-international-relations/584383/",
-      "date": "2019-03-09T13:46:21",
+      "id": 250,
+      "title": "Jerry Brown",
+      "url": "https://talkingpointsmemo.com/edblog/jerry-brown",
+      "date": "2019-01-07T19:35:16",
       "feed": "newsblur",
       "type": "article",
-      "description": "A veteran diplomat weighs in on Russia, Trump, and\u00a0America\u2019s place on the world stage.",
-      "image": "https://cdn.theatlantic.com/assets/media/img/mt/2019/03/RTR2YORH/facebook.jpg?1551986281",
-      "_url": "https://www.theatlantic.com/ideas/archive/2019/03/james-fallows-bill-burns-international-relations/584383/?utm_source=feed",
-      "site_name": "The Atlantic",
+      "description": "Late last night I saw this Twitter video clip of Gov. Jerry Brown (D-CA) leaving the governor&#8217;s office (presumably?) for...",
+      "image": "https://d15zn84cat5tp0.cloudfront.net/wp-content/uploads/2015/05/xvwwoqvdnwwoed89hrhh.jpg",
+      "_url": "https://talkingpointsmemo.com/edblog/jerry-brown",
+      "site_name": "TPM",
       "image:width": null,
       "image:height": null,
-      "locale": "en_US",
+      "locale": null,
       "latitude": null,
       "longitude": null,
       "streetaddress": null,
@@ -6732,22 +6774,23 @@
       "updated_time": null,
       "image:url": null,
       "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
+      "image:secure_url": "https://d15zn84cat5tp0.cloudfront.net/wp-content/uploads/2015/05/xvwwoqvdnwwoed89hrhh.jpg",
+      "article:publisher": null,
+      "image:alt": null
     },
     {
-      "id": 238,
-      "title": "Beyond UFC debut, Kron Gracie focused on fighting 'as much as possible, as soon as possible'",
-      "url": "https://mmajunkie.com/2019/02/beyond-ufc-debut-kron-gracie-focused-on-fighting-as-much-as-possible-as-soon-as-possible",
-      "date": "2019-02-17T01:52:17",
-      "feed": "instapaper",
+      "id": 251,
+      "title": "Visualizing a Year of @realDonaldTrump",
+      "url": "http://thedailyviz.com/2019/01/01/visualizing-a-year-of-realdonaldtrump/",
+      "date": "2019-01-01T22:02:43",
+      "feed": "newsblur",
       "type": "article",
-      "description": "There are two sides to being a Gracie in the MMA world, and Sunday marks Kron Gracie\u2019s opportunity to approach that double-edged sword.",
-      "image": "https://usatmmajunkie.files.wordpress.com/2019/02/kron-gracie-ufc-on-espn-1-pre-fight-intv.jpg?w=1000&h=576&crop=1",
-      "_url": "https://mmajunkie.com/2019/02/beyond-ufc-debut-kron-gracie-focused-on-fighting-as-much-as-possible-as-soon-as-possible",
-      "site_name": "MMA Junkie",
-      "image:width": "1000",
-      "image:height": "576",
+      "description": "President Trump thumbed his way through another year in the White House on Twitter, compiling a good (great) collection of 2,930 touts, complaints, defenses and rants. He left 2018 with this perple\u2026",
+      "image": "https://i0.wp.com/thedailyviz.com/wp-content/uploads/2019/01/trump-twitter-2018-promo.jpg?fit=1100%2C500",
+      "_url": "http://thedailyviz.com/2019/01/01/visualizing-a-year-of-realdonaldtrump/",
+      "site_name": "The Daily Viz",
+      "image:width": "1100",
+      "image:height": "500",
       "locale": "en_US",
       "latitude": null,
       "longitude": null,
@@ -6759,7 +6802,35 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 204,
+      "title": "Boston\u2019s schools are becoming resegregated - The Boston Globe",
+      "url": "https://www.bostonglobe.com/metro/2018/08/04/boston-schools-are-becoming-resegregated/brwPhLuupRzkOtSa9Gi6nL/story.html",
+      "date": "2018-08-06T13:57:37",
+      "feed": "instapaper",
+      "type": "article",
+      "description": "An alarming pattern of racial segregation has re-emerged in the Boston Public School system over the last two decades, according to a Globe analysis, largely the consequence of steps taken by city and school officials to allow more students to attend schools in their neighborhoods as they  did prior to court-ordered busing.\nNearly 60 percent of the city\u2019s schools meet the definition of being intensely segregated \u2014 meaning students of color occupy at least 90 percent of the seats.",
+      "image": "https://www.bostonglobe.com/rf/image_585w/Boston/2011-2020/2018/08/04/BostonGlobe.com/Metro/Images/ryan_recess2_met.jpg",
+      "_url": "https://www.bostonglobe.com/metro/2018/08/04/boston-schools-are-becoming-resegregated/brwPhLuupRzkOtSa9Gi6nL/story.html",
+      "site_name": "BostonGlobe.com",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 258,
@@ -6785,18 +6856,46 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
-      "id": 265,
-      "title": "Running Datasette on Glitch",
-      "url": "http://simonwillison.net/2019/Apr/23/datasette-glitch/",
-      "date": "2019-04-24T17:13:57",
-      "feed": "newsblur",
+      "id": 257,
+      "title": "Beto O\u2019Rourke\u2019s secret membership in America\u2019s oldest hacking group",
+      "url": "https://www.reuters.com/investigates/special-report/usa-politics-beto-orourke/",
+      "date": "2019-03-15T17:28:27",
+      "feed": "instapaper",
       "type": "article",
-      "description": "The worst part of any software project is setting up a development environment. It\u2019s by far the biggest barrier for anyone trying to get started learning to code. I\u2019ve been \u2026",
-      "image": "https://avatars0.githubusercontent.com/u/9599?v=4&s=200",
-      "_url": "http://simonwillison.net/2019/Apr/23/datasette-glitch/#atom-entries",
+      "description": "As Beto O'Rourke starts his run for U.S. president, members of a group famous for \u201chactivism\u201d come forward for the first time to claim him as a former comrade.",
+      "image": "https://www.reuters.com/investigates/special-report/assets/usa-politics-beto-orourke/mastheads/share-beto-green.jpg?v=571914180319",
+      "_url": "https://www.reuters.com/investigates/special-report/usa-politics-beto-orourke/",
+      "site_name": "Reuters",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": "specialreports",
+      "image:alt": null
+    },
+    {
+      "id": 254,
+      "title": "America\u2019s Cities Are Running on Software From the \u201980s",
+      "url": "https://www.bloomberg.com/news/articles/2019-02-28/america-s-cities-are-running-on-software-from-the-80s",
+      "date": "2019-03-07T18:18:25",
+      "feed": "instapaper",
+      "type": null,
+      "description": null,
+      "image": null,
+      "_url": "https://www.bloomberg.com/news/articles/2019-02-28/america-s-cities-are-running-on-software-from-the-80s",
       "site_name": null,
       "image:width": null,
       "image:height": null,
@@ -6807,23 +6906,51 @@
       "city": null,
       "state": null,
       "image:type": null,
-      "updated_time": "1555992533",
+      "updated_time": null,
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
-      "id": 268,
-      "title": "The Notre Dame Fire and the Invisible Tragedy of the Everyday",
-      "url": "https://kottke.org/19/04/the-notre-dame-fire-and-the-invisible-tragedy-of-the-everyday",
-      "date": "2019-04-18T18:19:30",
+      "id": 255,
+      "title": "You can't make your NY Times subscription online-only online",
+      "url": "http://johnkeefe.net/you-cant-make-your-ny-times-subscription-online-only-online",
+      "date": "2019-03-22T01:16:27",
       "feed": "newsblur",
       "type": "article",
-      "description": "In the aftermath of the fire that ravaged the Notre Dame Cathedral in Paris, two French billionaires stepped in to pledge &eur",
-      "image": "",
-      "_url": "https://kottke.org/19/04/the-notre-dame-fire-and-the-invisible-tragedy-of-the-everyday",
-      "site_name": "kottke.org",
+      "description": "Our family believes in paying for good journalism, so we have a few subscriptions \u2013 including the New York Times.\n\nWhen we signed up, we got online access along with physical papers delivered on...",
+      "image": "https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2232524/ttgcQj9shDDO6LwecZ1rDqBtc7c/large_Screen_Shot_2019-03-21_at_1.22.35_PM.png",
+      "_url": "http://johnkeefe.net/you-cant-make-your-ny-times-subscription-online-only-online",
+      "site_name": "johnkeefe.net",
+      "image:width": "1126",
+      "image:height": "488",
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 252,
+      "title": "The More Important Problem",
+      "url": "http://thescoop.org/archives/2019/03/09/the-more-important-problem/",
+      "date": "2019-03-09T17:14:44",
+      "feed": "newsblur",
+      "type": null,
+      "description": null,
+      "image": null,
+      "_url": "http://thescoop.org/archives/2019/03/09/the-more-important-problem/",
+      "site_name": null,
       "image:width": null,
       "image:height": null,
       "locale": null,
@@ -6837,21 +6964,49 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
-      "id": 269,
-      "title": "Go ahead, watch that movie again \u2013 research shows you\u2019ll enjoy it more than you think",
-      "url": "https://www.washingtonpost.com/business/2019/04/13/watch-same-movie-over-over-study-shows-youll-enjoy-it-more-than-you-think/",
-      "date": "2019-04-18T00:59:20",
+      "id": 253,
+      "title": "Bill Burns: \u2018Chaos Serves Putin\u2019s Interest\u2019",
+      "url": "https://www.theatlantic.com/ideas/archive/2019/03/james-fallows-bill-burns-international-relations/584383/",
+      "date": "2019-03-09T13:46:21",
       "feed": "newsblur",
       "type": "article",
-      "description": "We could all learn something from little kids who demand the same experience over and over again.",
-      "image": "https://www.washingtonpost.com/resizer/p7K8COuNlbzToGehgtFaPuJpgLA=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TCM5NPKRUZHOVPIAOADZVOHGDA.png",
-      "_url": "https://www.washingtonpost.com/business/2019/04/13/watch-same-movie-over-over-study-shows-youll-enjoy-it-more-than-you-think/",
-      "site_name": "Washington Post",
+      "description": "A veteran diplomat weighs in on Russia, Trump, and\u00a0America\u2019s place on the world stage.",
+      "image": "https://cdn.theatlantic.com/assets/media/img/mt/2019/03/RTR2YORH/facebook.jpg?1551986281",
+      "_url": "https://www.theatlantic.com/ideas/archive/2019/03/james-fallows-bill-burns-international-relations/584383/?utm_source=feed",
+      "site_name": "The Atlantic",
       "image:width": null,
       "image:height": null,
+      "locale": "en_US",
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 259,
+      "title": "The 3 most important things I\u2019ve learned as a health care reporter",
+      "url": "https://www.vox.com/health-care/2019/5/6/18532253/sarah-kliff-health-care-doctor-questions-voxcare",
+      "date": "2019-05-07T01:26:22",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "What I\u2019ve discovered covering the health care system \u2014 and as a patient.",
+      "image": "https://cdn.vox-cdn.com/thumbor/-kh3C2FcrDSmQ182iI45QOzxouM=/0x251:3500x2083/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/16215346/457835346.jpg.jpg",
+      "_url": "https://www.vox.com/health-care/2019/5/6/18532253/sarah-kliff-health-care-doctor-questions-voxcare",
+      "site_name": "Vox",
+      "image:width": "1200",
+      "image:height": "630",
       "locale": null,
       "latitude": null,
       "longitude": null,
@@ -6863,7 +7018,35 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": "Doctor Quarantined At NYC\u2019s Bellevue Hospital After Testing Positive For Ebola"
+    },
+    {
+      "id": 238,
+      "title": "Beyond UFC debut, Kron Gracie focused on fighting 'as much as possible, as soon as possible'",
+      "url": "https://mmajunkie.com/2019/02/beyond-ufc-debut-kron-gracie-focused-on-fighting-as-much-as-possible-as-soon-as-possible",
+      "date": "2019-02-17T01:52:17",
+      "feed": "instapaper",
+      "type": "article",
+      "description": "There are two sides to being a Gracie in the MMA world, and Sunday marks Kron Gracie\u2019s opportunity to approach that double-edged sword.",
+      "image": "https://usatmmajunkie.files.wordpress.com/2019/02/kron-gracie-ufc-on-espn-1-pre-fight-intv.jpg?w=1000&h=576&crop=1",
+      "_url": "https://mmajunkie.com/2019/02/beyond-ufc-debut-kron-gracie-focused-on-fighting-as-much-as-possible-as-soon-as-possible",
+      "site_name": "MMA Junkie",
+      "image:width": "1000",
+      "image:height": "576",
+      "locale": "en_US",
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 266,
@@ -6889,19 +7072,20 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
-      "id": 270,
-      "title": "M87 Black Hole Size Comparison",
-      "url": "https://xkcd.com/2135/",
-      "date": "2019-04-12T14:59:22",
+      "id": 269,
+      "title": "Go ahead, watch that movie again \u2013 research shows you\u2019ll enjoy it more than you think",
+      "url": "https://www.washingtonpost.com/business/2019/04/13/watch-same-movie-over-over-study-shows-youll-enjoy-it-more-than-you-think/",
+      "date": "2019-04-18T00:59:20",
       "feed": "newsblur",
-      "type": null,
-      "description": null,
-      "image": null,
-      "_url": "https://xkcd.com/2135/",
-      "site_name": null,
+      "type": "article",
+      "description": "We could all learn something from little kids who demand the same experience over and over again.",
+      "image": "https://www.washingtonpost.com/resizer/p7K8COuNlbzToGehgtFaPuJpgLA=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TCM5NPKRUZHOVPIAOADZVOHGDA.png",
+      "_url": "https://www.washingtonpost.com/business/2019/04/13/watch-same-movie-over-over-study-shows-youll-enjoy-it-more-than-you-think/",
+      "site_name": "Washington Post",
       "image:width": null,
       "image:height": null,
       "locale": null,
@@ -6915,7 +7099,62 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 270,
+      "title": "M87 Black Hole Size Comparison",
+      "url": "https://xkcd.com/2135/",
+      "date": "2019-04-12T14:59:22",
+      "feed": "newsblur",
+      "type": null,
+      "description": null,
+      "image": "https://imgs.xkcd.com/comics/m87_black_hole_size_comparison_2x.png",
+      "_url": "https://xkcd.com/2135/",
+      "site_name": "xkcd",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 268,
+      "title": "The Notre Dame Fire and the Invisible Tragedy of the Everyday",
+      "url": "https://kottke.org/19/04/the-notre-dame-fire-and-the-invisible-tragedy-of-the-everyday",
+      "date": "2019-04-18T18:19:30",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "In the aftermath of the fire that ravaged the Notre Dame Cathedral in Paris, two French billionaires stepped in to pledge &eur",
+      "image": "",
+      "_url": "https://kottke.org/19/04/the-notre-dame-fire-and-the-invisible-tragedy-of-the-everyday",
+      "site_name": "kottke.org",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 272,
@@ -6941,33 +7180,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 273,
-      "title": "Laying off journalists: \u201cWe\u2019re killing our seed corn\u201d",
-      "url": "http://johnlrobinson.com/2019/04/laying-off-journalists-were-killing-our-seed-corn/",
-      "date": "2019-04-03T15:13:24",
-      "feed": "newsblur",
-      "type": null,
-      "description": null,
-      "image": null,
-      "_url": "http://johnlrobinson.com/2019/04/laying-off-journalists-were-killing-our-seed-corn/",
-      "site_name": null,
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 262,
@@ -6993,7 +7207,35 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 273,
+      "title": "Laying off journalists: \u201cWe\u2019re killing our seed corn\u201d",
+      "url": "http://johnlrobinson.com/2019/04/laying-off-journalists-were-killing-our-seed-corn/",
+      "date": "2019-04-03T15:13:24",
+      "feed": "newsblur",
+      "type": null,
+      "description": null,
+      "image": null,
+      "_url": "http://johnlrobinson.com/2019/04/laying-off-journalists-were-killing-our-seed-corn/",
+      "site_name": null,
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 267,
@@ -7019,7 +7261,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 263,
@@ -7045,7 +7288,35 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 265,
+      "title": "Running Datasette on Glitch",
+      "url": "http://simonwillison.net/2019/Apr/23/datasette-glitch/",
+      "date": "2019-04-24T17:13:57",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "The worst part of any software project is setting up a development environment. It\u2019s by far the biggest barrier for anyone trying to get started learning to code. I\u2019ve been \u2026",
+      "image": "https://avatars0.githubusercontent.com/u/9599?v=4&s=200",
+      "_url": "http://simonwillison.net/2019/Apr/23/datasette-glitch/#atom-entries",
+      "site_name": null,
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": "1555992533",
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 274,
@@ -7071,7 +7342,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 275,
@@ -7097,7 +7369,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 271,
@@ -7123,7 +7396,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 264,
@@ -7149,7 +7423,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 289,
@@ -7175,293 +7450,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 283,
-      "title": "OTL: The inside story of how Bob Costas got yanked from the Super Bowl",
-      "url": "https://www.espn.com/espn/otl/story/_/id/25914913",
-      "date": "2019-02-11T21:10:42",
-      "feed": "instapaper",
-      "type": "article",
-      "description": "Conversations with Bob Costas reveal for the first time how the broadcasting icon went from fronting America's most popular sport to being excised from last year's Super Bowl and, ultimately, ending his nearly 40-year career with NBC.",
-      "image": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0207%2Fr498654_1295x1635cc.jpg",
-      "_url": "http://www.espn.com/espn/otl/story/_/id/25914913",
-      "site_name": "ESPN.com",
-      "image:width": "1295",
-      "image:height": "1635",
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 279,
-      "title": "Millennials",
-      "url": "https://xkcd.com/2165/",
-      "date": "2019-06-20T02:03:29",
-      "feed": "newsblur",
-      "type": null,
-      "description": null,
-      "image": null,
-      "_url": "https://xkcd.com/2165/",
-      "site_name": null,
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 281,
-      "title": "The case for fully cleaning up America\u2019s lead problem",
-      "url": "https://www.vox.com/policy-and-politics/2019/6/12/18661193/lead-pipes-paint-flint-michigan-usa-cost-fix",
-      "date": "2019-06-12T14:29:43",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "Replacing all the pipes, all the paint, and all the contaminated soil would cost a ton \u2014 and have huge benefits.",
-      "image": "https://cdn.vox-cdn.com/thumbor/VP6oMS_v5ie7pyUJocRD4SqyG3U=/0x599:3000x2170/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/16333729/513770162.jpg.jpg",
-      "_url": "https://www.vox.com/policy-and-politics/2019/6/12/18661193/lead-pipes-paint-flint-michigan-usa-cost-fix",
-      "site_name": "Vox",
-      "image:width": "1200",
-      "image:height": "630",
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 282,
-      "title": "Opinion | I Turned My Back for a Second, Half a Second, and He Was Grown",
-      "url": "https://www.nytimes.com/2019/06/10/opinion/alabama-childhood.html",
-      "date": "2019-06-11T14:24:40",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "Called back to my childhood home in Alabama, I found the past still very much alive.",
-      "image": "https://static01.nyt.com/images/2019/06/11/opinion/10renklWeb/10renklWeb-facebookJumbo.jpg",
-      "_url": "https://www.nytimes.com/2019/06/10/opinion/alabama-childhood.html?fbclid=IwAR3ks9Rx7X7uqUa8l7Iuh2_HxNItYrOoazgj7SFBCd-i1utYMSeZnxwtcPc",
-      "site_name": null,
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 284,
-      "title": "How China Has Changed Since Tiananmen Square",
-      "url": "https://www.pbs.org/wgbh/frontline/article/tiananmen-square-tank-man-china/",
-      "date": "2019-06-05T02:28:38",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "FRONTLINE spoke with political science professor Jean-Pierre Cabestan to understand how the events at Tiananmen Square have influenced the Chinese Communist Party today.",
-      "image": "https://i0.wp.com/www.pbs.org/wgbh/frontline/wp-content/uploads/2019/06/GettyImages-110141889.jpg?resize=1200%2C630",
-      "_url": "https://www.pbs.org/wgbh/frontline/article/tiananmen-square-tank-man-china/",
-      "site_name": "FRONTLINE",
-      "image:width": "1200",
-      "image:height": "630",
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 285,
-      "title": "The Last Family-Owned Daily in Mississippi",
-      "url": "https://www.theatlantic.com/notes/2019/05/future-local-journalism-case-study-mississippi/588865/",
-      "date": "2019-06-02T13:00:02",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "The Commercial Dispatch is showing other local papers a way forward.",
-      "image": "https://cdn.theatlantic.com/assets/media/img/notes/2019/05/ImesPortrait/facebook.jpg?1557502795",
-      "_url": "https://www.theatlantic.com/notes/2019/05/future-local-journalism-case-study-mississippi/588865/?utm_source=feed",
-      "site_name": "The Atlantic",
-      "image:width": null,
-      "image:height": null,
-      "locale": "en_US",
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 286,
-      "title": "Don\u2019t Fear the Artichoke. Cook It Whole.",
-      "url": "https://www.nytimes.com/2019/05/22/magazine/dont-fear-the-artichoke-cook-it-whole.html",
-      "date": "2019-05-29T01:58:11",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "Boil artichokes spikes and all \u2014 they will shed their thorns and release their sweet, nutty goodness.",
-      "image": "https://static01.nyt.com/images/2019/05/26/magazine/26mag-eat/26mag-eat-facebookJumbo.jpg",
-      "_url": "https://www.nytimes.com/2019/05/22/magazine/dont-fear-the-artichoke-cook-it-whole.html?te=1&nl=cooking&emc=edit_ck_20190524",
-      "site_name": null,
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 287,
-      "title": "There\u2019s Evidence on How to Raise Children, but Are Parents Listening?",
-      "url": "https://www.nytimes.com/2019/05/23/upshot/babies-evidence-parenting-myths.html",
-      "date": "2019-05-24T00:11:29",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "Day-to-day individual choices matter less than we think, but national policies seem to matter a lot.",
-      "image": "https://static01.nyt.com/images/2019/05/16/upshot/16up-baby1/16up-baby1-facebookJumbo.jpg",
-      "_url": "https://www.nytimes.com/2019/05/23/upshot/babies-evidence-parenting-myths.html?partner=rss&emc=rss",
-      "site_name": null,
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 288,
-      "title": "Our Towns: What David Halberstam Learned in Mississippi",
-      "url": "https://www.theatlantic.com/notes/2019/05/what-david-halberstam-learned-mississippi/589678/",
-      "date": "2019-05-19T02:31:53",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "The journalist's days at the Daily Times Leader taught him the \"nobility of ordinary people.\"",
-      "image": "https://cdn.theatlantic.com/assets/media/img/notes/2019/05/AP_9305140122/facebook.jpg?1558188657",
-      "_url": "https://www.theatlantic.com/notes/2019/05/what-david-halberstam-learned-mississippi/589678/?utm_source=feed",
-      "site_name": "The Atlantic",
-      "image:width": null,
-      "image:height": null,
-      "locale": "en_US",
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 278,
-      "title": "Julio Biason .Net 4.0 - Things I Learnt The Hard Way (in 30 Years of Software Development)",
-      "url": "https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+thechangelog+%28The+Changelog%29",
-      "date": "2019-06-25T01:43:28",
-      "feed": "newsblur",
-      "type": null,
-      "description": null,
-      "image": null,
-      "_url": "https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+thechangelog+%28The+Changelog%29",
-      "site_name": null,
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
-    },
-    {
-      "id": 261,
-      "title": "The Failure of the Great Tip-Free Restaurant Experiment",
-      "url": "https://kottke.org/19/04/the-failure-of-the-great-tip-free-restaurant-experiment",
-      "date": "2019-04-27T14:45:41",
-      "feed": "newsblur",
-      "type": "article",
-      "description": "Over the past three years, a number of restaurants across the geographic and economic spectrum of America have experimented with e",
-      "image": "",
-      "_url": "https://kottke.org/19/04/the-failure-of-the-great-tip-free-restaurant-experiment",
-      "site_name": "kottke.org",
-      "image:width": null,
-      "image:height": null,
-      "locale": null,
-      "latitude": null,
-      "longitude": null,
-      "streetaddress": null,
-      "city": null,
-      "state": null,
-      "image:type": null,
-      "updated_time": null,
-      "image:url": null,
-      "email": null,
-      "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 280,
@@ -7487,7 +7477,386 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 282,
+      "title": "Opinion | I Turned My Back for a Second, Half a Second, and He Was Grown",
+      "url": "https://www.nytimes.com/2019/06/10/opinion/alabama-childhood.html",
+      "date": "2019-06-11T14:24:40",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "Called back to my childhood home in Alabama, I found the past still very much alive.",
+      "image": "https://static01.nyt.com/images/2019/06/11/opinion/10renklWeb/10renklWeb-facebookJumbo.jpg",
+      "_url": "https://www.nytimes.com/2019/06/10/opinion/alabama-childhood.html?fbclid=IwAR3ks9Rx7X7uqUa8l7Iuh2_HxNItYrOoazgj7SFBCd-i1utYMSeZnxwtcPc",
+      "site_name": null,
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 284,
+      "title": "How China Has Changed Since Tiananmen Square",
+      "url": "https://www.pbs.org/wgbh/frontline/article/tiananmen-square-tank-man-china/",
+      "date": "2019-06-05T02:28:38",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "FRONTLINE spoke with political science professor Jean-Pierre Cabestan to understand how the events at Tiananmen Square have influenced the Chinese Communist Party today.",
+      "image": "https://i0.wp.com/www.pbs.org/wgbh/frontline/wp-content/uploads/2019/06/GettyImages-110141889.jpg?resize=1200%2C630",
+      "_url": "https://www.pbs.org/wgbh/frontline/article/tiananmen-square-tank-man-china/",
+      "site_name": "FRONTLINE",
+      "image:width": "1200",
+      "image:height": "630",
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 285,
+      "title": "The Last Family-Owned Daily in Mississippi",
+      "url": "https://www.theatlantic.com/notes/2019/05/future-local-journalism-case-study-mississippi/588865/",
+      "date": "2019-06-02T13:00:02",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "The Commercial Dispatch is showing other local papers a way forward.",
+      "image": "https://cdn.theatlantic.com/assets/media/img/notes/2019/05/ImesPortrait/facebook.jpg?1557502795",
+      "_url": "https://www.theatlantic.com/notes/2019/05/future-local-journalism-case-study-mississippi/588865/?utm_source=feed",
+      "site_name": "The Atlantic",
+      "image:width": null,
+      "image:height": null,
+      "locale": "en_US",
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 286,
+      "title": "Don\u2019t Fear the Artichoke. Cook It Whole.",
+      "url": "https://www.nytimes.com/2019/05/22/magazine/dont-fear-the-artichoke-cook-it-whole.html",
+      "date": "2019-05-29T01:58:11",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "Boil artichokes spikes and all \u2014 they will shed their thorns and release their sweet, nutty goodness.",
+      "image": "https://static01.nyt.com/images/2019/05/26/magazine/26mag-eat/26mag-eat-facebookJumbo.jpg",
+      "_url": "https://www.nytimes.com/2019/05/22/magazine/dont-fear-the-artichoke-cook-it-whole.html?te=1&nl=cooking&emc=edit_ck_20190524",
+      "site_name": null,
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 287,
+      "title": "There\u2019s Evidence on How to Raise Children, but Are Parents Listening?",
+      "url": "https://www.nytimes.com/2019/05/23/upshot/babies-evidence-parenting-myths.html",
+      "date": "2019-05-24T00:11:29",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "Day-to-day individual choices matter less than we think, but national policies seem to matter a lot.",
+      "image": "https://static01.nyt.com/images/2019/05/16/upshot/16up-baby1/16up-baby1-facebookJumbo.jpg",
+      "_url": "https://www.nytimes.com/2019/05/23/upshot/babies-evidence-parenting-myths.html?partner=rss&emc=rss",
+      "site_name": null,
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 288,
+      "title": "Our Towns: What David Halberstam Learned in Mississippi",
+      "url": "https://www.theatlantic.com/notes/2019/05/what-david-halberstam-learned-mississippi/589678/",
+      "date": "2019-05-19T02:31:53",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "The journalist's days at the Daily Times Leader taught him the \"nobility of ordinary people.\"",
+      "image": "https://cdn.theatlantic.com/assets/media/img/notes/2019/05/AP_9305140122/facebook.jpg?1558188657",
+      "_url": "https://www.theatlantic.com/notes/2019/05/what-david-halberstam-learned-mississippi/589678/?utm_source=feed",
+      "site_name": "The Atlantic",
+      "image:width": null,
+      "image:height": null,
+      "locale": "en_US",
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 261,
+      "title": "The Failure of the Great Tip-Free Restaurant Experiment",
+      "url": "https://kottke.org/19/04/the-failure-of-the-great-tip-free-restaurant-experiment",
+      "date": "2019-04-27T14:45:41",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "Over the past three years, a number of restaurants across the geographic and economic spectrum of America have experimented with e",
+      "image": "",
+      "_url": "https://kottke.org/19/04/the-failure-of-the-great-tip-free-restaurant-experiment",
+      "site_name": "kottke.org",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 279,
+      "title": "Millennials",
+      "url": "https://xkcd.com/2165/",
+      "date": "2019-06-20T02:03:29",
+      "feed": "newsblur",
+      "type": null,
+      "description": null,
+      "image": "https://imgs.xkcd.com/comics/millennials_2x.png",
+      "_url": "https://xkcd.com/2165/",
+      "site_name": "xkcd",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 283,
+      "title": "OTL: The inside story of how Bob Costas got yanked from the Super Bowl",
+      "url": "https://www.espn.com/espn/otl/story/_/id/25914913",
+      "date": "2019-02-11T21:10:42",
+      "feed": "instapaper",
+      "type": "article",
+      "description": "Conversations with Bob Costas reveal for the first time how the broadcasting icon went from fronting America's most popular sport to being excised from last year's Super Bowl and, ultimately, ending his nearly 40-year career with NBC.",
+      "image": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0207%2Fr498654_1295x1635cc.jpg",
+      "_url": "http://www.espn.com/espn/otl/story/_/id/25914913",
+      "site_name": "ESPN.com",
+      "image:width": "1295",
+      "image:height": "1635",
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 278,
+      "title": "Julio Biason .Net 4.0 - Things I Learnt The Hard Way (in 30 Years of Software Development)",
+      "url": "https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+thechangelog+%28The+Changelog%29",
+      "date": "2019-06-25T01:43:28",
+      "feed": "newsblur",
+      "type": null,
+      "description": null,
+      "image": null,
+      "_url": "https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+thechangelog+%28The+Changelog%29",
+      "site_name": null,
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 281,
+      "title": "The case for fully cleaning up America\u2019s lead problem",
+      "url": "https://www.vox.com/policy-and-politics/2019/6/12/18661193/lead-pipes-paint-flint-michigan-usa-cost-fix",
+      "date": "2019-06-12T14:29:43",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "Replacing all the pipes, all the paint, and all the contaminated soil would cost a ton \u2014 and have huge benefits.",
+      "image": "https://cdn.vox-cdn.com/thumbor/VP6oMS_v5ie7pyUJocRD4SqyG3U=/0x599:3000x2170/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/16333729/513770162.jpg.jpg",
+      "_url": "https://www.vox.com/policy-and-politics/2019/6/12/18661193/lead-pipes-paint-flint-michigan-usa-cost-fix",
+      "site_name": "Vox",
+      "image:width": "1200",
+      "image:height": "630",
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": "Work Begins In Flint To Replace Lead Water Pipes"
+    },
+    {
+      "id": 290,
+      "title": "\u2018Like I\u2019m Some Kind of Criminal\u2019: Tougher Fines in Tennis",
+      "url": "https://www.nytimes.com/2019/07/11/sports/tennis/fines-wimbledon-french-open.html",
+      "date": "2019-07-13T02:54:18",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "Two players have lost all their prize money from Grand Slam tournaments to cover fines for failing to \u201cperform to a professional standard\u201d in first-round matches.",
+      "image": "https://static01.nyt.com/images/2019/07/09/sports/09tennis-fines-03/09tennis-fines-03-facebookJumbo.jpg",
+      "_url": "https://www.nytimes.com/2019/07/11/sports/tennis/fines-wimbledon-french-open.html?emc=rss&partner=rss",
+      "site_name": null,
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 291,
+      "title": "Opinion | We need to know the truth about Jeffrey Epstein and his friends. All of it.",
+      "url": "https://www.washingtonpost.com/opinions/2019/07/08/we-need-know-truth-about-jeffrey-epstein-his-friends-all-it/",
+      "date": "2019-07-13T02:28:28",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "Rich, depraved men are tolerated across the political spectrum. This is a chance to indict everyone, not to score partisan points.",
+      "image": "https://www.washingtonpost.com/resizer/2sodtDwTTguEe2XDhz0hQNPQdC4=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/4SG7KGFBTAI6TJ3H26VYJLXT5E.jpg",
+      "_url": "https://www.washingtonpost.com/opinions/2019/07/08/we-need-know-truth-about-jeffrey-epstein-his-friends-all-it/",
+      "site_name": "Washington Post",
+      "image:width": null,
+      "image:height": null,
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": null,
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": null,
+      "article:publisher": null,
+      "image:alt": null
+    },
+    {
+      "id": 292,
+      "title": "Innocent Children Are Dying In Unconscionable Human Warehouses On the US-Mexico Border, But I\u2019m Going to Use My Political Capital to Complain About the Non-Existent Coddling of Millennials",
+      "url": "https://www.mcsweeneys.net/articles/innocent-children-are-dying-in-unconscionable-human-warehouses-on-the-us-mexico-border-but-im-going-to-use-my-political-capital-to-complain-about-the-non-existent-coddling-of-millennials",
+      "date": "2019-07-11T16:58:44",
+      "feed": "newsblur",
+      "type": "article",
+      "description": "When you look at the facts on the ground \u2014 25% of Americans experiencing homelessness are millennials, a proportion that is on the rise; 5.3 millio...",
+      "image": "http://d3thpuk46eyjbu.cloudfront.net/uploads/production/12794/1562543020/original/Screen_Shot_2019-07-07_at_7.43.28_PM.png",
+      "_url": "https://www.mcsweeneys.net/articles/innocent-children-are-dying-in-unconscionable-human-warehouses-on-the-us-mexico-border-but-im-going-to-use-my-political-capital-to-complain-about-the-non-existent-coddling-of-millennials?fbclid=IwAR0G-Y8v5JupLfMTmE7dYgWjA09kajGRsIodQVsaQq-93Tnh6afOAOM_p3I",
+      "site_name": "McSweeney's Internet Tendency",
+      "image:width": "886",
+      "image:height": "548",
+      "locale": null,
+      "latitude": null,
+      "longitude": null,
+      "streetaddress": null,
+      "city": null,
+      "state": null,
+      "image:type": "image/png",
+      "updated_time": null,
+      "image:url": null,
+      "email": null,
+      "image:secure_url": "https://d3thpuk46eyjbu.cloudfront.net/uploads/production/12794/1562543020/original/Screen_Shot_2019-07-07_at_7.43.28_PM.png",
+      "article:publisher": null,
+      "image:alt": null
     },
     {
       "id": 277,
@@ -7513,7 +7882,8 @@
       "image:url": null,
       "email": null,
       "image:secure_url": null,
-      "article:publisher": null
+      "article:publisher": null,
+      "image:alt": null
     }
   ],
   "meta": {}
