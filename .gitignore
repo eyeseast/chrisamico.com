@@ -94,3 +94,4 @@ ENV/
 *.sqlite
 
 node_modules
+.vscode
