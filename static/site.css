@@ -1,0 +1,45 @@
+/* typography */
+
+html {
+	--text-color: #333;
+	--quiet: #777;
+	--font-size: 16px;
+	--compact: 0.75em;
+}
+
+body {
+	color: var(--text-color);
+	font-size: var(--font-size);
+	font-family: Helvetica, sans-serif;
+	line-height: 1.25em;
+}
+
+.quiet {
+	color: var(--quiet);
+}
+
+/* layout */
+* + * {
+	margin-top: 1.5em;
+}
+
+.link * + * {
+	margin-top: var(--compact);
+}
+
+ul li {
+	margin-top: var(--compact);
+}
+
+ul.social {
+	margin-top: var(--compact);
+	padding-left: 0;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.container {
+	padding: 1em;
+}
