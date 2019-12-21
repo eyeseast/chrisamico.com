@@ -5,6 +5,8 @@ html {
 	--quiet: #777;
 	--font-size: 16px;
 	--compact: 0.75em;
+	--highlight: #1eaedb;
+	--highlight-darker: #0fa0ce;
 }
 
 body {
@@ -27,6 +29,18 @@ body {
 	margin-top: var(--compact);
 }
 
+a {
+	color: var(--highlight);
+}
+
+a:hover {
+	opacity: 0.75;
+}
+
+a:visited {
+	color: var(--highlight-darker);
+}
+
 ul li {
 	margin-top: var(--compact);
 }
@@ -42,4 +56,60 @@ ul.social {
 
 .container {
 	padding: 1em;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+	.container {
+		display: flex;
+	}
+
+	header {
+		min-width: 33%;
+	}
+
+	.fixed {
+		position: sticky;
+		top: 1.5em;
+	}
+
+	main {
+		margin-top: 0;
+	}
+
+	.social li {
+		display: list-item;
+	}
+
+	.social li {
+		list-style: none;
+	}
+
+	.social li a:before {
+		content: "";
+		display: inline-block;
+		height: 1.5em;
+		vertical-align: middle;
+		width: 1.5em;
+	}
+
+	.social li.twitter a:before {
+		background-image: url(./img/Twitter_Logo_Blue.svg);
+	}
+
+	.social li.github a:before {
+		background-image: url(./img/GitHub-Mark-32px.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 1em;
+		width: 1.5em;
+	}
+
+	.social li.linkedin a:before {
+		background-image: url(./img/linkedin.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 }
