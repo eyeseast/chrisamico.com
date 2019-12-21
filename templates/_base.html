@@ -10,17 +10,18 @@
 
 		<title>{{ OG.title }}</title>
 
-		{% block opengraph %}
-        {% for key, value in OG.items() %}
+		{% block opengraph %} {% for key, value in OG.items() %}
 		<meta property="og:{{ key }}" content="{{ value }}" />
-		{% endfor %}
-        {% endblock opengraph %} 
-        {% block css %}
-		<link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}" />
-		{% endblock css %} 
-        {% block head %}{% endblock head %} 
-        {% block analytics %}
+		{% endfor %} {% endblock opengraph %} {% block css %}
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='normalize.css', t=timestamp) }}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='site.css', t=timestamp) }}"
+		/>
+		{% endblock css %} {% block head %}{% endblock head %} {% block analytics %}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
 			async

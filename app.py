@@ -2,6 +2,7 @@
 
 import os
 import sys
+import time
 from urllib import parse
 
 import dataset
@@ -85,7 +86,7 @@ def urlparse(url, part="netloc"):
 def add_to_context():
     "Default context"
 
-    context = {"OG": OG, "CONTACT": CONTACT}
+    context = {"OG": OG, "CONTACT": CONTACT, "timestamp": time.time()}
 
     return context
 
