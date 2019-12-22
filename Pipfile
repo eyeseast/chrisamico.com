@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+ipython = "*"
 
 [packages]
 bs4 = "*"
@@ -16,6 +17,7 @@ Flask = "*"
 Frozen-Flask = "*"
 Markdown = "*"
 psycopg2-binary = "*"
+normality = "*"
 
 [requires]
 python_version = "3.7"
