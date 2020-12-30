@@ -1,0 +1,33 @@
+# Update my personal site
+
+name: Update
+
+on: workflow_dispatch
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # install before we install
+      - name: python setup
+        run: python3 -m pip install pipenv
+
+      - name: install
+        run: pipenv sync
+
+      - name: links
+        run: pipenv run ./app.py update
+
+      - name: freeze
+        run: |
+          pipenv run datafreeze Freezefile.yaml
+          pipenv run ./app.py freeze
+
+      - name: commit
+        run: |
+          git commit -am "Updated: `date +%Y-%m-%d`"
+          git push origin master
