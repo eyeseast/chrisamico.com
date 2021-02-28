@@ -8,16 +8,8 @@ ipython = "*"
 
 [packages]
 bs4 = "*"
-curio = "*"
-dataset = "*"
-datafreeze = "*"
-feedparser = "*"
-requests = "*"
-Flask = "*"
-Frozen-Flask = "*"
-Markdown = "*"
-psycopg2-binary = "*"
-normality = "*"
+datasette = "*"
+feed-to-sqlite = "*"
 
 [requires]
 python_version = "3.7"
