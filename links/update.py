@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 
 import httpx
+from dateutil.parser import parse
 from feed_to_sqlite.ingest import ingest_feed, extract_entry_fields
 
 from opengraph import OpenGraph
@@ -49,9 +50,22 @@ def normalize(table, entry, feed_details, client):
         if og.get(key):
             row[key] = og.pop(key)
 
+    row["published"] = safe_date(row.get("published"))
+    row["updated"] = safe_date(row.get("updated"))
+
     row["og"] = dict(og)
 
     return row
+
+
+def safe_date(s, default=None):
+    if not s:
+        return default
+
+    try:
+        return parse(s)
+    except:
+        return default
 
 
 if __name__ == "__main__":

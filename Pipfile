@@ -10,6 +10,7 @@ ipython = "*"
 bs4 = "*"
 datasette = "*"
 feed-to-sqlite = "*"
+python-dateutil = "*"
 
 [requires]
 python_version = "3.7"
