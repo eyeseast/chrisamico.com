@@ -11,6 +11,9 @@ bs4 = "*"
 datasette = "*"
 feed-to-sqlite = "*"
 python-dateutil = "*"
+flask = "*"
+frozen-flask = "*"
+markdown = "*"
 
 [requires]
 python_version = "3.7"

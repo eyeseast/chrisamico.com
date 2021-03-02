@@ -1,32 +1,23 @@
 #!/usr/bin/env python
-
+import datetime
+import json
 import os
 import sys
 import time
+from pathlib import Path
 from urllib import parse
 
-import dataset
-
 # from dotenv import load_dotenv, find_dotenv
+from dateutil.parser import parse as date_parse
 from flask import Flask, g, render_template, send_from_directory
 from flask_frozen import Freezer
 from markdown import markdown as md
+from sqlite_utils import Database
 
-from links.load import LinkLoader
-
-# load_dotenv(find_dotenv())
-
-
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://localhost/chrisamico.com")
+ROOT = Path(__file__).parent.absolute()
+DB_PATH = ROOT / "db" / "blog.db"
 LINK_TABLE = "links"
 
-FEEDS = (
-    (
-        "instapaper",
-        "https://www.instapaper.com/starred/rss/13475/qUh7yaOUGOSQeANThMyxXdYnho",
-    ),
-    ("newsblur", "https://chrisamico.newsblur.com/social/rss/35501/chrisamico"),
-)
 
 FREEZER_RELATIVE_URLS = True
 FREEZER_DESTINATION = "docs"
@@ -54,7 +45,7 @@ def get_db():
     "Connect to DB"
     db = g.get("_database", None)
     if db is None:
-        db = g._database = dataset.connect(DATABASE_URL)
+        db = g._database = Database(DB_PATH)
     return db
 
 
@@ -62,11 +53,14 @@ def get_db():
 def close_connection(exception):
     db = getattr(g, "_database", None)
     if db is not None:
-        db.engine.dispose()
+        # db.engine.dispose()
+        pass
 
 
 @app.template_filter("date")
 def date(d, format="%b %d, %Y"):
+    if not isinstance(d, datetime.datetime):
+        d = date_parse(d)
     return d.strftime(format)
 
 
@@ -96,7 +90,8 @@ def index():
     db = get_db()
     links = db[LINK_TABLE]
 
-    links = links.find(order_by="-date", _limit=20)
+    links = links.rows_where(order_by="published desc", limit=20)
+    links = json_cols(links, ["og"])
 
     return render_template("index.html", links=links)
 
@@ -114,13 +109,16 @@ def txt_urls():
         yield "textfile", {"name": os.path.splitext(filename)[0]}
 
 
-if __name__ == "__main__":
-    if sys.argv[1:]:
-        if sys.argv[1] == "update":
-            LinkLoader(DATABASE_URL, LINK_TABLE, FEEDS).run(with_monitor=True)
+def json_cols(rows, columns):
+    for row in rows:
+        for column in columns:
+            row[column] = json.loads(row[column])
+        yield row
 
-        elif sys.argv[1] == "freeze":
-            freezer.freeze()
+
+if __name__ == "__main__":
+    if sys.argv[1:] and sys.argv[1] == "freeze":
+        freezer.freeze()
 
     else:
         app.run(debug=True)
