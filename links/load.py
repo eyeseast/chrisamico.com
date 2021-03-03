@@ -20,14 +20,13 @@ class LinkLoader(object):
     Fetch open graph data for each link
     Save OG for each (plus some other metadata) to database
     """
+
     TYPES = {
-        'latitude': types.Float,
-        'longitude': types.Float,
+        "latitude": types.Float,
+        "longitude": types.Float,
     }
 
-    DB_OPTS = {
-        'engine_kwargs': {'pool_recycle': 3600}
-    }
+    DB_OPTS = {"engine_kwargs": {"pool_recycle": 3600}}
 
     def __init__(self, database_url, table_name, feeds):
 
@@ -72,7 +71,7 @@ class LinkLoader(object):
                     await curio.run_in_thread(self.save, link)
 
             except curio.TaskTimeout as e:
-                print('Timed out: {feed}, {url}'.format(**link))
+                print("Timed out: {feed}, {url}".format(**link))
 
             await self.queue.task_done()
 
@@ -80,8 +79,8 @@ class LinkLoader(object):
     def save(self, link):
         with dataset.connect(self.database_url, **self.DB_OPTS) as t:
             table = t[self.table_name]
-            table.upsert(link, ['url'], types=self.TYPES)
-            print('{feed}: {url}'.format(**link))
+            table.upsert(link, ["url"], types=self.TYPES)
+            print("{feed}: {url}".format(**link))
 
     async def handle_feed(self, name, url):
         "Parse feed URL, enqueue links reading for the database"
@@ -92,18 +91,20 @@ class LinkLoader(object):
 
         for entry in feed.entries:
             # bail here if we already have this URL
-            #if self.table.find_one(_url=entry.link):
+            # if self.table.find_one(_url=entry.link):
             #    continue
 
             date = get_entry_date(entry)
 
             try:
-                og = await self.handle_link(entry.link, 
-                    title=entry.get('title'),
-                    #description=entry.get('description'),
+                og = await self.handle_link(
+                    entry.link,
+                    title=entry.get("title"),
+                    # description=entry.get('description'),
                     url=entry.link,
                     date=date,
-                    feed=name)
+                    feed=name,
+                )
 
                 if og:
                     await self.queue.put(og)
@@ -111,26 +112,24 @@ class LinkLoader(object):
             except Exception as e:
                 print(e)
 
-
     async def handle_link(self, link, **defaults):
         "Fetch OG data and return a dict ready for the db"
         r = await curio.run_in_thread(requests.get, link)
         if r.ok:
             og = OpenGraph(html=r.content)
             defaults.update(og)
-            defaults['_url'] = link
+            defaults["_url"] = link
 
             return defaults
 
 
 def get_entry_date(entry):
     "Get one of many possible date fields on a feed entry"
-    date_fields = ['published_parsed', 'updated_parsed', 'created_parsed']
+    date_fields = ["published_parsed", "updated_parsed", "created_parsed"]
     for field in date_fields:
         if field in entry and entry[field]:
             return datetime.datetime.fromtimestamp(time.mktime(entry[field]))
 
     else:
-        print('No date for entry. Using now().\n{link}'.format(**entry))
+        print("No date for entry. Using now().\n{link}".format(**entry))
         return datetime.datetime.now()
-

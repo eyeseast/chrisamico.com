@@ -1,0 +1,7 @@
+title: "Chris Amico: Journalist & Programmer"
+
+databases:
+  blog:
+    tables:
+      links:
+        sort_desc: published

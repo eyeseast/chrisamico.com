@@ -11,14 +11,19 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      - name: Checkout LFS objects
+        run: git lfs checkout
 
       # Setup Python (faster than using Python container)
-      - name: Setup Python
+      - name: python
         uses: actions/setup-python@v2
         with:
           python-version: "3.7"
 
-      - name: Install pipenv
+      - name: pipenv
         run: |
           python -m pip install --upgrade pipenv wheel
       - id: cache-pipenv
@@ -27,19 +32,21 @@ jobs:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
 
-      - name: Install dependencies
+      - name: install
         if: steps.cache-pipenv.outputs.cache-hit != 'true'
         run: pipenv sync
 
-      - name: links
-        run: pipenv run ./app.py update
+      - name: update
+        run: make update
 
       - name: freeze
-        run: |
-          pipenv run datafreeze Freezefile.yaml
-          pipenv run ./app.py freeze
+        run: make freeze
 
       - name: commit
         run: |
-          git commit -am "Updated: `date +%Y-%m-%d`"
-          git push origin master
+          timestamp=$(date -u)
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Updated: ${timestamp}" || exit 0
+          git push

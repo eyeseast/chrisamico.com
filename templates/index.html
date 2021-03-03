@@ -17,14 +17,14 @@
 	<h2 class="quiet">Reading list:</h2>
 	{% for link in links %}
 	<div class="link">
-		<h3><a href="{{ link.url }}">{{ link.title }}</a></h3>
+		<h3><a href="{{ link.link }}">{{ link.title }}</a></h3>
 		<div class="date quiet">
-			{{ link.date|date }} | {% if link.site_name %} {{ link.site_name }} {% else %} {{
-			link.url|urlparse }} {% endif %}
+			{{ link.published|date }} | {% if link.og.site_name %} {{ link.og.site_name }} {%
+			else %} {{ link.link|urlparse }} {% endif %}
 		</div>
 		<div class="description">
 			{{ link.description|d('', True)|striptags|truncate }}
-			<a href="{{ link.url }}">More &rarr;</a>
+			<a href="{{ link.link }}">More &rarr;</a>
 		</div>
 	</div>
 	{% endfor %}
