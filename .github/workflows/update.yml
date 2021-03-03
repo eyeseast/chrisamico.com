@@ -11,6 +11,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      - name: Checkout LFS objects
+        run: git lfs checkout
 
       # Setup Python (faster than using Python container)
       - name: python
