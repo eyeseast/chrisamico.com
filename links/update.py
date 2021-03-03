@@ -12,9 +12,10 @@ from feed_to_sqlite.ingest import ingest_feed, extract_entry_fields
 
 from opengraph import OpenGraph
 
-log = logging.getLogger(__name__)
-log.addHandler(logging.StreamHandler())
+log = logging.getLogger("links.update")
 log.setLevel(logging.DEBUG)
+
+logging.basicConfig()
 
 ROOT = Path(__file__).parent.parent.absolute()
 DB_PATH = ROOT / "db" / "blog.db"
@@ -24,6 +25,7 @@ TABLE_NAME = "links"
 def main(*urls):
     with httpx.Client(timeout=30) as client:
         for url in urls:
+            log.info("Loading feed: %s", url)
             ingest_feed(
                 DB_PATH,
                 url=url,
@@ -35,7 +37,7 @@ def main(*urls):
 
 
 def normalize(table, entry, feed_details, client):
-    logging.info("%s: %s", feed_details.title, entry.title)
+    log.info("%s: %s", feed_details.title, entry.title)
     og = OpenGraph.fetch(entry["link"], client=client)
     row = extract_entry_fields(table, entry, feed_details)
 

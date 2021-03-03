@@ -90,8 +90,6 @@ ENV/
 .ropeproject
 
 .DS_Store
-*.db
-*.sqlite
 
 node_modules
 .vscode

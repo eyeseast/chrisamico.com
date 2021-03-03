@@ -32,14 +32,13 @@ jobs:
         run: pipenv sync
 
       - name: links
-        run: pipenv run ./app.py update
+        run: make update
 
       - name: freeze
-        run: |
-          pipenv run datafreeze Freezefile.yaml
-          pipenv run ./app.py freeze
+        run: make freeze
 
       - name: commit
         run: |
           git commit -am "Updated: `date +%Y-%m-%d`"
           git push origin master
+        if: git diff --exit-code db/blog.db
