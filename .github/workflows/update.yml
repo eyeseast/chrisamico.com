@@ -13,12 +13,12 @@ jobs:
       - uses: actions/checkout@v2
 
       # Setup Python (faster than using Python container)
-      - name: Setup Python
+      - name: python
         uses: actions/setup-python@v2
         with:
           python-version: "3.7"
 
-      - name: Install pipenv
+      - name: pipenv
         run: |
           python -m pip install --upgrade pipenv wheel
       - id: cache-pipenv
@@ -27,11 +27,11 @@ jobs:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
 
-      - name: Install dependencies
+      - name: install
         if: steps.cache-pipenv.outputs.cache-hit != 'true'
         run: pipenv sync
 
-      - name: links
+      - name: update
         run: make update
 
       - name: freeze
@@ -39,6 +39,7 @@ jobs:
 
       - name: commit
         run: |
-          git commit -am "Updated: `date +%Y-%m-%d`"
-          git push origin master
-        if: git diff --exit-code db/blog.db
+          timestamp=$(date -u)
+          git commit -A
+          git commit -m "Updated: ${timestamp}" || exit 0
+          git push
