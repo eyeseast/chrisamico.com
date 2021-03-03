@@ -45,6 +45,6 @@ jobs:
       - name: commit
         run: |
           timestamp=$(date -u)
-          git commit -A
+          git add -A
           git commit -m "Updated: ${timestamp}" || exit 0
           git push
