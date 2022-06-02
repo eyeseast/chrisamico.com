@@ -7,6 +7,9 @@ FEEDS = \
  https://chrisamico.newsblur.com/social/rss/35501/chrisamico \
  https://www.instapaper.com/starred/rss/13475/qUh7yaOUGOSQeANThMyxXdYnho
 
+install:
+	pipenv sync
+
 rebuild:
 	# pipenv run sqlite-utils upsert --csv --alter --pk id $(BLOG_DB) $(LINKS_TABLE) $(LINKS_CSV)
 
@@ -19,3 +22,5 @@ freeze:
 
 run:
 	pipenv run datasette serve --metadata metadata.yml db/*.db
+
+.Phony: install rebuild update freeze run
