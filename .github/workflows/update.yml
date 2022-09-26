@@ -3,6 +3,9 @@
 name: Update
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string
