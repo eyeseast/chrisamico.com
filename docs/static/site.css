@@ -113,4 +113,10 @@ ul.social {
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
+
+	.social li.mastodon a:before {
+		background-image: url("./img/Mastodon.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 }
