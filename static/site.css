@@ -101,22 +101,27 @@ ul.social {
 	}
 
 	.social li.github a:before {
-		background-image: url(./img/GitHub-Mark-32px.png);
+		background-image: url(./img/github-mark.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 1em;
 		width: 1.5em;
+		vertical-align: top;
 	}
 
 	.social li.linkedin a:before {
 		background-image: url(./img/linkedin.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
+		height: 1em;
+		width: 1.5em;
 	}
 
 	.social li.mastodon a:before {
 		background-image: url("./img/Mastodon.svg");
 		background-repeat: no-repeat;
 		background-size: contain;
+		height: 1em;
+		width: 1.5em;
 	}
 }
