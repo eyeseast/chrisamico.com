@@ -5,11 +5,17 @@
 		<h2 class="tagline quiet">{{ CONTACT.tagline }}</h2>
 
 		<ul class="social">
-			{% for link in ['twitter', 'github', 'linkedin'] %}
-			<li class="{{ link }}">
-				<a href="{{ CONTACT[link] }}" class="icon-{{ link }}">{{ link }}</a>
+			<li class="github">
+				<a href="{{ CONTACT['github'] }}" class="icon-github">Github</a>
 			</li>
-			{% endfor %}
+			<li class="linkedin">
+				<a href="{{ CONTACT['linkedin'] }}" class="icon-linkedin">LinkedIn</a>
+			</li>
+			<li class="mastodon">
+				<a class="icon-mastodon" rel="me" href="https://journa.host/@chrisamico"
+					>Mastodon</a
+				>
+			</li>
 		</ul>
 	</div>
 </header>
@@ -29,5 +35,4 @@
 	</div>
 	{% endfor %}
 </main>
-
 {% endblock content %}
