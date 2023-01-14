@@ -16,6 +16,7 @@ frozen-flask = "*"
 markdown = "*"
 httpx = "*"
 sqlite-utils = "*"
+python-frontmatter = "*"
 
 [requires]
 python_version = "3.11"

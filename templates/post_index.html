@@ -1,4 +1,5 @@
-{% extends "_base.html" %} {% block content %}
+{% extends "_base.html" %}
+{% block content %}
 <header id="about" class="left">
 	<div class="fixed">
 		<h1>{{ CONTACT.name }}</h1>
@@ -16,26 +17,26 @@
 					>Mastodon</a
 				>
 			</li>
-			<li>
-				<a href="/blog/">Blog archive</a>
-			</li>
 		</ul>
 	</div>
 </header>
-<main id="links" class="right">
-	<h2 class="quiet">Reading list:</h2>
-	{% for link in links %}
+<main id="posts" class="right">
+    <h2 class="quiet">Posts</h2>
+
+    {% for post in posts %}
 	<div class="link">
-		<h3><a href="{{ link.link }}">{{ link.title }}</a></h3>
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<div class="date quiet">
-			{{ link.published|date }} | {% if link.og.site_name %} {{ link.og.site_name }} {%
-			else %} {{ link.link|urlparse }} {% endif %}
+			<time>{{ post.date|date }}</time>
 		</div>
+        {% if post.summary %}
 		<div class="description">
-			{{ link.description|d('', True)|striptags|truncate }}
-			<a href="{{ link.link }}">More &rarr;</a>
+			{{ post.summary|d('', True)|striptags|truncate }}
+			<a href="{{ post.url }}">More &rarr;</a>
 		</div>
+        {% endif %}
 	</div>
 	{% endfor %}
+
 </main>
 {% endblock content %}
