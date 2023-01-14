@@ -27,7 +27,11 @@ FREEZER_DESTINATION_IGNORE = ["CNAME"]
 
 TEMPLATES_AUTO_RELOAD = True
 
-OG = {"title": "Chris Amico, journalist & programmer", "type": "website"}
+OG = {
+    "title": "Chris Amico, journalist & programmer",
+    "type": "website",
+    "author": "Chris Amico",
+}
 
 CONTACT = {
     "twitter": "https://twitter.com/eyeseast",
@@ -38,7 +42,7 @@ CONTACT = {
 }
 
 POST_FILENAME_RE = re.compile(
-    r"^(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})-(?P<slug>\w+)$"
+    r"^(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})-(?P<slug>.+)$"
 )
 
 app = Flask(__name__)
@@ -108,7 +112,7 @@ def post_index():
     posts = map(frontmatter.load, files)
     posts = [process_post(post, filename) for post, filename in zip(posts, files)]
 
-    return render_template("post_index.html", posts=posts)
+    return render_template("post_index.html", posts=reversed(posts))
 
 
 @app.route("/blog/<date>/<slug>/")
@@ -120,7 +124,10 @@ def post_detail(date, slug):
     post = frontmatter.load(path)
     post = process_post(post, path)
 
-    return render_template("post_detail.html", post=post)
+    post_og = dict(OG)
+    post_og["title"] = post["title"]
+
+    return render_template("post_detail.html", post=post, OG=post_og)
 
 
 @app.route("/<name>.txt")

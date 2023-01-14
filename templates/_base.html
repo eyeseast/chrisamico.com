@@ -8,7 +8,7 @@
 			content="width=device-width, initial-scale=1, maximum-scale=1"
 		/>
 
-		<title>{{ OG.title }}</title>
+		<title>{% block title %}{{ OG.title }}{% endblock title %}</title>
 
 		{% block opengraph %} {% for key, value in OG.items() %}
 		<meta property="og:{{ key }}" content="{{ value }}" />
