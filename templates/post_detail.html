@@ -1,0 +1,37 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<header id="about" class="left">
+	<div class="fixed">
+		<h1>{{ CONTACT.name }}</h1>
+		<h2 class="tagline quiet">{{ CONTACT.tagline }}</h2>
+
+		<ul class="social">
+			<li class="github">
+				<a href="{{ CONTACT['github'] }}" class="icon-github">Github</a>
+			</li>
+			<li class="linkedin">
+				<a href="{{ CONTACT['linkedin'] }}" class="icon-linkedin">LinkedIn</a>
+			</li>
+			<li class="mastodon">
+				<a class="icon-mastodon" rel="me" href="https://journa.host/@chrisamico"
+					>Mastodon</a
+				>
+			</li>
+		</ul>
+	</div>
+</header>
+<article id="post" class="right">
+    <h1>{{ post.title }}</h1>
+
+    <div class="metadata">
+        <p><time>{{ post.date|date }}</time></p>
+    </div>
+    <div class="content">
+        {{ post.content|safe }}
+    </div>
+    <div class="end">
+        <p><a href="/blog/">Post archives</a> | <a href="/">Home</a></p>
+    </div>
+</article>
+{% endblock content %}

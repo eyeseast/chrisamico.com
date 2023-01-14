@@ -3,14 +3,15 @@
 import datetime
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
 from urllib import parse
 
-# from dotenv import load_dotenv, find_dotenv
+import frontmatter
 from dateutil.parser import parse as date_parse
-from flask import Flask, g, render_template, send_from_directory
+from flask import Flask, abort, g, render_template, send_from_directory
 from flask_frozen import Freezer
 from markdown import markdown as md
 from sqlite_utils import Database
@@ -36,6 +37,10 @@ CONTACT = {
     "tagline": "Journalist & programmer",
 }
 
+POST_FILENAME_RE = re.compile(
+    r"^(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})-(?P<slug>\w+)$"
+)
+
 app = Flask(__name__)
 app.config.from_object(__name__)
 
@@ -60,7 +65,7 @@ def close_connection(exception):
 
 @app.template_filter("date")
 def date(d, format="%b %d, %Y"):
-    if not isinstance(d, datetime.datetime):
+    if not isinstance(d, (datetime.datetime, datetime.date)):
         d = date_parse(d)
     return d.strftime(format)
 
@@ -97,6 +102,27 @@ def index():
     return render_template("index.html", links=links)
 
 
+@app.route("/blog/")
+def post_index():
+    files = list(Path("posts").glob("*.md"))
+    posts = map(frontmatter.load, files)
+    posts = [process_post(post, filename) for post, filename in zip(posts, files)]
+
+    return render_template("post_index.html", posts=posts)
+
+
+@app.route("/blog/<date>/<slug>/")
+def post_detail(date, slug):
+    path = Path(f"posts/{date}-{slug}.md")
+    if not path.exists():
+        abort(404)
+
+    post = frontmatter.load(path)
+    post = process_post(post, path)
+
+    return render_template("post_detail.html", post=post)
+
+
 @app.route("/<name>.txt")
 def textfile(name):
     "Send a text file"
@@ -115,6 +141,23 @@ def json_cols(rows, columns):
         for column in columns:
             row[column] = json.loads(row[column])
         yield row
+
+
+def process_post(post: frontmatter.Post, path: Path):
+
+    m = POST_FILENAME_RE.match(path.stem)
+    post.metadata.update(m.groupdict())
+    post["date"] = datetime.date(
+        int(post["year"]), int(post["month"]), int(post["day"])
+    )
+
+    post["path"] = path
+    post["url"] = "/blog/{date}/{slug}/".format(
+        date=post["date"].strftime("%Y-%m-%d"), slug=post["slug"]
+    )
+    post.content = md(post.content)
+
+    return post
 
 
 if __name__ == "__main__":
