@@ -11,7 +11,7 @@ from urllib import parse
 
 import frontmatter
 from dateutil.parser import parse as date_parse
-from flask import Flask, abort, g, render_template, send_from_directory
+from flask import Flask, abort, g, render_template, send_from_directory, url_for
 from flask_frozen import Freezer
 from markdown import markdown as md
 from sqlite_utils import Database
@@ -151,7 +151,6 @@ def json_cols(rows, columns):
 
 
 def process_post(post: frontmatter.Post, path: Path):
-
     m = POST_FILENAME_RE.match(path.stem)
     post.metadata.update(m.groupdict())
     post["date"] = datetime.date(
@@ -159,8 +158,8 @@ def process_post(post: frontmatter.Post, path: Path):
     )
 
     post["path"] = path
-    post["url"] = "/blog/{date}/{slug}/".format(
-        date=post["date"].strftime("%Y-%m-%d"), slug=post["slug"]
+    post["url"] = url_for(
+        "post_detail", date=post["date"].strftime("%Y-%m-%d"), slug=post["slug"]
     )
     post.content = md(post.content)
 
