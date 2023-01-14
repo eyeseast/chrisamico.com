@@ -7,7 +7,7 @@ This is my recommended Python setup, as of January 2023. The Python landscape ca
 
 ## Tools and helpful links:
 
-- Python docs: https://docs.python.org/3/
+- Python docs: <https://docs.python.org/3/>
 - Python Standard Library: <https://docs.python.org/3/library/index.html> - Start here when you're trying to solve a specific problem
 - pip: <https://pip.pypa.io/en/stable/> - Python's standard package installer, included with the language itself
 - pipx: <https://pipxproject.github.io/pipx/> - Global script installer, built on top of pip
