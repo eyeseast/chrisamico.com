@@ -17,6 +17,7 @@ markdown = "*"
 httpx = "*"
 sqlite-utils = "*"
 python-frontmatter = "*"
+pygments = "*"
 
 [requires]
 python_version = "3.11"

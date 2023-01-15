@@ -13,7 +13,8 @@ import frontmatter
 from dateutil.parser import parse as date_parse
 from flask import Flask, abort, g, render_template, send_from_directory, url_for
 from flask_frozen import Freezer
-from markdown import markdown as md
+from markdown import Markdown
+from markdown.extensions import fenced_code
 from sqlite_utils import Database
 
 ROOT = Path(__file__).parent.absolute()
@@ -43,6 +44,15 @@ CONTACT = {
 
 POST_FILENAME_RE = re.compile(
     r"^(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})-(?P<slug>.+)$"
+)
+
+md = Markdown(
+    extensions=[
+        "markdown.extensions.codehilite",
+        "markdown.extensions.fenced_code",
+        "markdown.extensions.smarty",
+        "markdown.extensions.tables",
+    ]
 )
 
 app = Flask(__name__)
@@ -76,7 +86,7 @@ def date(d, format="%b %d, %Y"):
 
 @app.template_filter("markdown")
 def markdown(s):
-    return md(s)
+    return md.convert(s)
 
 
 @app.template_filter("urlparse")
@@ -161,7 +171,7 @@ def process_post(post: frontmatter.Post, path: Path):
     post["url"] = url_for(
         "post_detail", date=post["date"].strftime("%Y-%m-%d"), slug=post["slug"]
     )
-    post.content = md(post.content)
+    post.content = md.convert(post.content)
 
     return post
 

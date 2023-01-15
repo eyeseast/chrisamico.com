@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "666d269f784f78f44cef068b2194bc7a485d4268c79dabcfadba7d3f2e10af87"
+            "sha256": "25f723a89a6d39a1a56e12f6ed1916c2ea2e09ccb5f9b2bca347ecbbaefc31ea"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -93,11 +93,11 @@
         },
         "datasette": {
             "hashes": [
-                "sha256:50379a3ef352e108fc31ef8c89fc632b6bad4ef7d3e2e6c3b40fba78e9ee5faf",
-                "sha256:fc6a37c73d0d08e9240211a24893eb09886b84427be1ad2295a67be231175af3"
+                "sha256:7253c244ab35b537b2aa5ac239d24fd101af4a46caef11ee06a727b1db4e64ca",
+                "sha256:ca30c37e515400b3ba1b07dfe51093238e33baca75ccf3d163645cf5b3c80fd5"
             ],
             "index": "pypi",
-            "version": "==0.63.3"
+            "version": "==0.64.1"
         },
         "feed-to-sqlite": {
             "hashes": [
@@ -272,6 +272,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==1.0.0"
+        },
+        "pygments": {
+            "hashes": [
+                "sha256:b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297",
+                "sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717"
+            ],
+            "index": "pypi",
+            "version": "==2.14.0"
         },
         "python-dateutil": {
             "hashes": [
@@ -642,7 +650,7 @@
                 "sha256:b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297",
                 "sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717"
             ],
-            "markers": "python_version >= '3.6'",
+            "index": "pypi",
             "version": "==2.14.0"
         },
         "six": {
@@ -662,11 +670,11 @@
         },
         "traitlets": {
             "hashes": [
-                "sha256:6cc57d6dc28c85d5365961726ffd19b538739347749e13ebe34e03323a0e8f84",
-                "sha256:c864831efa0ba6576d09b44884b34e41defc18c0d7e720b4a2d6698c842cab3e"
+                "sha256:32500888f5ff7bbf3b9267ea31748fa657aaf34d56d85e60f91dda7dc7f5785b",
+                "sha256:a1ca5df6414f8b5760f7c5f256e326ee21b581742114545b462b35ffe3f04861"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==5.8.0"
+            "version": "==5.8.1"
         },
         "wcwidth": {
             "hashes": [
