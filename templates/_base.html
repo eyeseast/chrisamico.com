@@ -5,8 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=1"
-		/>
+			content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 		<title>{% block title %}{{ OG.title }}{% endblock title %}</title>
 
@@ -15,18 +14,15 @@
 		{% endfor %} {% endblock opengraph %} {% block css %}
 		<link
 			rel="stylesheet"
-			href="{{ url_for('static', filename='normalize.css', t=timestamp) }}"
-		/>
+			href="{{ url_for('static', filename='normalize.css', t=timestamp) }}" />
 		<link
 			rel="stylesheet"
-			href="{{ url_for('static', filename='site.css', t=timestamp) }}"
-		/>
+			href="{{ url_for('static', filename='site.css', t=timestamp) }}" />
 		{% endblock css %} {% block head %}{% endblock head %} {% block analytics %}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
 			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-1576645-1"
-		></script>
+			src="https://www.googletagmanager.com/gtag/js?id=UA-1576645-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
@@ -38,7 +34,37 @@
 		{% endblock analytics%}
 	</head>
 	<body>
-		<div class="container">{% block content %}{% endblock content %}</div>
+		<div class="container">
+			{% block rail %}
+			<header id="about" class="left">
+				<div class="fixed">
+					<h1>{{ CONTACT.name }}</h1>
+					<h2 class="tagline quiet">{{ CONTACT.tagline }}</h2>
+
+					<ul class="social">
+						<li class="github">
+							<a href="{{ CONTACT['github'] }}" class="icon-github">Github</a>
+						</li>
+						<li class="linkedin">
+							<a href="{{ CONTACT['linkedin'] }}" class="icon-linkedin">LinkedIn</a>
+						</li>
+						<li class="mastodon">
+							<a class="icon-mastodon" rel="me" href="https://journa.host/@chrisamico"
+								>Mastodon</a
+							>
+						</li>
+						<li>
+							<a href="/blog/">Blog archive</a>
+						</li>
+						<li>
+							<a href="/portfolio/">Portfolio</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			{% endblock rail %} {% block content %}{% endblock content %}
+		</div>
 
 		{% block js %}{% endblock js %}
 	</body>

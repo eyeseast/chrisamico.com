@@ -1,42 +1,20 @@
-{% extends "_base.html" %}
-{% block content %}
-<header id="about" class="left">
-	<div class="fixed">
-		<h1>{{ CONTACT.name }}</h1>
-		<h2 class="tagline quiet">{{ CONTACT.tagline }}</h2>
-
-		<ul class="social">
-			<li class="github">
-				<a href="{{ CONTACT['github'] }}" class="icon-github">Github</a>
-			</li>
-			<li class="linkedin">
-				<a href="{{ CONTACT['linkedin'] }}" class="icon-linkedin">LinkedIn</a>
-			</li>
-			<li class="mastodon">
-				<a class="icon-mastodon" rel="me" href="https://journa.host/@chrisamico"
-					>Mastodon</a
-				>
-			</li>
-		</ul>
-	</div>
-</header>
+{% extends "_base.html" %} {% block content %}
 <main id="posts" class="right">
-    <h2 class="quiet">Posts</h2>
+	<h2 class="quiet">Posts</h2>
 
-    {% for post in posts %}
+	{% for post in posts %}
 	<div class="link">
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<div class="date quiet">
 			<time>{{ post.date|date }}</time>
 		</div>
-        {% if post.summary %}
+		{% if post.summary %}
 		<div class="description">
 			{{ post.summary|d('', True)|striptags|truncate }}
 			<a href="{{ post.url }}">More &rarr;</a>
 		</div>
-        {% endif %}
+		{% endif %}
 	</div>
 	{% endfor %}
-
 </main>
 {% endblock content %}
