@@ -10,6 +10,8 @@ from pathlib import Path
 from urllib import parse
 
 import frontmatter
+import yaml
+
 from dateutil.parser import parse as date_parse
 from flask import Flask, abort, g, render_template, send_from_directory, url_for
 from flask_frozen import Freezer
@@ -21,6 +23,7 @@ ROOT = Path(__file__).parent.absolute()
 DB_PATH = ROOT / "db" / "blog.db"
 LINK_TABLE = "links"
 
+PORTFOLIO = ROOT / "db" / "portfolio.yml"
 
 FREEZER_RELATIVE_URLS = True
 FREEZER_DESTINATION = "docs"
@@ -138,6 +141,12 @@ def post_detail(date, slug):
     post_og["title"] = post["title"]
 
     return render_template("post_detail.html", post=post, OG=post_og)
+
+
+@app.route("/portfolio/")
+def portfolio():
+    data = yaml.load(PORTFOLIO.read_text(), Loader=yaml.Loader)
+    return render_template("portfolio.html", **data)
 
 
 @app.route("/<name>.txt")
