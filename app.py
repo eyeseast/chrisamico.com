@@ -121,11 +121,11 @@ def index():
 
 @app.route("/blog/")
 def post_index():
-    files = list(Path("posts").glob("*.md"))
+    files = sorted(Path("posts").glob("*.md"), reverse=True)
     posts = map(frontmatter.load, files)
     posts = [process_post(post, filename) for post, filename in zip(posts, files)]
 
-    return render_template("post_index.html", posts=reversed(posts))
+    return render_template("post_index.html", posts=posts)
 
 
 @app.route("/blog/<date>/<slug>/")
