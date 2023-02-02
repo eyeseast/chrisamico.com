@@ -1,4 +1,8 @@
-{% extends "_base.html" %} {% block content %}
+{% extends "_base.html" %} {% block head %} {% if post.style %}
+<style>
+	{{ post.style|safe }}
+</style>
+{% endif %} {% endblock head %} {% block content %}
 <article id="post" class="right">
 	<h1>{{ post.title }}</h1>
 
