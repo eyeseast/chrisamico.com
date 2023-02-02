@@ -8,15 +8,24 @@ import sys
 import time
 from pathlib import Path
 from urllib import parse
+from zoneinfo import ZoneInfo
 
 import frontmatter
 import yaml
 
 from dateutil.parser import parse as date_parse
-from flask import Flask, abort, g, render_template, send_from_directory, url_for
+from feedgen.feed import FeedGenerator
+from flask import (
+    Flask,
+    Response,
+    abort,
+    g,
+    render_template,
+    send_from_directory,
+    url_for,
+)
 from flask_frozen import Freezer
 from markdown import Markdown
-from markdown.extensions import fenced_code
 from sqlite_utils import Database
 
 ROOT = Path(__file__).parent.absolute()
@@ -30,11 +39,14 @@ FREEZER_DESTINATION = "docs"
 FREEZER_DESTINATION_IGNORE = ["CNAME"]
 
 TEMPLATES_AUTO_RELOAD = True
+TIMEZONE = ZoneInfo("US/Eastern")
 
 OG = {
     "title": "Chris Amico, journalist & programmer",
     "type": "website",
     "author": "Chris Amico",
+    "url": "https://chrisamico.com",
+    "description": "Journalist & programmer",
 }
 
 CONTACT = {
@@ -119,6 +131,9 @@ def index():
     return render_template("index.html", links=links)
 
 
+# blog
+
+
 @app.route("/blog/")
 def post_index():
     files = sorted(Path("posts").glob("*.md"), reverse=True)
@@ -141,6 +156,59 @@ def post_detail(date, slug):
     post_og["title"] = post["title"]
 
     return render_template("post_detail.html", post=post, OG=post_og)
+
+
+# feeds
+
+
+@app.route("/blog.rss")
+def blog_feed():
+    files = sorted(Path("posts").glob("*.md"), reverse=True)[:10]
+    posts = map(frontmatter.load, files)
+    posts = [process_post(post, filename) for post, filename in zip(posts, files)]
+
+    feed = FeedGenerator()
+    feed.id(OG["url"])
+    feed.title(OG["title"])
+    feed.author(name=OG["author"])
+    feed.link(href=OG["url"], rel="self")
+    feed.description(OG["description"])
+
+    for post in posts:
+        entry = feed.add_entry(order="append")
+        entry.title(post["title"])
+        entry.id(post["url"])
+        entry.link(href=OG["url"] + post["url"])
+        entry.summary(post.get("summary") or post.content)
+        entry.description(post.content)
+        entry.published(post["date"])
+
+    return Response(feed.rss_str(), content_type="application/rss+xml")
+
+
+@app.route("/links.rss")
+def links_feed():
+    db = get_db()
+    links = db[LINK_TABLE]
+
+    links = links.rows_where(order_by="published desc", limit=20)
+    links = json_cols(links, ["og"])
+
+    feed = FeedGenerator()
+    feed.id(OG["url"])
+    feed.title(f'{OG["title"]}: Links')
+    feed.author(name=OG["author"])
+    feed.link(href=OG["url"], rel="self")
+    feed.description(OG["description"])
+
+    for link in links:
+        entry = feed.add_entry(order="append")
+        entry.title(link["title"])
+        entry.link(href=link["link"])
+        entry.description(link["description"])
+        entry.published(link["published"])
+
+    return Response(feed.rss_str(), content_type="application/rss+xml")
 
 
 @app.route("/portfolio/")
@@ -172,8 +240,8 @@ def json_cols(rows, columns):
 def process_post(post: frontmatter.Post, path: Path):
     m = POST_FILENAME_RE.match(path.stem)
     post.metadata.update(m.groupdict())
-    post["date"] = datetime.date(
-        int(post["year"]), int(post["month"]), int(post["day"])
+    post["date"] = datetime.datetime(
+        int(post["year"]), int(post["month"]), int(post["day"]), tzinfo=TIMEZONE
     )
 
     post["path"] = path

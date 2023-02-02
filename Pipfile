@@ -18,6 +18,7 @@ httpx = "*"
 sqlite-utils = "*"
 python-frontmatter = "*"
 pygments = "*"
+feedgen = "*"
 
 [requires]
 python_version = "3.11"
