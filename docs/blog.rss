@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Chris Amico, journalist &amp; programmer</title><link>https://chrisamico.com</link><description>Journalist &amp; programmer</description><atom:link href="https://chrisamico.com" rel="self"/><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><lastBuildDate>Thu, 02 Feb 2023 15:37:25 +0000</lastBuildDate><item><title>The Three Kinds of Code You Write in the Newsroom</title><link>https://chrisamico.com/blog/2023-02-01/three-kinds-of-code/</link><description>&lt;p&gt;&lt;em&gt;This is a &lt;a href="https://rjionline.org/news/the-three-kinds-of-code-you-write-in-the-newsroom/"&gt;lightning talk&lt;/a&gt; I gave at NICAR 2020. Since then, this framework has become the primary way I explain what programmers (like myself) do in newsrooms. You can watch a video of the talk &lt;a href="https://youtu.be/TwJhJ44mTuE"&gt;here&lt;/a&gt; or click through slides &lt;a href="https://eyeseast.github.io/nicar-2020-three-kinds-of-code/"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A couple years ago, I had one of those opportunities you don&amp;rsquo;t get often: I got to build a team from scratch.&lt;/p&gt;
+&lt;p&gt;Not a big team, there would be three of us, and we&amp;rsquo;d have a role in basically everything that required code on a small news site &amp;ndash; from &lt;a href="https://www.pbs.org/wgbh/frontline/interactive/child-marriage-by-the-numbers/"&gt;data journalism&lt;/a&gt;, to &lt;a href="https://www.pbs.org/wgbh/frontline/interactive/inheritance/"&gt;experimenting with new story forms&lt;/a&gt;, to a &lt;a href="https://www.pbs.org/wgbh/frontline/article/welcome-to-our-new-site/"&gt;major site redesign&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;div class="team"&gt;
+        &lt;span class="box"&gt;
+        ??
+        &lt;/span&gt;
+        &lt;span class="box"&gt;
+        me
+        &lt;/span&gt;
+        &lt;span class="box"&gt;
+        ??
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As we got into the hiring process, I started making a list of all the skills we might need, so I could compare candidates.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;ul class="skills"&gt;
+        &lt;li&gt;html&lt;/li&gt;
+        &lt;li&gt;css&lt;/li&gt;
+        &lt;li&gt;javascript&lt;/li&gt;
+        &lt;li&gt;php&lt;/li&gt;
+        &lt;li&gt;sql&lt;/li&gt;
+        &lt;li&gt;python&lt;/li&gt;
+        &lt;li&gt;git&lt;/li&gt;
+        &lt;li&gt;node&lt;/li&gt;
+        &lt;li&gt;d3&lt;/li&gt;
+        &lt;li&gt;photoshop&lt;/li&gt;
+        &lt;li&gt;illustrator&lt;/li&gt;
+        &lt;li&gt;wordpress&lt;/li&gt;
+        &lt;li&gt;excel&lt;/li&gt;
+        &lt;li&gt;R&lt;/li&gt;
+        &lt;li&gt;foia&lt;/li&gt;
+        &lt;li&gt;statistics&lt;/li&gt;
+        &lt;li&gt;scraping&lt;/li&gt;
+        &lt;li&gt;bash&lt;/li&gt;
+        &lt;li&gt;video editing&lt;/li&gt;
+        &lt;li&gt;after effects&lt;/li&gt;
+        &lt;li&gt;dev ops&lt;/li&gt;
+        &lt;li&gt;mapping&lt;/li&gt;
+        &lt;li&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This got overwhelming pretty quickly.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t realize it at the time, but this was part of a problem I&amp;rsquo;d been struggling with in different ways since I started writing code for journalism, back when George W Bush was still president.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a problem of language.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Turris_Babel_by_Athanasius_Kircher.jpg" alt="Turris Babel by Athanasius Kircher.jpg" height="467" width="480"&gt;&lt;/a&gt;
+    &lt;figcaption&gt;By &lt;a href="https://en.wikipedia.org/wiki/en:Coenraet_Decker" class="extiw" title="w:en:Coenraet Decker"&gt;&lt;span title="Dutch Golden Age engraver"&gt;Coenraet Decker&lt;/span&gt;&lt;/a&gt; - &lt;a rel="nofollow" class="external free" href="http://digi.ub.uni-heidelberg.de/diglit/kircher1679/0059"&gt;http://digi.ub.uni-heidelberg.de/diglit/kircher1679/0059&lt;/a&gt;, Public Domain, &lt;a href="https://commons.wikimedia.org/w/index.php?curid=35102210"&gt;Link&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There&amp;rsquo;s an overwhelming number of skills and tools we use in writing code around news.&lt;/p&gt;
+&lt;p&gt;Most of those, and most job descriptions, are lumped together into titles like &amp;ldquo;news applications&amp;rdquo; or &amp;ldquo;interactives&amp;rdquo; or data journalism.&lt;/p&gt;
+&lt;p&gt;Then a few months ago, a friend asked me to talk to one of her students who was a talented photographer and also starting a comp sci program. And he wanted to know what to do with that set of skills.&lt;/p&gt;
+&lt;p&gt;And after talking to him and thinking about the jobs I&amp;rsquo;ve had, I realized that ultimately, there are three kinds of code we write in newsrooms:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reporting&lt;/strong&gt;. &lt;strong&gt;Storytelling&lt;/strong&gt;. &lt;strong&gt;Product&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s pretty much it.&lt;/p&gt;
+&lt;p&gt;So what do I mean by reporting, storytelling and product?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reporting&lt;/strong&gt; code is, well, reporting. It&amp;rsquo;s how we gather information and ask questions of it. It&amp;rsquo;s scraping, data analysis, machine learning and natural language processing. When you&amp;rsquo;re using SQL, R, Pandas and Jupyter notebooks, you&amp;rsquo;re probably writing code I&amp;rsquo;d call reporting. If you&amp;rsquo;re writing code to figure out if you have a story, I&amp;rsquo;d say you&amp;rsquo;re doing reporting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Storytelling&lt;/strong&gt; is, of course, what we do with all that reporting. It&amp;rsquo;s our graphics, interactive or not, and maps and charts and generative text. It&amp;rsquo;s AR and VR and 3D modeling. We know what we&amp;rsquo;re trying to say, because we did the reporting, and now we&amp;rsquo;re speaking with code.&lt;/p&gt;
+&lt;p&gt;And what is product? You might be thinking: We have another department that does that. They build the CMS and handle ad code, and I&amp;rsquo;m in the newsroom.&lt;/p&gt;
+&lt;p&gt;And I&amp;rsquo;m here to say, &lt;em&gt;more of us are doing product than we realize&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Product&lt;/strong&gt; is everything we build that isn&amp;rsquo;t for just one story or project.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s everything we do between deadlines that makes our next project launch faster or run smoother or get a little closer to what our audience needs. (In fact, it&amp;rsquo;s everywhere we talk about user needs.)&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s anything we need to maintain, and anything that accumulated technical debt. (You might say it is the technical debt.)&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s our app templates and starter kits that we update after we launch a project. It&amp;rsquo;s our longform tool. It&amp;rsquo;s our open source code. It&amp;rsquo;s our analytics packages and documented best practices.&lt;/p&gt;
+&lt;h2&gt;An example: Ahead of the Fire&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.azcentral.com/in-depth/news/local/arizona-wildfires/2019/07/22/wildfire-risks-more-than-500-spots-have-greater-hazard-than-paradise/1434502001/"&gt;Here&amp;rsquo;s an example&lt;/a&gt;. This series &amp;ndash; &lt;a href="https://www.azcentral.com/in-depth/news/local/arizona-wildfires/2019/07/22/wildfire-risks-more-than-500-spots-have-greater-hazard-than-paradise/1434502001/"&gt;Ahead of the Fire&lt;/a&gt; &amp;ndash; looked a wildfire risk across the Western United States.&lt;/p&gt;
+&lt;p&gt;In the reporting phase, my colleagues used GIS tools to ask which communities are most at risk, and which particular risks does each community face.&lt;/p&gt;
+&lt;p&gt;The storytelling side focused on explaining those risks and the methodology behind the story.&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s product: We call this the In-Depth framework, and it&amp;rsquo;s the machinary that powers our best storytelling.&lt;/p&gt;
+&lt;p&gt;So why does it matter what we call these kinds of code? Because they move at different speeds. And every newsroom I&amp;rsquo;ve worked in has struggled at moving at different speeds.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="chart of reporting, storytelling and product cadence" src="https://media.githubusercontent.com/media/eyeseast/nicar-2020-three-kinds-of-code/main/assets/code-speeds.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Think of a project you worked on that went well. It probably started with a lot of reporting, which tapered off as the story solidified and you started to focus on storytelling. Meanwhile, product is (or should be) moving along in a steady cadence of sprints.&lt;/p&gt;
+&lt;p&gt;And this is where it&amp;rsquo;s important to know what kind of code we&amp;rsquo;re writing, and to be able to talk about it with other people in the newsroom, especially our editors. This is where it&amp;rsquo;s easy to screw things up.&lt;/p&gt;
+&lt;p&gt;This is where I&amp;rsquo;ve screwed things up.&lt;/p&gt;
+&lt;p&gt;Like trying to make something reusable too early: I wrote &lt;a href="https://github.com/eyeseast/propublica-congress"&gt;a Python client for the ProPublica Congress API&lt;/a&gt; because someone pitched a story related to Congress, and my response was to create a library. Cool. Never used it for a story.&lt;/p&gt;
+&lt;p&gt;Or falling in love with storytelling when it&amp;rsquo;s time to move into product: &lt;a href="http://apps.frontline.org/zika-water/"&gt;This story on Zika&lt;/a&gt; was great. We did a dozen like it, with a little variation, each one basically a bespoke Tarbell project.&lt;/p&gt;
+&lt;p&gt;After about the third one, we really should have started building tools into WordPress, but I was nervous about technical debt. This is where it helps to think in product terms.&lt;/p&gt;
+&lt;p&gt;Writing storytelling code that becomes technical debt: The original topper &lt;a href="https://www.desertsun.com/in-depth/news/environment/border-pollution/poisoned-cities/2018/12/05/air-pollution-taking-deadly-toll-u-s-mexico-border/1381585002/"&gt;in this story&lt;/a&gt; was gorgeous. It was also built into our storytelling framework, which meant we were responsible for maintaining it. Forever. Oops. (We finally made it a static image.)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m sure you have your own examples.&lt;/p&gt;
+&lt;p&gt;Thinking about these three distinct kinds of code can help beyond individual projects.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re looking at a job description, it&amp;rsquo;s a good way to get a read on what kind of job it is, and whether it matches up with your skills or career goals. You might use it to decide which NICAR sessions to go to.&lt;/p&gt;
+&lt;p&gt;It helps answer the question: &amp;ldquo;Should I learn [fill in the blank]?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Now you can reframe it as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;What is X best suited for?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;How might X be used for reporting, for storytelling, for product?&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One last thing:&lt;/p&gt;
+&lt;p&gt;When I talk about three kinds of code, I want to be very clear that I don&amp;rsquo;t mean there are three kinds of coders.&lt;/p&gt;
+&lt;p&gt;As I said at the top, most of us are doing all three kinds of programming, and I think that&amp;rsquo;s a good thing, because it pushes us to be better and more well-rounded, both as programmers and as journalists.&lt;/p&gt;
+&lt;p&gt;Reporting and storytelling are still the core of our profession, and product is going to open up new ways of doing both.&lt;/p&gt;
+&lt;p&gt;We all have a lot to learn from each other.&lt;/p&gt;</description><guid isPermaLink="false">/blog/2023-02-01/three-kinds-of-code/</guid><pubDate>Wed, 01 Feb 2023 00:00:00 -0500</pubDate></item><item><title>My Python setup, as of January 2023</title><link>https://chrisamico.com/blog/2023-01-14/python-setup/</link><description>&lt;p&gt;This is my recommended Python setup, as of January 2023. The Python landscape can be a &lt;a href="https://xkcd.com/1987/"&gt;confusing mess of overlapping tools&lt;/a&gt; that sometimes don&amp;rsquo;t work well together. I wrote this for my team at work, which included (at the time) a designer and several developers used to working in Node.js and Go. This was an effort to standardize our environments.&lt;/p&gt;
+&lt;h2&gt;Tools and helpful links:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python docs: &lt;a href="https://docs.python.org/3/"&gt;https://docs.python.org/3/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Python Standard Library: &lt;a href="https://docs.python.org/3/library/index.html"&gt;https://docs.python.org/3/library/index.html&lt;/a&gt; - Start here when you&amp;rsquo;re trying to solve a specific problem&lt;/li&gt;
+&lt;li&gt;pip: &lt;a href="https://pip.pypa.io/en/stable/"&gt;https://pip.pypa.io/en/stable/&lt;/a&gt; - Python&amp;rsquo;s standard package installer, included with the language itself&lt;/li&gt;
+&lt;li&gt;pipx: &lt;a href="https://pipxproject.github.io/pipx/"&gt;https://pipxproject.github.io/pipx/&lt;/a&gt; - Global script installer, built on top of pip&lt;/li&gt;
+&lt;li&gt;pipenv: &lt;a href="https://pipenv.pypa.io/en/latest/"&gt;https://pipenv.pypa.io/en/latest/&lt;/a&gt; - Package installer for projects, manages both dependencies and virtual environments&lt;/li&gt;
+&lt;li&gt;pyenv: &lt;a href="https://github.com/pyenv/pyenv"&gt;https://github.com/pyenv/pyenv&lt;/a&gt; - Manage different versions of Python itself&lt;/li&gt;
+&lt;li&gt;homebrew: &lt;a href="https://brew.sh/"&gt;https://brew.sh/&lt;/a&gt; - Package manager for macOs, use for specific needs&lt;/li&gt;
+&lt;li&gt;Postgres.app: &lt;a href="https://postgresapp.com/"&gt;https://postgresapp.com/&lt;/a&gt; - Preferred database server for macOs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Installing the right Python&lt;/h2&gt;
+&lt;p&gt;Python 3 is now the right version of Python to use. We may have projects running different minor versions – such as 3.7 or 3.9 – but we should always default to the latest available version. As of this writing, that&amp;rsquo;s 3.11.1. The must up-to-date Python documentation will always be here: https://docs.python.org/3/.&lt;/p&gt;
+&lt;p&gt;In the past, you might have seen recommendations to install Python with homebrew. This is now strongly discouraged. Let me say that louder: &lt;strong&gt;DO NOT INSTALL PYTHON WITH HOMEBREW&lt;/strong&gt;. Homebrew can be very aggressive and expansive with upgrades, and upgrading one package often results in lots of seemingly unrelated upgrades, which will frequently break dependencies for other packages.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use pyenv&lt;/strong&gt;. To install and manage different Python versions, use pyenv. In most cases, I recommend either the homebrew installation or the git installation:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;brew&lt;span class="w"&gt; &lt;/span&gt;update
+brew&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;pyenv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Is it weird that I recommend using homebrew to install pyenv but not Python? Yes it is. But pyenv is built entirely with shell scripts, so it&amp;rsquo;s relatively safe, and pyenv itself will keep your Python versions safely isolated from homebrew&amp;rsquo;s aggressive upgrades.&lt;/p&gt;
+&lt;p&gt;Follow the instructions to configure your shell profile (https://github.com/pyenv/pyenv#installation) so that the pyenv command is available and you are able to install new versions of Python as needed.&lt;/p&gt;
+&lt;p&gt;From there, install at least the latest stable version of Python (again, probably 3.11.1) and make that your global default. This will make the right version of pip available for installing new packages.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pyenv&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--list&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# see a list of installable versions&lt;/span&gt;
+pyenv&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;.11.1&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# or something different&lt;/span&gt;
+pyenv&lt;span class="w"&gt; &lt;/span&gt;global&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;.11.1
+
+python&lt;span class="w"&gt; &lt;/span&gt;--version
+&lt;span class="c1"&gt;# Python 3.11.1&lt;/span&gt;
+
+which&lt;span class="w"&gt; &lt;/span&gt;python
+&lt;span class="c1"&gt;# /Users/camico/.pyenv/shims/python&lt;/span&gt;
+
+which&lt;span class="w"&gt; &lt;/span&gt;pip
+&lt;span class="c1"&gt;# /Users/camico/.pyenv/shims/pip&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Global scripts and utilities&lt;/h2&gt;
+&lt;p&gt;For any tools built in Python you want available across projects, use &lt;code&gt;pipx&lt;/code&gt;. Install it with &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--user&lt;span class="w"&gt; &lt;/span&gt;pipx&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# install it&lt;/span&gt;
+pipx&lt;span class="w"&gt; &lt;/span&gt;ensurepath&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# make sure your system can find it&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;(Note that pipx&amp;rsquo;s documentation recommends installing with Homebrew. As noted above, I don&amp;rsquo;t recommend using Homebrew with Python projects, except for pyenv.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Among the first things you should install with &lt;code&gt;pipx&lt;/code&gt; is &lt;code&gt;pipenv&lt;/code&gt;, which we&amp;rsquo;ll use for specific projects.&lt;/p&gt;
+&lt;h2&gt;Virtual environments&lt;/h2&gt;
+&lt;p&gt;Python uses virtual environments to separate dependencies for different projects. This can be a frustrating step, especially if you are used to having a local &lt;code&gt;node_modules&lt;/code&gt; folder. In the past, this also meant having to install a separate &lt;code&gt;virtualenv&lt;/code&gt; library. In Python 3, it&amp;rsquo;s now part of the standard library as the &lt;code&gt;venv&lt;/code&gt; package.&lt;/p&gt;
+&lt;p&gt;This is a good tutorial that covers how virtual environments work: https://docs.python.org/3/tutorial/venv.html&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the tl;dr:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;project-dir
+
+&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;project-dir/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That will create a virtual environment in the &lt;code&gt;project-dir&lt;/code&gt; folder. The second command will run the activate script, which will tell your shell to use a local version of Python and locally installed dependencies. For the most part, you won&amp;rsquo;t have to do this by hand, but it&amp;rsquo;s useful to know what&amp;rsquo;s happening under the hood.&lt;/p&gt;
+&lt;p&gt;In a project with a &lt;code&gt;Pipfile&lt;/code&gt;, like &lt;a href="https://github.com/eyeseast/alltheplaces-datasette"&gt;alltheplaces-datasette&lt;/a&gt;, we can use &lt;code&gt;pipenv&lt;/code&gt; to both manage our virtual environment and install dependencies. In that case, navigate to the directory and run &lt;code&gt;pipenv sync&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;alltheplaces-datasette
+pipenv&lt;span class="w"&gt; &lt;/span&gt;sync
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will also, assuming you have pyenv installed and working, switch to the version of Python listed in the &lt;code&gt;Pipfile&lt;/code&gt; (installing it if needed). Consult the &lt;a href="https://pipenv.pypa.io/en/latest/"&gt;pipenv docs&lt;/a&gt; to see what else it can do.&lt;/p&gt;
+&lt;h2&gt;Installing local Python packages&lt;/h2&gt;
+&lt;p&gt;For the most part, we&amp;rsquo;re going to work on projects where we have a &lt;code&gt;Pipfile&lt;/code&gt; managing dependencies. In that case, installing something new is a one-liner:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;django
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That will install the &lt;code&gt;django&lt;/code&gt; package, add it to our &lt;code&gt;Pipfile&lt;/code&gt; and update our &lt;code&gt;Pipfile.lock&lt;/code&gt; file, pinning a specific version. Running &lt;code&gt;pipenv sync&lt;/code&gt;, as above, installs dependencies from &lt;code&gt;Pipfile.lock&lt;/code&gt;, much like &lt;code&gt;npm ci&lt;/code&gt; installs from &lt;code&gt;package-lock.json&lt;/code&gt;, ensuring we get the same version of every dependency every time.&lt;/p&gt;
+&lt;h2&gt;Databases&lt;/h2&gt;
+&lt;p&gt;There are two main databases I use with Python: &lt;a href="https://sqlite.org/"&gt;SQLite&lt;/a&gt; and &lt;a href="https://www.postgresql.org/"&gt;Postgres&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;SQLite comes bundled with Python, though I use a more recent version installed via Homebrew. (That&amp;rsquo;s worth a post in itself.) It runs as an embedded process, with all data contained in a single file, and it can be very useful for data analysis.&lt;/p&gt;
+&lt;p&gt;Postgres is the best database available for web applications. For local development, I recommend &lt;code&gt;Postgres.app&lt;/code&gt;, which the easiest way to manage a database server on your laptop.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;So that&amp;rsquo;s it. It&amp;rsquo;s a lot. Why is Python so complicated to set up right? I&amp;rsquo;ll get into that in a future post.&lt;/em&gt;&lt;/p&gt;</description><guid isPermaLink="false">/blog/2023-01-14/python-setup/</guid><pubDate>Sat, 14 Jan 2023 00:00:00 -0500</pubDate></item><item><title>Hello, World</title><link>https://chrisamico.com/blog/2023-01-07/hello/</link><description>&lt;p&gt;There are many places to write on the internet. This one is mine.&lt;/p&gt;</description><guid isPermaLink="false">/blog/2023-01-07/hello/</guid><pubDate>Sat, 07 Jan 2023 00:00:00 -0500</pubDate></item></channel></rss>
