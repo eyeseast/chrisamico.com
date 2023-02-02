@@ -18,6 +18,9 @@
 		<link
 			rel="stylesheet"
 			href="{{ url_for('static', filename='site.css', t=timestamp) }}" />
+
+		<link rel="alternate" href="{{ url_for('blog_feed') }}" />
+		<link rel="alternate" href="{{ url_for('links_feed') }}" />
 		{% endblock css %} {% block head %}{% endblock head %} {% block analytics %}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
