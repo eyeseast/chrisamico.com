@@ -23,4 +23,7 @@ freeze:
 run:
 	pipenv run datasette serve --metadata metadata.yml db/*.db
 
+shell:
+	pipenv run ipython
+
 .Phony: install rebuild update freeze run

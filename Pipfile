@@ -19,6 +19,7 @@ sqlite-utils = "*"
 python-frontmatter = "*"
 pygments = "*"
 feedgen = "*"
+toot = "*"
 
 [requires]
 python_version = "3.11"
