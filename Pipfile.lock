@@ -18,11 +18,11 @@
     "default": {
         "aiofiles": {
             "hashes": [
-                "sha256:1142fa8e80dbae46bb6339573ad4c8c0841358f79c6eb50a493dceca14621bad",
-                "sha256:9107f1ca0b2a5553987a94a3c9959fe5b491fdf731389aa5b7b1bd0733e32de6"
+                "sha256:9312414ae06472eb6f1d163f555e466a23aed1c8f60c30cccf7121dba2e53eb2",
+                "sha256:edd247df9a19e0db16534d4baaf536d6609a43e1de5401d7a4c1c148753a1635"
             ],
             "markers": "python_version >= '3.7' and python_version < '4.0'",
-            "version": "==22.1.0"
+            "version": "==23.1.0"
         },
         "anyio": {
             "hashes": [
@@ -58,7 +58,7 @@
                 "sha256:0e79446b10b3ecb499c1556f7e228a53e64a2bfcebd455f370d8927cb5b59e39",
                 "sha256:bc4bdda6717de5a2987436fb8d72f45dc90dd856bdfd512a1314ce90349a0106"
             ],
-            "markers": "python_full_version >= '3.6.0'",
+            "markers": "python_version >= '3.6'",
             "version": "==4.11.2"
         },
         "bs4": {
@@ -639,14 +639,6 @@
         }
     },
     "develop": {
-        "appnope": {
-            "hashes": [
-                "sha256:02bd91c4de869fbb1e1c50aafc4098827a7a54ab2f39d9dcba6c9547ed920e24",
-                "sha256:265a455292d0bd8a72453494fa24df5a11eb18373a60c7c0430889f22548605e"
-            ],
-            "markers": "sys_platform == 'darwin'",
-            "version": "==0.1.3"
-        },
         "asttokens": {
             "hashes": [
                 "sha256:4622110b2a6f30b77e1473affaa97e711bc2f07d3f10848420ff1898edbe94f3",
@@ -678,11 +670,11 @@
         },
         "ipython": {
             "hashes": [
-                "sha256:71618e82e6d59487bea059626e7c79fb4a5b760d1510d02fab1160db6fdfa1f7",
-                "sha256:9c207b0ef2d276d1bfcfeb9a62804336abbe4b170574ea061500952319b1d78c"
+                "sha256:b13a1d6c1f5818bd388db53b7107d17454129a70de2b87481d555daede5eb49e",
+                "sha256:b38c31e8fc7eff642fc7c597061fff462537cf2314e3225a19c906b7b0d8a345"
             ],
             "index": "pypi",
-            "version": "==8.9.0"
+            "version": "==8.10.0"
         },
         "jedi": {
             "hashes": [
