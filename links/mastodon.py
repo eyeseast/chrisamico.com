@@ -6,7 +6,9 @@ import datetime
 import enum
 import json
 import logging
+import textwrap
 from pathlib import Path
+
 from sqlite_utils.db import Database
 from toot.config import load_config, load_app, load_user
 from toot.api import post_status
@@ -87,6 +89,11 @@ def post_latest(dry_run=False):
 
 def post_all(dry_run=False):
     "Post all un-posted links"
+    db = Database(DB_PATH)
+    sql = Path(__file__).parent / "links_to_post.sql"
+
+    latest = next(db.query(sql.read_text()), None)
+    updates = get_updated_table()
 
 
 def link_text(link):
