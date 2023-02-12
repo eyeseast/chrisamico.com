@@ -10,7 +10,7 @@ import httpx
 from dateutil.parser import parse
 from feed_to_sqlite.ingest import ingest_feed, extract_entry_fields
 
-from .opengraph import OpenGraph
+from opengraph import OpenGraph
 
 log = logging.getLogger("links.update")
 log.setLevel(logging.DEBUG)

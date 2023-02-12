@@ -20,6 +20,9 @@ freeze:
 	pipenv run ./app.py freeze
 	pipenv run sqlite-utils rows $(BLOG_DB) $(LINKS_TABLE) --csv > $(LINKS_CSV)
 
+post:
+	pipenv run ./links/mastodon.py
+
 run:
 	pipenv run datasette serve --metadata metadata.yml db/*.db
 

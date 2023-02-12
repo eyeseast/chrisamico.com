@@ -13,7 +13,7 @@ from sqlite_utils.db import Database
 from toot.config import load_config, load_app, load_user
 from toot.api import post_status
 
-from .update import TABLE_NAME as LINKS_TABLE
+from update import TABLE_NAME as LINKS_TABLE
 
 USER = "chrisamico"
 HOST = "journa.host"
@@ -56,22 +56,42 @@ def post_latest(dry_run=False):
     db = Database(DB_PATH)
     sql = f"select * from {LINKS_TABLE} order by published desc limit 1"
     latest = next(db.query(sql), None)
-    updates = get_updated_table()
 
     if not latest:
         return log.error("No links in %s table", LINKS_TABLE)
 
-    text = link_text(latest)
     log.info("Posting link: %s", latest["link"])
 
     if dry_run:
-        print(text)
+        print(link_text(latest))
         return
 
-    # post the update and record that I did it
+    post_link(latest)
+
+
+def post_all(dry_run=False):
+    "Post all un-posted links"
+    db = Database(DB_PATH)
+    sql = Path(__file__).parent / "links_to_post.sql"
+
+    latest = db.query(sql.read_text())
+    updates = get_updated_table()
+
+    for link in latest:
+        if dry_run:
+            print(link_text(link))
+        else:
+            post_link(link)
+
+
+def post_link(link):
+    "post the update and record that I did it"
+    updates = get_updated_table()
     app = load_app(HOST)
     user = load_user(f"{USER}@{HOST}")
-    update = {"link_id": latest["id"]}
+    text = link_text(link)
+
+    update = {"link_id": link["id"]}
     try:
         result = post_status(app, user, text)
         update.update(
@@ -85,15 +105,6 @@ def post_latest(dry_run=False):
         update.update({"status": UpdateStatus.failed, "error": str(e)})
 
     updates.insert(update)
-
-
-def post_all(dry_run=False):
-    "Post all un-posted links"
-    db = Database(DB_PATH)
-    sql = Path(__file__).parent / "links_to_post.sql"
-
-    latest = next(db.query(sql.read_text()), None)
-    updates = get_updated_table()
 
 
 def link_text(link):
@@ -111,4 +122,4 @@ def safe_json(s):
 
 
 if __name__ == "__main__":
-    post_latest(dry_run=True)
+    post_all()
