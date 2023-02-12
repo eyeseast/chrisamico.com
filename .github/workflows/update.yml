@@ -49,6 +49,9 @@ jobs:
       - name: freeze
         run: make freeze
 
+      - name: post
+        run: make post
+
       - name: commit
         run: |
           timestamp=$(date -u)
