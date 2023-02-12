@@ -1,14 +1,9 @@
-My site
-=======
-
-Not a blog. 
+# My site
 
 My personal site, going forward, should have:
 
 - a professional bio
 - contact info
-- social links (twitter, linkdedin, FB, instagram)
+- social links (mastodon, linkdedin, github)
 
-I'd like to have a stream of links to stuff I'm reading. That's the biggest build thing.
-
-And the site really, really needs a new theme, something from this decade.
+I have a stream of links from things I've shared on NewsBlur and Instapaper, plus a blog. It's good to write again.

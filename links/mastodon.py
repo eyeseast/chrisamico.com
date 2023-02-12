@@ -6,11 +6,10 @@ import datetime
 import enum
 import json
 import logging
-import textwrap
 from pathlib import Path
 
 from sqlite_utils.db import Database
-from toot.config import load_config, load_app, load_user
+from toot.config import load_app, load_user
 from toot.api import post_status
 
 from update import TABLE_NAME as LINKS_TABLE

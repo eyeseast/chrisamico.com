@@ -20,9 +20,17 @@ body {
 	color: var(--quiet);
 }
 
+h1 {
+	line-height: 1.15em;
+}
+
 /* layout */
 * + * {
 	margin-top: 1.5em;
+}
+
+article.right {
+	margin-top: 0;
 }
 
 .link * + * {
