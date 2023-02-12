@@ -94,3 +94,6 @@ ENV/
 node_modules
 .vscode
 .env
+
+*.db-wal
+*.db-shm
