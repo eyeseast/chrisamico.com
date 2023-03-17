@@ -1,5 +1,6 @@
 ---
 title: Five years of Go
+summary: After half a decade of regularly working in Go, there's a lot I've come to like about it, and a few things I still struggle with.
 ---
 
 I'd never written a line of Go when I started at Gannett in 2018. I'd barely even looked at the language, and when I did it looked both verbose and intimidating. But my team's primary codebase was written in Go, and it was (at the time) the recommended approach to building web services in the company. After half a decade of regularly working in Go, there's a lot I've come to like about it, and a few things I still struggle with.
