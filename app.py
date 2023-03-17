@@ -41,6 +41,8 @@ FREEZER_DESTINATION_IGNORE = ["CNAME"]
 TEMPLATES_AUTO_RELOAD = True
 TIMEZONE = ZoneInfo("US/Eastern")
 
+PORT = int(os.environ.get("PORT", 8000))
+
 OG = {
     "title": "Chris Amico, journalist & programmer",
     "type": "website",
@@ -258,4 +260,4 @@ if __name__ == "__main__":
         freezer.freeze()
 
     else:
-        app.run(debug=True)
+        app.run(debug=True, port=PORT)
