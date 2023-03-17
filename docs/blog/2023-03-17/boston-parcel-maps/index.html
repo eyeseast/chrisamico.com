@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<title>Boston parcels, mapped three ways</title>
+
+		 
+		<meta property="og:title" content="Boston parcels, mapped three ways" />
+		
+		<meta property="og:type" content="website" />
+		
+		<meta property="og:author" content="Chris Amico" />
+		
+		<meta property="og:url" content="https://chrisamico.com" />
+		
+		<meta property="og:description" content="Journalist &amp; programmer" />
+		  
+		<link
+			rel="stylesheet"
+			href="../../../static/normalize.css?t=1679081021.7961328" />
+		<link
+			rel="stylesheet"
+			href="../../../static/site.css?t=1679081021.7961328" />
+
+		<link rel="alternate" href="../../../blog.rss" />
+		<link rel="alternate" href="../../../links.rss" />
+		    
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-1576645-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-1576645-1");
+		</script>
+		
+	</head>
+	<body>
+		<div class="container">
+			
+			<header id="about" class="left">
+				<div class="fixed">
+					<h1>Chris Amico</h1>
+					<h2 class="tagline quiet">Journalist &amp; programmer</h2>
+
+					<ul class="social">
+						<li class="github">
+							<a href="https://github.com/eyeseast" class="icon-github">Github</a>
+						</li>
+						<li class="linkedin">
+							<a href="https://www.linkedin.com/in/chrisamico/" class="icon-linkedin">LinkedIn</a>
+						</li>
+						<li class="mastodon">
+							<a class="icon-mastodon" rel="me" href="https://journa.host/@chrisamico"
+								>Mastodon</a
+							>
+						</li>
+						<li>
+							<a href="/blog/">Blog archive</a>
+						</li>
+						<li>
+							<a href="/portfolio/">Portfolio</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			 
+<article id="post" class="right">
+	<h1>Boston parcels, mapped three ways</h1>
+
+	<div class="metadata">
+		<p><time>Mar 17, 2023</time></p>
+	</div>
+	<div class="content"><p>I made a few maps this week, just for fun, using Boston&rsquo;s parcel and assessment data.</p>
+<p>All of these used my <a href="https://github.com/eyeseast/spatial-data-cooking-show">Datasette GIS stack</a> to filter and join the relevant data and <a href="https://felt.com">Felt</a> to visualize it.</p>
+<h3>Age of Boston&rsquo;s buildings</h3>
+<p>Assessments include a column called <code>YR_BUILT</code> (and also a <code>YR_REMODEL</code> which could be interesting). Joining this to parcel boundaries gave me a map of Boston&rsquo;s buildings colored by age. Darker purple is the oldest parcels, and some go back to the 1700s. It&rsquo;s an old city.</p>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-buildings-colored-by-year-built-sPYjj6I0ROmOhnJ9AC9AURWD?lat=42.313051&lon=-71.068934&zoom=11.76"></iframe>
+
+<h3>Value of residential units</h3>
+<p>I initially made a map of <a href="https://felt.com/map/Boston-buildings-Assessment-value-ePQe7WgaTgmjmbUmBOx9CwC">all property values</a>, but that isn&rsquo;t very interesting when you include houses and also universities and an airport. Those big public works are expensive.</p>
+<p>But filtering out <a href="https://github.com/eyeseast/boston-parcels/blob/main/queries/boston/residential-value.sql">everything but residential units</a> &ndash; coded as <code>R1</code>, <code>R2</code>, <code>R3</code>, <code>R4</code> and <code>CD</code> &ndash; makes for an intersting map.</p>
+<p>There are still things missing here: Mixed use buildings are a separate category, as well as large apartment buildings. I wanted to map places an individual might realistically own.</p>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-parcels-Residential-assessed-value-efGgl9AsxSMuMGp2tcdHmLB?lat=42.312442&lon=-71.085013&zoom=11.82"></iframe>
+
+<h3>Value density</h3>
+<p>While I was working on this, Jeffrey Baker in the <a href="https://felt.com/community-signup">Felt community Slack</a> posted a map of <a href="https://felt.com/map/Alameda-County-Parcels-2022-iNHItlavRg2zSCF4ncl9ACD">Alameda County</a>, CA, colored by &ldquo;value density,&rdquo; or assessment value divided by area. It&rsquo;s a smart way to handle the problem I had with the range of values in Boston.</p>
+<p>Is it a huge surprise to see more concentrated land value downtown? No. But it&rsquo;s an interesting way to look at the city, and to think about the economic tradeoffs of living on its edges.</p>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-2023-value-density-x9Aa76bcdRm9BTPUr2kv9ADuD?lat=42.31251&lon=-71.05698&zoom=11.75"></iframe>
+
+<p>All the code I used is <a href="https://github.com/eyeseast/boston-parcels">here</a>. Open an issue if there&rsquo;s something you&rsquo;d like to see mapped.</p></div>
+	<div class="end">
+		<p><a href="/blog/">Post archives</a> | <a href="/">Home</a></p>
+	</div>
+</article>
+
+		</div>
+
+		
+	</body>
+</html>
