@@ -22,10 +22,10 @@
 		  
 		<link
 			rel="stylesheet"
-			href="../../../static/normalize.css?t=1679227902.1435559" />
+			href="../../../static/normalize.css?t=1679231826.275007" />
 		<link
 			rel="stylesheet"
-			href="../../../static/site.css?t=1679227902.1435559" />
+			href="../../../static/site.css?t=1679231826.275007" />
 
 		<link rel="alternate" href="../../../blog.rss" />
 		<link rel="alternate" href="../../../links.rss" />
@@ -142,6 +142,8 @@ pipenv<span class="w"> </span>sync
 </code></pre></div>
 
 <p>This will also, assuming you have pyenv installed and working, switch to the version of Python listed in the <code>Pipfile</code> (installing it if needed). Consult the <a href="https://pipenv.pypa.io/en/latest/">pipenv docs</a> to see what else it can do.</p>
+<p>In practice, I almost never use a virtual environment by itself. My standalone projects, like <a href="https://github.com/eyeseast/alltheplaces-datasette">alltheplaces-datasette</a>, will always include a <code>Pipfile</code> and <code>Pipfile.lock</code>. When I work on open source libraries (mine or not), I still use <code>pipenv</code>. Running <code>pipenv install -e .</code> will create a virtual environment with that library and its dependencies.</p>
+<p>If I need to run Python commands inside a virtual environment, I use <code>pipenv shell</code> or <code>pipenv run</code>.</p>
 <h2>Installing local Python packages</h2>
 <p>For the most part, we&rsquo;re going to work on projects where we have a <code>Pipfile</code> managing dependencies. In that case, installing something new is a one-liner:</p>
 <div class="codehilite"><pre><span></span><code>pipenv<span class="w"> </span>install<span class="w"> </span>django
