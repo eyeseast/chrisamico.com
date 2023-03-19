@@ -88,7 +88,9 @@ pipenv sync
 
 This will also, assuming you have pyenv installed and working, switch to the version of Python listed in the `Pipfile` (installing it if needed). Consult the [pipenv docs](https://pipenv.pypa.io/en/latest/) to see what else it can do.
 
-In practice, I almost never use a virtual environment by itself. My standalone projects, like [alltheplaces-datasette](https://github.com/eyeseast/alltheplaces-datasette), will always include a `Pipfile` and `Pipfile.lock`. When I work on open source libraries (mine or not), I still use `pipenv`. Running `pipenv install -e .` will create a virtual environment with that library and its dependencies.
+In practice, I almost never use a virtual environment by itself. My standalone projects, like [alltheplaces-datasette](https://github.com/eyeseast/alltheplaces-datasette), will always include a `Pipfile` and `Pipfile.lock`.
+
+When I work on open source libraries (mine or not), I still use `pipenv`. Running `pipenv install -e .` will create a virtual environment with that library and its dependencies.
 
 If I need to run Python commands inside a virtual environment, I use `pipenv shell` or `pipenv run`.
 
