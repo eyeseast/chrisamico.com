@@ -18,7 +18,7 @@ This is my recommended Python setup, as of January 2023. The Python landscape ca
 
 ## Installing the right Python
 
-Python 3 is now the right version of Python to use. We may have projects running different minor versions – such as 3.7 or 3.9 – but we should always default to the latest available version. As of this writing, that's 3.11.1. The must up-to-date Python documentation will always be here: https://docs.python.org/3/.
+Python 3 is now the right version of Python to use. We may have projects running different minor versions – such as 3.7 or 3.9 – but we should always default to the latest available version. As of this writing, that's 3.11.1. The most up-to-date Python documentation will always be here: https://docs.python.org/3/.
 
 In the past, you might have seen recommendations to install Python with homebrew. This is now strongly discouraged. Let me say that louder: **DO NOT INSTALL PYTHON WITH HOMEBREW**. Homebrew can be very aggressive and expansive with upgrades, and upgrading one package often results in lots of seemingly unrelated upgrades, which will frequently break dependencies for other packages.
 
