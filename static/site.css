@@ -132,6 +132,18 @@ ul.social {
 		height: 1em;
 		width: 1.5em;
 	}
+
+	.social li.blog a:before {
+		content: "📓";
+		height: 1em;
+		width: 1.5em;
+	}
+
+	.social li.portfolio a:before {
+		content: "📔";
+		height: 1em;
+		width: 1.5em;
+	}
 }
 
 /* pygment */
