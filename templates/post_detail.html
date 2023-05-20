@@ -10,8 +10,11 @@
 		<p><time>{{ post.date|date }}</time></p>
 	</div>
 	<div class="content">{{ post.content|safe }}</div>
+
 	<div class="end">
-		<p><a href="/blog/">Post archives</a> | <a href="/">Home</a></p>
+		<a href="{{ url_for('post_index') }}">Blog</a> |
+		<a href="{{ url_for('portfolio') }}">Portfolio</a> |
+		<a href="{{ url_for('index') }}">Home</a>
 	</div>
 </article>
 {% endblock content %}
