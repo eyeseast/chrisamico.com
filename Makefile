@@ -29,4 +29,7 @@ run:
 shell:
 	pipenv run ipython
 
+preview:
+	pipenv run ./app.py
+
 .Phony: install rebuild update freeze run
