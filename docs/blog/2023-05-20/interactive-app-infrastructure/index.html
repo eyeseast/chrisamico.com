@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<title>So you want to build something interactive for your news story?</title>
+
+		 
+		<meta property="og:title" content="So you want to build something interactive for your news story?" />
+		
+		<meta property="og:type" content="website" />
+		
+		<meta property="og:author" content="Chris Amico" />
+		
+		<meta property="og:url" content="https://chrisamico.com" />
+		
+		<meta property="og:description" content="Journalist &amp; programmer" />
+		  
+		<link
+			rel="stylesheet"
+			href="../../../static/normalize.css?t=1684612462.9206946" />
+		<link
+			rel="stylesheet"
+			href="../../../static/site.css?t=1684612462.9206946" />
+
+		<link rel="alternate" href="../../../blog.rss" />
+		<link rel="alternate" href="../../../links.rss" />
+		    
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-1576645-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-1576645-1");
+		</script>
+		
+	</head>
+	<body>
+		<div class="container">
+			
+			<header id="about" class="left">
+				<div class="fixed">
+					<h1>Chris Amico</h1>
+					<h2 class="tagline quiet">Journalist &amp; programmer</h2>
+
+					<ul class="social">
+						<li class="github">
+							<a href="https://github.com/eyeseast" class="icon-github">Github</a>
+						</li>
+						<li class="linkedin">
+							<a href="https://www.linkedin.com/in/chrisamico/" class="icon-linkedin">LinkedIn</a>
+						</li>
+						<li class="mastodon">
+							<a class="icon-mastodon" rel="me" href="https://journa.host/@chrisamico"
+								>Mastodon</a
+							>
+						</li>
+						<li class="blog">
+							<a href="/blog/">Blog archive</a>
+						</li>
+						<li class="portfolio">
+							<a href="/portfolio/">Portfolio</a>
+						</li>
+						<li class="github">
+							<a class="icon-github" href="https://github.com/eyeseast/chrisamico.com"
+								>View source</a
+							>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			 
+<article id="post" class="right">
+	<h1>So you want to build something interactive for your news story?</h1>
+
+	<div class="metadata">
+		<p><time>May 20, 2023</time></p>
+	</div>
+	<div class="content"><p>I&rsquo;ve built a lot of interactive stories, and I&rsquo;ve set up templates and storytelling infrastructure at a few news organizations. These are the questions I think need to be answered before building any bespoke storytelling experiences in-house.</p>
+<h2>Where do you put your stuff?</h2>
+<p>In most cases, this is a bundle of files &ndash; HTML, CSS and JavaScript &ndash; that you can serve with something fast. The simpler that bundle is, the more options you have.</p>
+<p>Object storage &ndash; <a href="https://aws.amazon.com/s3/">Amazon S3</a>, <a href="https://cloud.google.com/storage">Google Cloud Storage</a> or Microsoft&rsquo;s <a href="https://azure.microsoft.com/en-us/products/storage/blobs/">Azure Blog Storage</a> &ndash; remains a popular choice, especially if you don&rsquo;t need a URL that matches your main website. It&rsquo;s cheap, has basically infinite capacity and rarely fails.</p>
+<p>Store your stuff there, and ideally put a CDN in front of it, and you&rsquo;re done. I&rsquo;ve done this almost everywhere I&rsquo;ve worked and never regretted it.</p>
+<p>That said, there are other options, and sometimes other needs.</p>
+<p>Static files are easy to serve, and if you&rsquo;re not doing <a href="https://www.merriam-webster.com/words-at-play/break-the-internet">break the internet</a> traffic, you can probably use just about any off-the-shelf webserver.</p>
+<p>How do I know this? Because in 2010, I built a <a href="https://www.pbs.org/newshour/nation/gulf-coast-oil-leak-widget">little ticker</a> tracking the <a href="https://www.pbs.org/newshour/tag/gulf-oil-spill">Gulf Coast oil spill</a> and it ended up on some of the most popular news sites in the world. We served it out of the static file directory of our little Movable Type instance.</p>
+<p>Generally speaking, it&rsquo;s going to be easier to get files onto S3 or Cloud Storage than it would be to set up a server and run NGINX or Apache. But if that&rsquo;s your only option, it can work.</p>
+<h3>Do I need a server?</h3>
+<p>Sometimes, yes, you do need a server. Maybe you need authentication, or your data is too big or too complicated to serve as static files, or you have a private API and need to mask it somewhere. Now what?</p>
+<p>This is going to be more complicated than any of the options above. In most cases, I recommend a platform-as-a-service provider. I&rsquo;ve used <a href="https://www.heroku.com/">Heroku</a> for years, but lately all my side projects go on <a href="https://fly.io/">fly.io</a>. There are other options like <a href="https://www.netlify.com/">Netlify</a> and <a href="https://vercel.com/">Vercel</a>.</p>
+<p>These are going to vary widely in what they offer, what they cost and how much time you&rsquo;ll need to spend managing them.</p>
+<p>If you get to this point, you are definitely doing <a href="https://chrisamico.com/blog/2023-02-01/three-kinds-of-code/">Product</a>. Remember to pay your (technical) debts.</p>
+<h2>How do you get it there?</h2>
+<p>Deploying code to production (and to staging!) should be boring. It should be routine. Ideally, it shouldn&rsquo;t even require a developer.</p>
+<p>Consider <a href="https://www.usatoday.com/storytelling/database-rating-dam-condition-climate-change-heavy-rain/">this project</a> I worked on at USA TODAY. I wrote most of the code, but there were frequent updates as my colleagues tweaked copy and I touched up the design. Most of those updates used a Github Action that followed a standardized deployment process:</p>
+<ol>
+<li>Clone a repository</li>
+<li>Install dependencies</li>
+<li>Pull data from Google Sheets, and possibly other places</li>
+<li>Compile and render a <a href="https://svelte.dev/">Svelte</a> application</li>
+<li>Push the built files to Google Cloud Storage</li>
+<li>Purge a frontend cache</li>
+</ol>
+<p>On my old team, that process was so routine we rarely thought about it, but it enabled everything else we did. It completely took away the mental overhead of deployment.</p>
+<h2>How does it get on your website?</h2>
+<p>Every CMS is a special snowflake, and there&rsquo;s no solution I can offer that&rsquo;s going to work everywhere.</p>
+<ul>
+<li>Can you put an <code>iframe</code> in a regular story?</li>
+<li>Do you have a special/longform/interactive story template?</li>
+<li>Can you inject HTML, CSS or JavaScript into story pages?</li>
+<li>Can you create blank pages with custom, maybe external assets?</li>
+<li>Or does anything that&rsquo;s not a story live on a subdomain?</li>
+</ul>
+<p>How you answer the questions above will tell you how to get your cool interactive thing onto your website. And if you can&rsquo;t answer this question, you might need to rethink your storytelling choices.</p>
+<h2>Who can update what?</h2>
+<p>This is an editorial question, not a technical one. You need to decide who is responsible for anything that might need to be changed, and how that&rsquo;s going to happen.</p>
+<p>It&rsquo;s easy to fall into the trap of thinking words are for editors and everything else is for developers. But this whole thing is an editorial project, and everyone involved is a journalist. For example, the <a href="https://www.azcentral.com/in-depth/news/2021/11/20/us-forest-service-water-management-limited-oversight-diversions/8446212002/">last map in this story</a> animates lines that trace water diversions. The text in each step lives in a spreadsheet, but there are also variables that let an editor change the speed of the animaation or the color of the lines. Changing those was an editorial choice, so those decisions lived in a place an editor could update if needed.</p>
+<h2>Do you need to build anything?</h2>
+<p>Maybe not. There are great off-the-shelf tools that didn&rsquo;t exist a few years ago. I use <a href="https://felt.com/">Felt</a> for maps and <a href="https://www.datawrapper.de/">Datawrapper</a> or <a href="https://flourish.studio/">Flourish</a> for charts. Don&rsquo;t sleep on good photos, video or illustration.</p>
+<p>Before you go beyond those, make sure have an answer to the questions above.</p></div>
+	<div class="end">
+		<p><a href="/blog/">Post archives</a> | <a href="/">Home</a></p>
+	</div>
+</article>
+
+		</div>
+
+		
+	</body>
+</html>
