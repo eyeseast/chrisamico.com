@@ -5,6 +5,8 @@ summary: Answer these questions before you start coding up that sweet new thing.
 
 I've built a lot of interactive stories, and I've set up templates and storytelling infrastructure at a few news organizations. These are the questions I think need to be answered before building any bespoke storytelling experiences in-house.
 
+In the context of my [three kinds of code](https://chrisamico.com/blog/2023-02-01/three-kinds-of-code/), this is **product** work that enables **storytelling**.
+
 ## Where do you put your stuff?
 
 In most cases, this is a bundle of files -- HTML, CSS and JavaScript -- that you can serve with something fast. The simpler that bundle is, the more options you have.
