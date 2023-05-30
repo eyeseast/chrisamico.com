@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<title>Mapping wildfires with Datasette and Felt</title>
+
+		 
+		<meta property="og:title" content="Mapping wildfires with Datasette and Felt" />
+		
+		<meta property="og:type" content="website" />
+		
+		<meta property="og:author" content="Chris Amico" />
+		
+		<meta property="og:url" content="https://chrisamico.com" />
+		
+		<meta property="og:description" content="Journalist &amp; programmer" />
+		  
+		<link
+			rel="stylesheet"
+			href="../../../static/normalize.css?t=1685456025.0267673" />
+		<link
+			rel="stylesheet"
+			href="../../../static/site.css?t=1685456025.0267673" />
+
+		<link rel="alternate" href="../../../blog.rss" />
+		<link rel="alternate" href="../../../links.rss" />
+		    
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-1576645-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-1576645-1");
+		</script>
+		
+	</head>
+	<body>
+		<div class="container">
+			
+			<header id="about" class="left">
+				<div class="fixed">
+					<h1>Chris Amico</h1>
+					<h2 class="tagline quiet">Journalist &amp; programmer</h2>
+
+					<ul class="social">
+						<li class="github">
+							<a href="https://github.com/eyeseast" class="icon-github">Github</a>
+						</li>
+						<li class="linkedin">
+							<a href="https://www.linkedin.com/in/chrisamico/" class="icon-linkedin">LinkedIn</a>
+						</li>
+						<li class="mastodon">
+							<a class="icon-mastodon" rel="me" href="https://journa.host/@chrisamico"
+								>Mastodon</a
+							>
+						</li>
+						<li class="blog">
+							<a href="/blog/">Blog archive</a>
+						</li>
+						<li class="portfolio">
+							<a href="/portfolio/">Portfolio</a>
+						</li>
+						<li class="github">
+							<a class="icon-github" href="https://github.com/eyeseast/chrisamico.com"
+								>View source</a
+							>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			 
+<article id="post" class="right">
+	<h1>Mapping wildfires with Datasette and Felt</h1>
+
+	<div class="metadata">
+		<p><time>May 30, 2023</time></p>
+	</div>
+	<div class="content"><p>It&rsquo;s a testament to how bad 2020 was that I barely remember the wildfire season, which was the worst in at least 40 years. Friends in the Bay Area complained about being stuck inside to avoid the horrific air quality, and thousands were evacuated to shelters while the COVID-19 pandemic peaked.</p>
+<p>Yet an EPA rule could allow that smoke to be excluded from official pollution records, as my <a href="https://www.muckrock.com/news/archives/2023/may/23/wildfire-smoke-exceptional-event/">colleagues reported</a>:</p>
+<blockquote>
+<p>Over the last three decades, the number of acres burned by wildfire has grown, spewing smoke across California and the country. The new GAO report highlights how a loophole in the Clean Air Act permits the EPA to erase pollution — not from the sky, but from the record.</p>
+<p>The tool for erasing some of the worst air-pollution days is called the “exceptional events” rule — a legal pathway that allows local regulators to make a case that air pollution from “natural” wildfires shouldn’t count against their federal air quality goals.</p>
+</blockquote>
+<p>As part of that story, I mapped and charted 40 years of wildfires using data from the <a href="https://data-nifc.opendata.arcgis.com/datasets/nifc::interagencyfireperimeterhistory-all-years-view/about">National Interagency Fire Center</a>.</p>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Wildfires-are-becoming-more-frequent-across-the-West-QBFznerjRpK6BWnGzY9BRYC?lat=40.48443&lon=-104.777596&zoom=4.25"></iframe>
+
+<p>I recommend looking at the map on the biggest screen you can, and zooming into a place you know. You can filter the map to show one decade at a time, and the change is shocking in some places. <a href="https://felt.com/map/Wildfires-are-becoming-more-frequent-across-the-West-QBFznerjRpK6BWnGzY9BRYC?lat=38.574223&amp;lon=-122.029378&amp;zoom=9.29">Sonoma County</a> is a good place to start.</p>
+<div><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/EjL0r/embed.js?v=4" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/EjL0r/full.png" alt="A line chart shows the increase in acres burned by wildfire in the United States between 1980 and 2021. Faded bars in the background show individual years, while a three-year average shows the overall trend." /></noscript></div>
+
+<p>I used <a href="https://datasette.io/">Datasette</a> and my <a href="https://github.com/eyeseast/spatial-data-cooking-show">SpatiaLite stack</a> to analyze fire data. The code is <a href="https://github.com/MuckRock/gao-wildfire-exceptions">available on Github</a>. A few libraries really helped:</p>
+<ul>
+<li><a href="https://github.com/simonw/geojson-to-sqlite">geojson-to-sqlite</a> loads GeoJSON into a SQLite database</li>
+<li><a href="https://github.com/eyeseast/datasette-geojson">datasette-geojson</a> adds GeoJSON output to Datasette</li>
+<li><a href="https://github.com/eyeseast/datasette-geojson-map">datasette-geojson-map</a> renders a map for geographic queries</li>
+<li><a href="https://github.com/eyeseast/datasette-query-files">datasette-query-files</a> lets me write canned queries as SQL files</li>
+</ul>
+<p>I can&rsquo;t say enough how useful it is to be able to ask a question, write a SQL query and see a map. Once I had a version version I liked, I downloaded the GeoJSON version of the same query and plugged it into <a href="https://felt.com">Felt</a> and styled an interactive map.</p>
+<p>For the chart, I wrote grouped and summed fires by year and added a <a href="https://github.com/MuckRock/gao-wildfire-exceptions/blob/main/queries/wildfires/acres-burned.sql">three-year rolling average</a>. I exported that as a CSV file and plugged it into <a href="https://datawrapper.de">Datawrapper</a>.</p>
+<p>Coding the map and chart by hand probably would&rsquo;ve taken me a day, and they might not have looked as nice. I also would&rsquo;ve needed <a href="https://chrisamico.com/blog/2023-05-20/interactive-app-infrastructure/">hosting infrastructure</a>, which I haven&rsquo;t yet set up at MuckRock (and maybe I never will). Instead, I had drafts of each visual in front of editors in less than half an hour.</p></div>
+
+	<div class="end">
+		<a href="../../index.html">Blog</a> |
+		<a href="../../../portfolio/index.html">Portfolio</a> |
+		<a href="../../../index.html">Home</a>
+	</div>
+</article>
+
+		</div>
+
+		
+	</body>
+</html>
