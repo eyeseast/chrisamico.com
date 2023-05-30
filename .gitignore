@@ -97,3 +97,5 @@ node_modules
 
 *.db-wal
 *.db-shm
+
+drafts/
