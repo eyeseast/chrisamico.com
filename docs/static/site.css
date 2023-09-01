@@ -75,6 +75,11 @@ ul.social {
 	margin-bottom: 2em;
 }
 
+figure,
+img {
+	max-width: 100%;
+}
+
 /* desktop */
 @media (min-width: 768px) {
 	.container {
