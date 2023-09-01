@@ -8,6 +8,7 @@ style: |
     margin: 0 auto;
     width: 100%;
   }
+
   .box {
     border: 5px solid black;
     margin: 20px;
@@ -18,11 +19,6 @@ style: |
   .skills li {
     display: inline-block;
     padding: 5px;
-  }
-
-  .toppers {
-    grid-template-columns: repeat(3, 33%); 
-    grid-gap: 20px;
   }
 ---
 
