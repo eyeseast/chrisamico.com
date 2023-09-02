@@ -25,7 +25,7 @@ post:
 	pipenv run ./links/mastodon.py
 
 dump:
-	pipenv run sqlite-utils dump $(BLOG_DB) > $(BLOG_BACKUP)
+	sqlite3 $(BLOG_DB) .dump > $(BLOG_BACKUP)
 
 run:
 	pipenv run datasette serve --metadata metadata.yml db/*.db
