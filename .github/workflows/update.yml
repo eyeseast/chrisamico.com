@@ -49,6 +49,11 @@ jobs:
       - name: freeze
         run: make freeze
 
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "dist/"
+
       - name: post
         env:
           MASTODON_AUTH: ${{ secrets.MASTODON_AUTH }}
@@ -65,3 +70,20 @@ jobs:
           git add -A
           git commit -m "Updated: ${timestamp}" || exit 0
           git push
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
