@@ -39,6 +39,7 @@ node_modules
 
 *.db-wal
 *.db-shm
+*.db
 
 dist/
 drafts/

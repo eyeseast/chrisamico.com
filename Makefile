@@ -1,6 +1,7 @@
 # update everything
 
 BLOG_DB=./db/blog.db
+BLOG_BACKUP=./db/blog.sql
 LINKS_CSV=./static/links.csv
 LINKS_TABLE=links
 FEEDS = \
@@ -11,7 +12,7 @@ install:
 	pipenv sync
 
 rebuild:
-	# pipenv run sqlite-utils upsert --csv --alter --pk id $(BLOG_DB) $(LINKS_TABLE) $(LINKS_CSV)
+	sqlite3 $(BLOG_DB) < $(BLOG_BACKUP) 
 
 update:
 	pipenv run ./links/update.py $(FEEDS)
@@ -22,6 +23,9 @@ freeze:
 
 post:
 	pipenv run ./links/mastodon.py
+
+dump:
+	pipenv run sqlite-utils dump $(BLOG_DB) > $(BLOG_BACKUP)
 
 run:
 	pipenv run datasette serve --metadata metadata.yml db/*.db
