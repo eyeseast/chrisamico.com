@@ -63,6 +63,8 @@ POST_FILENAME_RE = re.compile(
     r"^(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})-(?P<slug>.+)$"
 )
 
+LINKS_PER_PAGE = 20
+
 md = Markdown(
     extensions=[
         "markdown.extensions.codehilite",
@@ -90,8 +92,7 @@ def get_db():
 def close_connection(exception):
     db = getattr(g, "_database", None)
     if db is not None:
-        # db.engine.dispose()
-        pass
+        db.close()
 
 
 @app.template_filter("date")
@@ -127,15 +128,46 @@ def index():
     db = get_db()
     links = db[LINK_TABLE]
 
-    links = links.rows_where(order_by="published desc", limit=20)
+    links = links.rows_where(order_by="published desc", limit=LINKS_PER_PAGE + 1)
     links = json_cols(links, ["og"])
+    links = list(links)
 
-    return render_template("index.html", links=links)
+    has_next = len(links) > LINKS_PER_PAGE
+
+    return render_template(
+        "index.html", links=links, page=1, has_next=has_next, has_previous=False
+    )
+
+
+@app.route("/links/")
+@app.route("/links/<int:page>/")
+def links(page=1):
+    db = get_db()
+    links = db[LINK_TABLE]
+
+    if page > 1:
+        offset = LINKS_PER_PAGE * (page - 1)
+        links = links.rows_where(
+            order_by="published desc", limit=LINKS_PER_PAGE + 1, offset=offset
+        )
+    else:
+        links = links.rows_where(order_by="published desc", limit=LINKS_PER_PAGE + 1)
+
+    links = json_cols(links, ["og"])
+    links = list(links)
+
+    has_next = len(links) > LINKS_PER_PAGE
+
+    return render_template(
+        "index.html",
+        links=links,
+        page=page,
+        has_next=has_next,
+        has_previous=page > 1,
+    )
 
 
 # blog
-
-
 @app.route("/blog/")
 def post_index():
     files = sorted(Path("posts").glob("*.md"), reverse=True)
@@ -161,8 +193,6 @@ def post_detail(date, slug):
 
 
 # feeds
-
-
 @app.route("/blog.rss")
 def blog_feed():
     files = sorted(Path("posts").glob("*.md"), reverse=True)[:10]

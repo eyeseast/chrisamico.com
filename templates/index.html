@@ -1,7 +1,10 @@
 {% extends "_base.html" %} {% block content %}
 <main id="links" class="right">
+	{% if page == 1 %}
 	<h2 class="quiet">Reading list:</h2>
-	{% for link in links %}
+	{% else %}
+	<h2 class="quiet">Page {{ page }}</h2>
+	{% endif %} {% for link in links %}
 	<div class="link">
 		<h3><a href="{{ link.link }}">{{ link.title }}</a></h3>
 		<div class="date quiet">
@@ -14,5 +17,15 @@
 		</div>
 	</div>
 	{% endfor %}
+
+	<div class="pagination">
+		{% if has_previous %}
+		<a href="{{ url_for('links', page=page - 1)}}">Previous</a>
+		{% endif %} {% if has_next and has_previous %}
+		<span class="pipe">|</span>
+		{% endif %} {% if has_next %}
+		<a href="{{ url_for('links', page=page + 1)}}">Next</a>
+		{% endif %}
+	</div>
 </main>
 {% endblock content %}
