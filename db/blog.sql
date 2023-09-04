@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-09-03T18:11:07.434029');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-09-01T21:49:37.950000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-09-04T00:23:14.592253');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-09-03T18:31:59.212000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -568,6 +568,7 @@ INSERT INTO links VALUES('https://erinkissane.com/the-affordance-loop','https://
 INSERT INTO links VALUES('https://www.universalhub.com/2023/real-time-looks-carbon-dioxide-levels-pretty-much','https://chrisamico.newsblur.com/','Real-time looks at the air quality in pretty much every single BPS classroom','Boston Public Schools Indoor Air Quality provides hourly stats from more than 4,400 sensors in individual BPS classrooms and offices on a variety of ventilation-related readings: Carbon dioxide, carbon monoxide, particulates, humidity and temperature. Read more.','2023-08-26T16:03:46.423000+00:00',NULL,'https://www.universalhub.com/2023/real-time-looks-carbon-dioxide-levels-pretty-much','{"site_name": "Universal Hub", "type": "article", "image": "https://www.universalhub.com/images/alogosmall2.png"}');
 INSERT INTO links VALUES('https://www.niemanlab.org/2023/08/the-daily-tar-heels-shooting-coverage-is-just-the-latest-example-of-college-newspapers-taking-on-a-local-reporting-role/','https://chrisamico.newsblur.com/','The Daily Tar Heel’s shooting coverage is just the latest example of college newspapers taking on a local reporting role','The front page of the August 30 issue of The Daily Tar Heel — the independent student newspaper of the University of North Carolina at Chapel Hill — consists entirely of texts sent to and from students during the lockdown around the August 28 campus shooting which a graduate student killed a …','2023-08-30T21:20:26.104000+00:00',NULL,'https://www.niemanlab.org/2023/08/the-daily-tar-heels-shooting-coverage-is-just-the-latest-example-of-college-newspapers-taking-on-a-local-reporting-role/','{"type": "article", "image": "", "image:width": "", "image:height": "", "site_name": "Nieman Lab"}');
 INSERT INTO links VALUES('https://www.nytimes.com/2023/08/31/sports/tennis/us-open-john-isner-retirement.html','https://chrisamico.newsblur.com/','John Isner Says Goodbye to Pro Tennis at the U.S. Open',NULL,'2023-09-01T21:49:37.950000+00:00',NULL,'https://www.nytimes.com/2023/08/31/sports/tennis/us-open-john-isner-retirement.html','{}');
+INSERT INTO links VALUES('https://www.nytimes.com/2023/09/01/sports/tennis/us-open-one-handed-backhand-wawrinka.html','https://chrisamico.newsblur.com/','The One-Handed Backhand Is on the Way to Extinction',NULL,'2023-09-03T18:31:59.212000+00:00',NULL,'https://www.nytimes.com/2023/09/01/sports/tennis/us-open-one-handed-backhand-wawrinka.html','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -662,4 +663,5 @@ INSERT INTO mastodon VALUES('https://www.washingtonpost.com/technology/2023/08/1
 INSERT INTO mastodon VALUES('https://www.universalhub.com/2023/real-time-looks-carbon-dioxide-levels-pretty-much','2023-08-26T18:11:27.318Z','success','https://journa.host/@chrisamico/110957264064791923',NULL);
 INSERT INTO mastodon VALUES('https://www.niemanlab.org/2023/08/the-daily-tar-heels-shooting-coverage-is-just-the-latest-example-of-college-newspapers-taking-on-a-local-reporting-role/','2023-08-31T00:23:00.571Z','success','https://journa.host/@chrisamico/110981374316864962',NULL);
 INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/08/31/sports/tennis/us-open-john-isner-retirement.html','2023-09-02T00:21:45.647Z','success','https://journa.host/@chrisamico/110992694027361295',NULL);
+INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/09/01/sports/tennis/us-open-one-handed-backhand-wawrinka.html','2023-09-04T00:23:31.292Z','success','https://journa.host/@chrisamico/111004025571843508',NULL);
 COMMIT;
