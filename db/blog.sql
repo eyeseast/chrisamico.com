@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-10-04T12:11:46.636597');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-09-27T18:13:56.686000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-10-04T18:11:16.065235');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-10-04T14:48:01.634000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -578,6 +578,7 @@ INSERT INTO links VALUES('https://www.wbur.org/news/2023/09/21/public-records-la
 INSERT INTO links VALUES('https://www.washingtonpost.com/lifestyle/2023/09/14/roman-empire-trend-men-tiktok/','https://chrisamico.newsblur.com/','How often do men think about ancient Rome? Quite frequently, it seems.','Videos shared on TikTok and Instagram as part of a new trend reveal that many men think about the Roman Empire frequently. But why? ','2023-09-17T12:34:01.055000+00:00',NULL,'https://www.washingtonpost.com/lifestyle/2023/09/14/roman-empire-trend-men-tiktok/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/P4GGQ22VVW24NIXITHAETZWI5A_size-normalized.jpg&w=1440"}');
 INSERT INTO links VALUES('https://www.combatlearning.com/blog/scalable-live-training/','https://www.instapaper.com/liked','Introducing "Scalable Live Training":  How (& Why) to Safely Conduct 100% Live Training from Day 1',replace(replace('\r\nATTN: Readers new to skill acquisition and/or ecological approaches:A vastly simplified and shorter version of this article can be found here.\r\n\r\nThe p…','\r',char(13)),'\n',char(10)),'2023-09-23T02:07:23+00:00',NULL,'https://www.combatlearning.com/blog/scalable-live-training/','{"type": "article", "image": "https://images.podpage.com/https%3A%2F%2Fd3t3ozftmdmh3i.cloudfront.net%2Fproduction%2Fpodcast_uploaded_nologo%2F162367%2F162367-1633017826261-0a9528f1d1f9c.jpg?auto=format&fill=blur&fit=fill&h=628&w=1200&s=5d1391fce45a0509100ac9de4e21ac2d", "site_name": "Combat Learning Podcast"}');
 INSERT INTO links VALUES('https://www.nytimes.com/2023/09/02/opinion/cosmology-crisis-webb-telescope.html','https://www.instapaper.com/liked','Opinion | The Story of Our Universe May Be Starting to Unravel',NULL,'2023-09-06T11:54:29+00:00',NULL,'https://www.nytimes.com/2023/09/02/opinion/cosmology-crisis-webb-telescope.html','{}');
+INSERT INTO links VALUES('https://flowingdata.com/2023/10/03/scale-of-sports-fields-and-courts/','https://chrisamico.newsblur.com/','Scale of Sports Fields and Courts','Here are the major sports drawn at the same scale to help appreciate the differences between field and court sizes.','2023-10-04T14:48:01.634000+00:00',NULL,'https://flowingdata.com/2023/10/03/scale-of-sports-fields-and-courts/','{"type": "article", "site_name": "FlowingData", "image": "https://flowingdata.com/wp-content/uploads/2023/10/sports-scales-featured.png", "image:width": "1441", "image:height": "801", "image:alt": "", "locale": "en_US"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -674,4 +675,5 @@ INSERT INTO mastodon VALUES('https://www.niemanlab.org/2023/08/the-daily-tar-hee
 INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/08/31/sports/tennis/us-open-john-isner-retirement.html','2023-09-02T00:21:45.647Z','success','https://journa.host/@chrisamico/110992694027361295',NULL);
 INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/09/01/sports/tennis/us-open-one-handed-backhand-wawrinka.html','2023-09-04T00:23:31.292Z','success','https://journa.host/@chrisamico/111004025571843508',NULL);
 INSERT INTO mastodon VALUES('https://codywinchester.com/the-onion-american-voices/','2023-09-06T18:11:20.979Z','success','https://journa.host/@chrisamico/111019549063681360',NULL);
+INSERT INTO mastodon VALUES('https://flowingdata.com/2023/10/03/scale-of-sports-fields-and-courts/','2023-10-04T18:11:40.027Z','success','https://journa.host/@chrisamico/111178095003427292',NULL);
 COMMIT;
