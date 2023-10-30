@@ -20,7 +20,6 @@ python-frontmatter = "*"
 pygments = "*"
 feedgen = "*"
 toot = "*"
-werkzeug = "<3"  # werkzeug 3.0.0 removes .charset, which breaks Frozen-Flask
 
 [requires]
 python_version = "3.11"
