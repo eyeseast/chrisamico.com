@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-04T18:11:11.270459');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-10-30T18:23:13.483000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-05T00:25:52.568015');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-04T22:10:14.072000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -594,6 +594,7 @@ INSERT INTO links VALUES('https://www.businessinsider.com/peter-thiel-fbi-inform
 INSERT INTO links VALUES('https://www.polygon.com/23929489/martin-scorsese-best-movies-killers-flower-moon-career','https://chrisamico.newsblur.com/','Martin Scorsese proves Quentin Tarantino is wrong about aging directors','Scorsese keeps making standout movies he couldn’t have made when he was younger, for so many reasons','2023-10-30T03:35:56.254000+00:00',NULL,'https://www.polygon.com/23929489/martin-scorsese-best-movies-killers-flower-moon-career','{"image": "https://cdn.vox-cdn.com/thumbor/PjaKMKGFQcFnq1E1hidgEZdV60o=/0x306:4325x2570/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25032073/1728751115.jpg", "image:alt": "A closeup of Martin Scorsese with a serious look on his face on the red carpet at the Los Angeles premiere of his movie Killers of the Flower Moon", "image:height": "630", "image:width": "1200", "site_name": "Polygon", "type": "article"}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/politics/2023/10/27/how-know-when-its-politically-acceptable-discuss-guns/','https://chrisamico.newsblur.com/','Analysis | How to know when it’s politically acceptable to discuss guns','Curious when there’s been a window during which it’s okay to politicize mass shootings? Our calculator can help!','2023-10-30T18:23:13.483000+00:00',NULL,'https://www.washingtonpost.com/politics/2023/10/27/how-know-when-its-politically-acceptable-discuss-guns/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LXS2AKTCNEZ635H2YGIW7SDEUU.JPG&w=1440"}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','https://www.instapaper.com/liked','The AI Market is Firming Up Fast','Making humans data, making data human.','2023-11-02T20:07:02+00:00',NULL,'https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','{"locale": "en_US", "site_name": "Drew Breunig", "type": "article"}');
+INSERT INTO links VALUES('http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','https://chrisamico.newsblur.com/','Embeddings: What they are and why they matter',NULL,'2023-11-04T22:10:14.072000+00:00',NULL,'http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -695,4 +696,5 @@ INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/10/27/opinion/stephen-
 INSERT INTO mastodon VALUES('https://www.polygon.com/23929489/martin-scorsese-best-movies-killers-flower-moon-career','2023-10-30T06:11:29.838Z','success','https://journa.host/@chrisamico/111322483250787923',NULL);
 INSERT INTO mastodon VALUES('https://www.washingtonpost.com/politics/2023/10/27/how-know-when-its-politically-acceptable-discuss-guns/','2023-10-31T00:24:05.691Z','success','https://journa.host/@chrisamico/111326779519217051',NULL);
 INSERT INTO mastodon VALUES('https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','2023-11-03T18:11:46.021Z','success','https://journa.host/@chrisamico/111347964708198579',NULL);
+INSERT INTO mastodon VALUES('http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','2023-11-05T00:26:10.043Z','success','https://journa.host/@chrisamico/111355099220744477',NULL);
 COMMIT;
