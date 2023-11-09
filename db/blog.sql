@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-08T18:11:11.292166');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-04T22:10:14.072000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-09T00:23:26.609382');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-08T19:16:44.166000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -595,6 +595,7 @@ INSERT INTO links VALUES('https://www.polygon.com/23929489/martin-scorsese-best-
 INSERT INTO links VALUES('https://www.washingtonpost.com/politics/2023/10/27/how-know-when-its-politically-acceptable-discuss-guns/','https://chrisamico.newsblur.com/','Analysis | How to know when it’s politically acceptable to discuss guns','Curious when there’s been a window during which it’s okay to politicize mass shootings? Our calculator can help!','2023-10-30T18:23:13.483000+00:00',NULL,'https://www.washingtonpost.com/politics/2023/10/27/how-know-when-its-politically-acceptable-discuss-guns/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LXS2AKTCNEZ635H2YGIW7SDEUU.JPG&w=1440"}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','https://www.instapaper.com/liked','The AI Market is Firming Up Fast','Making humans data, making data human.','2023-11-02T20:07:02+00:00',NULL,'https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','{"locale": "en_US", "site_name": "Drew Breunig", "type": "article"}');
 INSERT INTO links VALUES('http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','https://chrisamico.newsblur.com/','Embeddings: What they are and why they matter',NULL,'2023-11-04T22:10:14.072000+00:00',NULL,'http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','{}');
+INSERT INTO links VALUES('https://www.youtube.com/watch?v=_R5pM8lVldU&t=347s','https://chrisamico.newsblur.com/','Post-Scarcity Web Mapping with Protomaps - Brandon Liu, Protomaps','Post-Scarcity Web Mapping with ProtomapsBrandon Liu, ProtomapsThe Protomaps vector basemap is an open-source cartographic product designed for free reproduct...','2023-11-08T19:16:44.166000+00:00',NULL,'https://www.youtube.com/watch?v=_R5pM8lVldU','{"site_name": "YouTube", "image": "https://i.ytimg.com/vi/_R5pM8lVldU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgWyggMA8=&rs=AOn4CLAdbgIY64YxEHXz93MsoK45AJ52TQ", "image:width": "1280", "image:height": "720", "type": "video.other", "video:url": "https://www.youtube.com/embed/_R5pM8lVldU?start=347", "video:secure_url": "https://www.youtube.com/embed/_R5pM8lVldU?start=347", "video:type": "text/html", "video:width": "1280", "video:height": "720", "video:tag": "mappy"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -697,4 +698,5 @@ INSERT INTO mastodon VALUES('https://www.polygon.com/23929489/martin-scorsese-be
 INSERT INTO mastodon VALUES('https://www.washingtonpost.com/politics/2023/10/27/how-know-when-its-politically-acceptable-discuss-guns/','2023-10-31T00:24:05.691Z','success','https://journa.host/@chrisamico/111326779519217051',NULL);
 INSERT INTO mastodon VALUES('https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','2023-11-03T18:11:46.021Z','success','https://journa.host/@chrisamico/111347964708198579',NULL);
 INSERT INTO mastodon VALUES('http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','2023-11-05T00:26:10.043Z','success','https://journa.host/@chrisamico/111355099220744477',NULL);
+INSERT INTO mastodon VALUES('https://www.youtube.com/watch?v=_R5pM8lVldU&t=347s','2023-11-09T00:23:42.196Z','success','https://journa.host/@chrisamico/111377738773011465',NULL);
 COMMIT;
