@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-09T12:11:39.698471');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-08T19:16:44.166000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-09T18:10:57.112943');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-09T14:51:03.496000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -596,6 +596,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/politics/2023/10/27/how
 INSERT INTO links VALUES('https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','https://www.instapaper.com/liked','The AI Market is Firming Up Fast','Making humans data, making data human.','2023-11-02T20:07:02+00:00',NULL,'https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','{"locale": "en_US", "site_name": "Drew Breunig", "type": "article"}');
 INSERT INTO links VALUES('http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','https://chrisamico.newsblur.com/','Embeddings: What they are and why they matter',NULL,'2023-11-04T22:10:14.072000+00:00',NULL,'http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','{}');
 INSERT INTO links VALUES('https://www.youtube.com/watch?v=_R5pM8lVldU&t=347s','https://chrisamico.newsblur.com/','Post-Scarcity Web Mapping with Protomaps - Brandon Liu, Protomaps','Post-Scarcity Web Mapping with ProtomapsBrandon Liu, ProtomapsThe Protomaps vector basemap is an open-source cartographic product designed for free reproduct...','2023-11-08T19:16:44.166000+00:00',NULL,'https://www.youtube.com/watch?v=_R5pM8lVldU','{"site_name": "YouTube", "image": "https://i.ytimg.com/vi/_R5pM8lVldU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgWyggMA8=&rs=AOn4CLAdbgIY64YxEHXz93MsoK45AJ52TQ", "image:width": "1280", "image:height": "720", "type": "video.other", "video:url": "https://www.youtube.com/embed/_R5pM8lVldU?start=347", "video:secure_url": "https://www.youtube.com/embed/_R5pM8lVldU?start=347", "video:type": "text/html", "video:width": "1280", "video:height": "720", "video:tag": "mappy"}');
+INSERT INTO links VALUES('https://www.poynter.org/commentary/2023/were-not-ready-for-a-major-shift-in-visual-journalism/','https://chrisamico.newsblur.com/','We’re not ready for a major shift in visual journalism - Poynter',NULL,'2023-11-09T14:51:03.496000+00:00',NULL,'https://www.poynter.org/commentary/2023/were-not-ready-for-a-major-shift-in-visual-journalism/','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -699,4 +700,5 @@ INSERT INTO mastodon VALUES('https://www.washingtonpost.com/politics/2023/10/27/
 INSERT INTO mastodon VALUES('https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','2023-11-03T18:11:46.021Z','success','https://journa.host/@chrisamico/111347964708198579',NULL);
 INSERT INTO mastodon VALUES('http://simonwillison.net/2023/Oct/23/embeddings/#atom-entries','2023-11-05T00:26:10.043Z','success','https://journa.host/@chrisamico/111355099220744477',NULL);
 INSERT INTO mastodon VALUES('https://www.youtube.com/watch?v=_R5pM8lVldU&t=347s','2023-11-09T00:23:42.196Z','success','https://journa.host/@chrisamico/111377738773011465',NULL);
+INSERT INTO mastodon VALUES('https://www.poynter.org/commentary/2023/were-not-ready-for-a-major-shift-in-visual-journalism/','2023-11-09T18:11:14.487Z','success','https://journa.host/@chrisamico/111381936504018220',NULL);
 COMMIT;
