@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-15T12:11:48.086798');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-13T15:44:02.659000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-15T18:11:07.373221');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-15T14:43:23.577000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -603,6 +603,7 @@ INSERT INTO links VALUES('https://bloodyelbow.com/2023/08/24/pickleball-vs-bjj-p
 INSERT INTO links VALUES('https://www.washingtonpost.com/opinions/2023/11/09/sbf-ftx-conviction-crypto-scam/','https://www.instapaper.com/liked','Opinion | Regulating crypto might end it. And that’s just fine.','The industry is little more than a vast digital casino.','2023-11-10T22:10:58+00:00',NULL,'https://www.washingtonpost.com/opinions/2023/11/09/sbf-ftx-conviction-crypto-scam/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/POJF5HEPW3RQAM3F6AWP4FTRDM_size-normalized.jpg&w=1440"}');
 INSERT INTO links VALUES('https://variety.com/2023/film/features/marvel-jonathan-majors-problem-the-marvels-reshoots-kang-1235774940/','https://www.instapaper.com/liked','Crisis at Marvel: Jonathan Majors Back-Up Plans, ‘The Marvels’ Reshoots, Reviving Original Avengers and More Issues Revealed','Marvel has enjoyed a nearly uninterrupted string of hits ever since it started independently producing its movies with 2008’s “Iron Man.” ','2023-11-04T02:47:16+00:00',NULL,'https://variety.com/2023/film/features/marvel-jonathan-majors-problem-the-marvels-reshoots-kang-1235774940/','{"type": "article", "site_name": "Variety", "image": "https://variety.com/wp-content/uploads/2023/10/Marvel-In-Trouble-Illustration-Full-2.jpg?crop=0px%2C1px%2C1000px%2C562px&resize=1000%2C563", "image:width": "1000", "image:height": "563", "image:alt": "Is Marvel in Trouble Illustration", "locale": "en_US"}');
 INSERT INTO links VALUES('https://macwright.com/2023/11/13/placemark.html','https://chrisamico.newsblur.com/','Placemark is going open source and shutting down',NULL,'2023-11-13T15:44:02.659000+00:00',NULL,'https://macwright.com/2023/11/13/placemark','{"site_name": "macwright.com", "email": "tom@macwright.com", "type": "article"}');
+INSERT INTO links VALUES('https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','https://chrisamico.newsblur.com/','Leg Lock Combinatorics','Combinatorics is the study of counting; this sounds trivial, but it’s a very useful field of mathematics that allows you to count huge systems with relatively simple calculations. For example…','2023-11-15T14:43:23.577000+00:00',NULL,'https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','{"type": "article", "site_name": "Teddy Tort", "image": "https://teddytort.files.wordpress.com/2022/09/cropped-medium_logo.png?w=200", "image:width": "200", "image:height": "200", "image:alt": "", "locale": "en_US"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -709,4 +710,5 @@ INSERT INTO mastodon VALUES('https://www.youtube.com/watch?v=_R5pM8lVldU&t=347s'
 INSERT INTO mastodon VALUES('https://www.poynter.org/commentary/2023/were-not-ready-for-a-major-shift-in-visual-journalism/','2023-11-09T18:11:14.487Z','success','https://journa.host/@chrisamico/111381936504018220',NULL);
 INSERT INTO mastodon VALUES('https://source.opennews.org/articles/our-search-best-ocr-tool-2023/','2023-11-10T18:11:18.502Z','success','https://journa.host/@chrisamico/111387599077492765',NULL);
 INSERT INTO mastodon VALUES('https://macwright.com/2023/11/13/placemark.html','2023-11-13T18:11:27.707Z','success','https://journa.host/@chrisamico/111404586612013425',NULL);
+INSERT INTO mastodon VALUES('https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','2023-11-15T18:11:23.204Z','success','https://journa.host/@chrisamico/111415910937698192',NULL);
 COMMIT;
