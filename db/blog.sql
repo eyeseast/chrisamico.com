@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-18T18:10:47.337105');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-15T14:43:23.577000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-19T00:26:32.567225');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-18T18:19:14.024000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -604,6 +604,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/opinions/2023/11/09/sbf
 INSERT INTO links VALUES('https://variety.com/2023/film/features/marvel-jonathan-majors-problem-the-marvels-reshoots-kang-1235774940/','https://www.instapaper.com/liked','Crisis at Marvel: Jonathan Majors Back-Up Plans, ‘The Marvels’ Reshoots, Reviving Original Avengers and More Issues Revealed','Marvel has enjoyed a nearly uninterrupted string of hits ever since it started independently producing its movies with 2008’s “Iron Man.” ','2023-11-04T02:47:16+00:00',NULL,'https://variety.com/2023/film/features/marvel-jonathan-majors-problem-the-marvels-reshoots-kang-1235774940/','{"type": "article", "site_name": "Variety", "image": "https://variety.com/wp-content/uploads/2023/10/Marvel-In-Trouble-Illustration-Full-2.jpg?crop=0px%2C1px%2C1000px%2C562px&resize=1000%2C563", "image:width": "1000", "image:height": "563", "image:alt": "Is Marvel in Trouble Illustration", "locale": "en_US"}');
 INSERT INTO links VALUES('https://macwright.com/2023/11/13/placemark.html','https://chrisamico.newsblur.com/','Placemark is going open source and shutting down',NULL,'2023-11-13T15:44:02.659000+00:00',NULL,'https://macwright.com/2023/11/13/placemark','{"site_name": "macwright.com", "email": "tom@macwright.com", "type": "article"}');
 INSERT INTO links VALUES('https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','https://chrisamico.newsblur.com/','Leg Lock Combinatorics','Combinatorics is the study of counting; this sounds trivial, but it’s a very useful field of mathematics that allows you to count huge systems with relatively simple calculations. For example…','2023-11-15T14:43:23.577000+00:00',NULL,'https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','{"type": "article", "site_name": "Teddy Tort", "image": "https://teddytort.files.wordpress.com/2022/09/cropped-medium_logo.png?w=200", "image:width": "200", "image:height": "200", "image:alt": "", "locale": "en_US"}');
+INSERT INTO links VALUES('https://especiales.eldiario.es/spain-lives-in-flats/','https://chrisamico.newsblur.com/','Spain lives in flats: why we have built our cities vertically','The development of cities in Spain has been upwards. Map of the evolution of urban planning in Spain, with data from the Cadastre — and why Spaniards live in apartments.','2023-11-18T18:19:14.024000+00:00',NULL,'https://especiales.eldiario.es/spain-lives-in-flats/','{"image": "https://static.eldiario.es/clip/5640d09d-1ba9-4387-9c10-9ccafd9c7108_source-aspect-ratio_default_0.jpg", "image:alt": "why we have built our cities vertically", "type": "website", "site_name": "ElDiario.es"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -711,4 +712,5 @@ INSERT INTO mastodon VALUES('https://www.poynter.org/commentary/2023/were-not-re
 INSERT INTO mastodon VALUES('https://source.opennews.org/articles/our-search-best-ocr-tool-2023/','2023-11-10T18:11:18.502Z','success','https://journa.host/@chrisamico/111387599077492765',NULL);
 INSERT INTO mastodon VALUES('https://macwright.com/2023/11/13/placemark.html','2023-11-13T18:11:27.707Z','success','https://journa.host/@chrisamico/111404586612013425',NULL);
 INSERT INTO mastodon VALUES('https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','2023-11-15T18:11:23.204Z','success','https://journa.host/@chrisamico/111415910937698192',NULL);
+INSERT INTO mastodon VALUES('https://especiales.eldiario.es/spain-lives-in-flats/','2023-11-19T00:26:52.041Z','success','https://journa.host/@chrisamico/111434374318672767',NULL);
 COMMIT;
