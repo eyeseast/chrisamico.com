@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-19T00:26:32.567225');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-19T06:10:51.325884');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-18T18:19:14.024000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -605,6 +605,7 @@ INSERT INTO links VALUES('https://variety.com/2023/film/features/marvel-jonathan
 INSERT INTO links VALUES('https://macwright.com/2023/11/13/placemark.html','https://chrisamico.newsblur.com/','Placemark is going open source and shutting down',NULL,'2023-11-13T15:44:02.659000+00:00',NULL,'https://macwright.com/2023/11/13/placemark','{"site_name": "macwright.com", "email": "tom@macwright.com", "type": "article"}');
 INSERT INTO links VALUES('https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','https://chrisamico.newsblur.com/','Leg Lock Combinatorics','Combinatorics is the study of counting; this sounds trivial, but it’s a very useful field of mathematics that allows you to count huge systems with relatively simple calculations. For example…','2023-11-15T14:43:23.577000+00:00',NULL,'https://teddytort.wordpress.com/2023/06/11/leg-lock-combinatorics/','{"type": "article", "site_name": "Teddy Tort", "image": "https://teddytort.files.wordpress.com/2022/09/cropped-medium_logo.png?w=200", "image:width": "200", "image:height": "200", "image:alt": "", "locale": "en_US"}');
 INSERT INTO links VALUES('https://especiales.eldiario.es/spain-lives-in-flats/','https://chrisamico.newsblur.com/','Spain lives in flats: why we have built our cities vertically','The development of cities in Spain has been upwards. Map of the evolution of urban planning in Spain, with data from the Cadastre — and why Spaniards live in apartments.','2023-11-18T18:19:14.024000+00:00',NULL,'https://especiales.eldiario.es/spain-lives-in-flats/','{"image": "https://static.eldiario.es/clip/5640d09d-1ba9-4387-9c10-9ccafd9c7108_source-aspect-ratio_default_0.jpg", "image:alt": "why we have built our cities vertically", "type": "website", "site_name": "ElDiario.es"}');
+INSERT INTO links VALUES('https://www.vulture.com/article/the-simpsons-is-good-again.html','https://www.instapaper.com/liked','The Simpsons Is Good Again','After 34 seasons, 750 episodes, and a decades-long funk, the beloved show innovated its way back to popularity and relevance.','2023-11-08T12:12:31+00:00',NULL,'https://www.vulture.com/article/the-simpsons-is-good-again.html','{"image": "https://pyxis.nymag.com/v1/imgs/5bb/2ee/148fc649260de27381dcf2a13492179717-SIMPSONS-GG-FINAL-WEB.1x.rsocial.w1200.jpg", "site_name": "Vulture", "type": "article"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
