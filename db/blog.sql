@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-24T00:23:47.404678');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-20T20:17:32.801000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-11-25T06:10:54.172311');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-11-24T02:49:04.445000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -607,6 +607,8 @@ INSERT INTO links VALUES('https://teddytort.wordpress.com/2023/06/11/leg-lock-co
 INSERT INTO links VALUES('https://especiales.eldiario.es/spain-lives-in-flats/','https://chrisamico.newsblur.com/','Spain lives in flats: why we have built our cities vertically','The development of cities in Spain has been upwards. Map of the evolution of urban planning in Spain, with data from the Cadastre — and why Spaniards live in apartments.','2023-11-18T18:19:14.024000+00:00',NULL,'https://especiales.eldiario.es/spain-lives-in-flats/','{"image": "https://static.eldiario.es/clip/5640d09d-1ba9-4387-9c10-9ccafd9c7108_source-aspect-ratio_default_0.jpg", "image:alt": "why we have built our cities vertically", "type": "website", "site_name": "ElDiario.es"}');
 INSERT INTO links VALUES('https://www.vulture.com/article/the-simpsons-is-good-again.html','https://www.instapaper.com/liked','The Simpsons Is Good Again','After 34 seasons, 750 episodes, and a decades-long funk, the beloved show innovated its way back to popularity and relevance.','2023-11-08T12:12:31+00:00',NULL,'https://www.vulture.com/article/the-simpsons-is-good-again.html','{"image": "https://pyxis.nymag.com/v1/imgs/5bb/2ee/148fc649260de27381dcf2a13492179717-SIMPSONS-GG-FINAL-WEB.1x.rsocial.w1200.jpg", "site_name": "Vulture", "type": "article"}');
 INSERT INTO links VALUES('https://19thnews.org/2023/11/paternity-leave-brain-sugdaddies-are-made-not-born/','https://chrisamico.newsblur.com/','Paternity leave alters the brain — suggesting daddies are made, not born',NULL,'2023-11-20T20:17:32.801000+00:00',NULL,'https://19thnews.org/2023/11/paternity-leave-brain-sugdaddies-are-made-not-born/','{}');
+INSERT INTO links VALUES('https://www.bloomberg.com/opinion/articles/2023-11-22/sam-altman-return-to-openai-makes-clear-winners-and-losers-of-debacle','https://chrisamico.newsblur.com/','Who Controls OpenAI?',NULL,'2023-11-24T02:49:04.445000+00:00',NULL,'https://www.bloomberg.com/opinion/articles/2023-11-22/sam-altman-return-to-openai-makes-clear-winners-and-losers-of-debacle','{}');
+INSERT INTO links VALUES('https://bjjnolej.com/gi-vs-nogi-jiu-jitsu-and-why-i-train-both/','https://chrisamico.newsblur.com/','Gi vs Nogi Jiu Jitsu and Why I Train Both - BJJNolej','The title should really be Gi vs Nogi Jiu Jitsu, Why I Train Both and How I''ve Had My Mind Changed While Writing This Article but that''s too long! Quick note about spellings for all you pedants out there. I''m English and use UK spellings but some of my case studies who typed their replies to','2023-11-24T00:53:44.318000+00:00',NULL,'https://bjjnolej.com/gi-vs-nogi-jiu-jitsu-and-why-i-train-both/','{"locale": "en_US", "type": "article", "site_name": "BJJNolej", "image": "https://bjjnolej.com/wp-content/uploads/2023/11/GI-vs-Nogi-blog-image.png", "image:width": "1000", "image:height": "563", "image:type": "image/png"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
