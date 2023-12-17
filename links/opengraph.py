@@ -65,6 +65,9 @@ class OpenGraph:
             client = httpx.Client()
 
         r = client.get(url)
+        if r.status_code > 400:
+            return {}
+        
         return Cls(r.content, **defaults)
 
     def parse(self):
