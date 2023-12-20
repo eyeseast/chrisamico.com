@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-12-20T12:11:15.773207');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-12-16T14:25:26.709000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-12-20T18:10:57.724896');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-12-20T17:16:06.661000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -612,6 +612,7 @@ INSERT INTO links VALUES('https://bloodyelbow.com/2023/08/24/pickleball-vs-bjj-p
 INSERT INTO links VALUES('https://www.washingtonpost.com/opinions/2023/11/09/sbf-ftx-conviction-crypto-scam/','https://www.instapaper.com/liked','Opinion | Regulating crypto might end it. And that’s just fine.','The industry is little more than a vast digital casino.','2023-11-10T22:10:58+00:00',NULL,'https://www.washingtonpost.com/opinions/2023/11/09/sbf-ftx-conviction-crypto-scam/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/POJF5HEPW3RQAM3F6AWP4FTRDM.jpg&w=1440"}');
 INSERT INTO links VALUES('https://www.vox.com/2023/10/20/23919946/israel-hamas-war-gaza-palestine-ground-invasion-strategy','https://www.instapaper.com/liked','What Israel should do now','Israel’s current approach is clearly wrong. Here’s a better way to fight Hamas — and win.','2023-11-04T14:17:34+00:00',NULL,'https://www.vox.com/2023/10/20/23919946/israel-hamas-war-gaza-palestine-ground-invasion-strategy','{"image": "https://cdn.vox-cdn.com/thumbor/F3FLLSvzY3mkAvz7HNyhExQFWS0=/0x138:1920x1143/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25017017/AP23292315242723.jpg", "image:height": "630", "image:width": "1200", "site_name": "Vox", "type": "article"}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','https://www.instapaper.com/liked','The AI Market is Firming Up Fast','Making humans data, making data human.','2023-11-02T20:07:02+00:00',NULL,'https://www.dbreunig.com/2023/10/02/the-ai-market-is-firming-up-fast.html','{"locale": "en_US", "site_name": "Drew Breunig", "type": "article"}');
+INSERT INTO links VALUES('https://www.muckrock.com/news/archives/2023/dec/20/muckrock-survey-of-foia-fees-points-to-uneven-picture-across-the-us/','https://chrisamico.newsblur.com/','MuckRock survey of FOIA fees points to uneven picture across the U.S.: From $2 in Washington state to $431 per request in Idaho','A fee is charged for about 16% of U.S. public-records requests, according to a MuckRock analysis of our data. The rising costs of records limits government accountability at the state-level but requestors have found ways to lower costs.','2023-12-20T17:16:06.661000+00:00',NULL,'https://www.muckrock.com/news/archives/2023/dec/20/muckrock-survey-of-foia-fees-points-to-uneven-picture-across-the-us/','{"type": "article", "image": "https://cdn.muckrock.com/news_images/2023/12/19/Foia_fees_banner.png.2400x800_q85.png", "site_name": "MuckRock", "article:published_time": ""}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -706,4 +707,5 @@ INSERT INTO mastodon VALUES('https://www.washingtonpost.com/technology/2023/08/1
 INSERT INTO mastodon VALUES('https://www.universalhub.com/2023/real-time-looks-carbon-dioxide-levels-pretty-much','2023-08-26T18:11:27.318Z','success','https://journa.host/@chrisamico/110957264064791923',NULL);
 INSERT INTO mastodon VALUES('https://www.niemanlab.org/2023/08/the-daily-tar-heels-shooting-coverage-is-just-the-latest-example-of-college-newspapers-taking-on-a-local-reporting-role/','2023-08-31T00:23:00.571Z','success','https://journa.host/@chrisamico/110981374316864962',NULL);
 INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/08/31/sports/tennis/us-open-john-isner-retirement.html','2023-09-02T00:21:45.647Z','success','https://journa.host/@chrisamico/110992694027361295',NULL);
+INSERT INTO mastodon VALUES('https://www.muckrock.com/news/archives/2023/dec/20/muckrock-survey-of-foia-fees-points-to-uneven-picture-across-the-us/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 COMMIT;
