@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-12-20T18:10:57.724896');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2023-12-21T00:24:42.525815');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2023-12-20T17:16:06.661000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -707,5 +707,6 @@ INSERT INTO mastodon VALUES('https://www.washingtonpost.com/technology/2023/08/1
 INSERT INTO mastodon VALUES('https://www.universalhub.com/2023/real-time-looks-carbon-dioxide-levels-pretty-much','2023-08-26T18:11:27.318Z','success','https://journa.host/@chrisamico/110957264064791923',NULL);
 INSERT INTO mastodon VALUES('https://www.niemanlab.org/2023/08/the-daily-tar-heels-shooting-coverage-is-just-the-latest-example-of-college-newspapers-taking-on-a-local-reporting-role/','2023-08-31T00:23:00.571Z','success','https://journa.host/@chrisamico/110981374316864962',NULL);
 INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/08/31/sports/tennis/us-open-john-isner-retirement.html','2023-09-02T00:21:45.647Z','success','https://journa.host/@chrisamico/110992694027361295',NULL);
+INSERT INTO mastodon VALUES('https://www.muckrock.com/news/archives/2023/dec/20/muckrock-survey-of-foia-fees-points-to-uneven-picture-across-the-us/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.muckrock.com/news/archives/2023/dec/20/muckrock-survey-of-foia-fees-points-to-uneven-picture-across-the-us/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 COMMIT;
