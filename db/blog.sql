@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-01-03T18:11:01.695044');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-01-04T00:25:07.839772');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-01-03T14:19:42.314000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -713,5 +713,6 @@ INSERT INTO mastodon VALUES('https://www.niemanlab.org/2023/08/the-daily-tar-hee
 INSERT INTO mastodon VALUES('https://www.nytimes.com/2023/08/31/sports/tennis/us-open-john-isner-retirement.html','2023-09-02T00:21:45.647Z','success','https://journa.host/@chrisamico/110992694027361295',NULL);
 INSERT INTO mastodon VALUES('https://www.muckrock.com/news/archives/2023/dec/20/muckrock-survey-of-foia-fees-points-to-uneven-picture-across-the-us/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.muckrock.com/news/archives/2023/dec/20/muckrock-survey-of-foia-fees-points-to-uneven-picture-across-the-us/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://flowingdata.com/2023/12/29/best-of-2023/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://flowingdata.com/2023/12/29/best-of-2023/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 COMMIT;
