@@ -11,7 +11,7 @@ All of these used my [Datasette GIS stack](https://github.com/eyeseast/spatial-d
 
 Assessments include a column called `YR_BUILT` (and also a `YR_REMODEL` which could be interesting). Joining this to parcel boundaries gave me a map of Boston's buildings colored by age. Darker purple is the oldest parcels, and some go back to the 1700s. It's an old city.
 
-<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-buildings-colored-by-year-built-sPYjj6I0ROmOhnJ9AC9AURWD?lat=42.313051&lon=-71.068934&zoom=11.76"></iframe>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-buildings-colored-by-year-built-eUFvMwLmS7iatHwFfpsRvD?lat=42.313051&lon=-71.068934&zoom=11.76"></iframe>
 
 ### Value of residential units
 
@@ -21,7 +21,7 @@ But filtering out [everything but residential units](https://github.com/eyeseast
 
 There are still things missing here: Mixed use buildings are a separate category, as well as large apartment buildings. I wanted to map places an individual might realistically own.
 
-<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-parcels-Residential-assessed-value-efGgl9AsxSMuMGp2tcdHmLB?lat=42.312442&lon=-71.085013&zoom=11.82"></iframe>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-parcels-Residential-assessed-value-wEznhQG2Tz6acqqPUIWy9CC?lat=42.312442&lon=-71.085013&zoom=11.82"></iframe>
 
 ### Value density
 
@@ -29,6 +29,6 @@ While I was working on this, Jeffrey Baker in the [Felt community Slack](https:/
 
 Is it a huge surprise to see more concentrated land value downtown? No. But it's an interesting way to look at the city, and to think about the economic tradeoffs of living on its edges.
 
-<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-2023-value-density-x9Aa76bcdRm9BTPUr2kv9ADuD?lat=42.31251&lon=-71.05698&zoom=11.75"></iframe>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Boston-2023-value-density-fxpxMZH8Tc9BoxekF79BX53A?lat=42.31251&lon=-71.05698&zoom=11.75"></iframe>
 
 All the code I used is [here](https://github.com/eyeseast/boston-parcels). Open an issue if there's something you'd like to see mapped.

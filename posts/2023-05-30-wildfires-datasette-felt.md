@@ -13,7 +13,7 @@ Yet an EPA rule could allow that smoke to be excluded from official pollution re
 
 As part of that story, I mapped and charted 40 years of wildfires using data from the [National Interagency Fire Center](https://data-nifc.opendata.arcgis.com/datasets/nifc::interagencyfireperimeterhistory-all-years-view/about).
 
-<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Wildfires-are-becoming-more-frequent-across-the-West-QBFznerjRpK6BWnGzY9BRYC?lat=40.48443&lon=-104.777596&zoom=4.25"></iframe>
+<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Wildfires-are-becoming-more-frequent-across-the-West-sjYNTDMUT8qeQAo7WbX3MB?lat=40.48443&lon=-104.777596&zoom=4.25"></iframe>
 
 I recommend looking at the map on the biggest screen you can, and zooming into a place you know. You can filter the map to show one decade at a time, and the change is shocking in some places. [Sonoma County](https://felt.com/map/Wildfires-are-becoming-more-frequent-across-the-West-QBFznerjRpK6BWnGzY9BRYC?lat=38.574223&lon=-122.029378&zoom=9.29) is a good place to start.
 
