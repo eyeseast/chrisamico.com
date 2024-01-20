@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-01-19T18:10:55.681770');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-01-20T00:24:23.665769');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-01-19T14:59:37.252000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -723,5 +723,6 @@ INSERT INTO mastodon VALUES('https://simonwillison.net/2023/Dec/31/ai-in-2023/#a
 INSERT INTO mastodon VALUES('https://simonwillison.net/2023/Dec/31/ai-in-2023/#atom-entries',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.pbs.org/newshour/show/the-stars-of-how-to-dance-in-ohio-on-exploring-connections-among-autistic-adults?fbclid=IwAR2pesxrXfHeVKESNNgmYS-2gBy2X4gdYoTp7N4we-PV7c3bvKX5vSBG1nA',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.pbs.org/newshour/show/the-stars-of-how-to-dance-in-ohio-on-exploring-connections-among-autistic-adults?fbclid=IwAR2pesxrXfHeVKESNNgmYS-2gBy2X4gdYoTp7N4we-PV7c3bvKX5vSBG1nA',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.niemanlab.org/2024/01/the-baltimore-sun-explores-the-question-of-whether-there-can-be-a-worse-newspaper-owner-than-alden-global-capital/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.niemanlab.org/2024/01/the-baltimore-sun-explores-the-question-of-whether-there-can-be-a-worse-newspaper-owner-than-alden-global-capital/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 COMMIT;
