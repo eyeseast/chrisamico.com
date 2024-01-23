@@ -13,7 +13,13 @@ Yet an EPA rule could allow that smoke to be excluded from official pollution re
 
 As part of that story, I mapped and charted 40 years of wildfires using data from the [National Interagency Fire Center](https://data-nifc.opendata.arcgis.com/datasets/nifc::interagencyfireperimeterhistory-all-years-view/about).
 
-<iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Wildfires-are-becoming-more-frequent-across-the-West-sjYNTDMUT8qeQAo7WbX3MB?lat=40.48443&lon=-104.777596&zoom=4.25"></iframe>
+<iframe
+  src="https://muckrock.github.io/wildfires-protomaps/#3/40.48443/-104.777596"
+  width="100%"
+  height="450px"
+  frameborder="0"
+  title="Wildfires: 1980 - 2021"
+></iframe>
 
 I recommend looking at the map on the biggest screen you can, and zooming into a place you know. You can filter the map to show one decade at a time, and the change is shocking in some places. [Sonoma County](https://felt.com/map/Wildfires-are-becoming-more-frequent-across-the-West-QBFznerjRpK6BWnGzY9BRYC?lat=38.574223&lon=-122.029378&zoom=9.29) is a good place to start.
 
@@ -31,3 +37,7 @@ I can't say enough how useful it is to be able to ask a question, write a SQL qu
 For the chart, I wrote grouped and summed fires by year and added a [three-year rolling average](https://github.com/MuckRock/gao-wildfire-exceptions/blob/main/queries/wildfires/acres-burned.sql). I exported that as a CSV file and plugged it into [Datawrapper](https://datawrapper.de).
 
 Coding the map and chart by hand probably would've taken me a day, and they might not have looked as nice. I also would've needed [hosting infrastructure](https://chrisamico.com/blog/2023-05-20/interactive-app-infrastructure/), which I haven't yet set up at MuckRock (and maybe I never will). Instead, I had drafts of each visual in front of editors in less than half an hour.
+
+---
+
+**Update**: I had to rebuild the map by hand after Felt started requiring paid plans to embed maps. I'll write more about how I built this new version in a later post. The original map is still on [Felt](https://felt.com/map/Wildfires-are-becoming-more-frequent-across-the-West-QBFznerjRpK6BWnGzY9BRYC?lat=38.574223&lon=-122.029378&zoom=9.29).
