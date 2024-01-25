@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-01-25T06:11:10.436537');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-01-25T12:11:37.287365');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-01-25T00:42:49.027000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -727,5 +727,6 @@ INSERT INTO mastodon VALUES('https://www.pbs.org/newshour/show/the-stars-of-how-
 INSERT INTO mastodon VALUES('https://www.pbs.org/newshour/show/the-stars-of-how-to-dance-in-ohio-on-exploring-connections-among-autistic-adults?fbclid=IwAR2pesxrXfHeVKESNNgmYS-2gBy2X4gdYoTp7N4we-PV7c3bvKX5vSBG1nA',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.niemanlab.org/2024/01/the-baltimore-sun-explores-the-question-of-whether-there-can-be-a-worse-newspaper-owner-than-alden-global-capital/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.niemanlab.org/2024/01/the-baltimore-sun-explores-the-question-of-whether-there-can-be-a-worse-newspaper-owner-than-alden-global-capital/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://jskfellows.stanford.edu/untangling-complex-identities-b3f0e85011f3',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://jskfellows.stanford.edu/untangling-complex-identities-b3f0e85011f3',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 COMMIT;
