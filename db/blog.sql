@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-02-09T00:22:52.959072');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-02-09T06:10:41.603096');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-02-08T22:38:55.193000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -740,5 +740,6 @@ INSERT INTO mastodon VALUES('https://jskfellows.stanford.edu/untangling-complex-
 INSERT INTO mastodon VALUES('https://jskfellows.stanford.edu/untangling-complex-identities-b3f0e85011f3',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://talkingpointsmemo.com/edblog/the-messenger-shuts-down-and-some-thoughts-about-why-it-ever-happened',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://xkcd.com/2889/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.grapplearts.com/this-black-belts-advice-would-have-killed-me/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.grapplearts.com/this-black-belts-advice-would-have-killed-me/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 COMMIT;
