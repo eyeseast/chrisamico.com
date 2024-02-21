@@ -13,6 +13,7 @@ install:
 
 rebuild:
 	sqlite3 $(BLOG_DB) < $(BLOG_BACKUP) 
+	pipenv run sqlite-utils enable-wal $(BLOG_DB)
 
 update:
 	pipenv run ./links/update.py $(FEEDS)
