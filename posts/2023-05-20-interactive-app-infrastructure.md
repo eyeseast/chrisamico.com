@@ -64,7 +64,7 @@ How you answer the questions above will tell you how to get your cool interactiv
 
 This is an editorial question, not a technical one. You need to decide who is responsible for anything that might need to be changed, and how that's going to happen.
 
-It's easy to fall into the trap of thinking words are for editors and everything else is for developers. But this whole thing is an editorial project, and everyone involved is a journalist. For example, the [last map in this story](https://www.azcentral.com/in-depth/news/2021/11/20/us-forest-service-water-management-limited-oversight-diversions/8446212002/) animates lines that trace water diversions. The text in each step lives in a spreadsheet, but there are also variables that let an editor change the speed of the animaation or the color of the lines. Changing those was an editorial choice, so those decisions lived in a place an editor could update if needed.
+It's easy to fall into the trap of thinking words are for editors and everything else is for developers. But this whole thing is an editorial project, and everyone involved is a journalist. For example, the [last map in this story](https://www.azcentral.com/in-depth/news/2021/11/20/us-forest-service-water-management-limited-oversight-diversions/8446212002/) animates lines that trace water diversions. The text in each step lives in a spreadsheet, but there are also variables that let an editor change the speed of the animation or the color of the lines. Changing those was an editorial choice, so those decisions lived in a place an editor could update if needed.
 
 ## Do you need to build anything?
 
