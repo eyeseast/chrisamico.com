@@ -64,6 +64,7 @@ jobs:
           mkdir -p ~/.config/toot
           echo $MASTODON_AUTH > ~/.config/toot/config.json
           make post
+        continue-on-error: true
 
       - name: export
         run: make dump
