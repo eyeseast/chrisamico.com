@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-02-21T18:10:41.927238');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-02-21T16:26:24.067000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-02-22T00:24:12.954600');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-02-21T19:23:57.238000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -635,6 +635,7 @@ INSERT INTO links VALUES('https://www.grapplearts.com/this-black-belts-advice-wo
 INSERT INTO links VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/','https://chrisamico.newsblur.com/','Opinion | Parents are drowning in paperwork. That’s a real problem.','No one gets into this business because they love filling out forms. Here’s how we could reduce them.','2024-02-21T16:26:24.067000+00:00',NULL,'https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HHCVFKKOVNBF7D4PZMVRF2WH2M_size-normalized.jpg&w=1440"}');
 INSERT INTO links VALUES('https://buzzmachine.com/2024/01/18/make-bell-labs-an-internet-museum/','https://chrisamico.newsblur.com/','Make Bell Labs an internet museum','I wrote an op-ed for NJ.com and the Star-Ledger in New Jersey proposing that the soon-empty Bell Labs should become a Museum and School of the Internet....','2024-02-15T17:09:56.220000+00:00',NULL,'https://buzzmachine.com/2024/01/18/make-bell-labs-an-internet-museum/','{"locale": "en_US", "type": "article", "site_name": "BuzzMachine", "image": "https://buzzmachine.com/wp-content/uploads/bell-labs-pic.png"}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/climate-environment/interactive/2024/can-we-save-nature-with-crazy-shapes/','https://chrisamico.newsblur.com/','Analysis | Can we save nature with crazy shapes?','The U.N. wants to protect 30 percent of the planet. Many of the areas it counts towards that goal are small and oddly shaped. Can contorted shapes save nature?','2024-02-14T12:45:33.382000+00:00',NULL,'https://www.washingtonpost.com/climate-environment/interactive/2024/can-we-save-nature-with-crazy-shapes/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/VTE6MAMDZZB3FOKMRFMDPP4ABE.jpg&w=1200"}');
+INSERT INTO links VALUES('https://stamen.com/manzanar-upclose-in-depth/','https://chrisamico.newsblur.com/','Manzanar UpClose In-Depth | Stamen',NULL,'2024-02-21T19:23:57.238000+00:00',NULL,'https://stamen.com/manzanar-upclose-in-depth/','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
@@ -745,6 +746,15 @@ INSERT INTO mastodon VALUES('https://talkingpointsmemo.com/edblog/the-messenger-
 INSERT INTO mastodon VALUES('https://xkcd.com/2889/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.grapplearts.com/this-black-belts-advice-would-have-killed-me/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.grapplearts.com/this-black-belts-advice-would-have-killed-me/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
+INSERT INTO mastodon VALUES('https://stamen.com/manzanar-upclose-in-depth/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
 INSERT INTO mastodon VALUES('https://www.washingtonpost.com/opinions/2024/02/21/parents-children-how-to-reduce-paperwork/',NULL,'failed',NULL,'''Response'' object is not subscriptable');
