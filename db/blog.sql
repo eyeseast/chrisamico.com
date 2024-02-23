@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-02-22T18:10:51.263950');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-02-21T19:23:57.238000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-02-23T00:23:30.947478');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-02-22T21:56:40.573000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -636,6 +636,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/opinions/2024/02/21/par
 INSERT INTO links VALUES('https://buzzmachine.com/2024/01/18/make-bell-labs-an-internet-museum/','https://chrisamico.newsblur.com/','Make Bell Labs an internet museum','I wrote an op-ed for NJ.com and the Star-Ledger in New Jersey proposing that the soon-empty Bell Labs should become a Museum and School of the Internet....','2024-02-15T17:09:56.220000+00:00',NULL,'https://buzzmachine.com/2024/01/18/make-bell-labs-an-internet-museum/','{"locale": "en_US", "type": "article", "site_name": "BuzzMachine", "image": "https://buzzmachine.com/wp-content/uploads/bell-labs-pic.png"}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/climate-environment/interactive/2024/can-we-save-nature-with-crazy-shapes/','https://chrisamico.newsblur.com/','Analysis | Can we save nature with crazy shapes?','The U.N. wants to protect 30 percent of the planet. Many of the areas it counts towards that goal are small and oddly shaped. Can contorted shapes save nature?','2024-02-14T12:45:33.382000+00:00',NULL,'https://www.washingtonpost.com/climate-environment/interactive/2024/can-we-save-nature-with-crazy-shapes/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/VTE6MAMDZZB3FOKMRFMDPP4ABE.jpg&w=1200"}');
 INSERT INTO links VALUES('https://stamen.com/manzanar-upclose-in-depth/','https://chrisamico.newsblur.com/','Manzanar UpClose In-Depth | Stamen',NULL,'2024-02-21T19:23:57.238000+00:00',NULL,'https://stamen.com/manzanar-upclose-in-depth/','{}');
+INSERT INTO links VALUES('https://www.edibleboston.com/blog/2023/11/8/an-heirloom-finds-its-way-home-return-of-the-worcester-mammoth-bean','https://chrisamico.newsblur.com/','An Heirloom Finds Its Way Home: Return of the Worcester Mammoth Bean — Edible Boston','Photos by Michael Piazza   Jen Burt is reviving a long-forgotten Worcester heirloom, and it’s a big deal. Dare we say “mammoth”?   The Worcester Mammoth Horticulture Bean is large compared to other local bean varieties, and is said to be known for its resilience and high yield. The bean plant itself','2024-02-22T21:56:40.573000+00:00',NULL,'https://www.edibleboston.com/blog/2023/11/8/an-heirloom-finds-its-way-home-return-of-the-worcester-mammoth-bean','{"site_name": "Edible Boston", "type": "article", "image": "http://static1.squarespace.com/static/57f7c21be3df28e37ffbbc26/57fadd2b579fb3dc20187cac/654bf4d5b692515ea50264f5/1700051022448/FEA-W24-MammothBeans-5.jpg?format=1500w", "image:width": "1500", "image:height": "1968"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
