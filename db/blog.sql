@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-05T12:11:37.448520');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-02-24T15:06:36.218000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-05T18:11:07.581097');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-03-05T14:18:53.798000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -640,6 +640,7 @@ INSERT INTO links VALUES('https://www.edibleboston.com/blog/2023/11/8/an-heirloo
 INSERT INTO links VALUES('https://hellgatenyc.com/vice-bankruptcy-executive-salary','https://chrisamico.newsblur.com/','VICE Ran Out of Money (For Everyone Except Its Executives) - Hell Gate','New documents from the VICE bankruptcy proceedings tell a tale as old as digital media.','2024-02-23T18:36:41.139000+00:00',NULL,'https://hellgatenyc.com/vice-bankruptcy-executive-salary','{"type": "article", "image": "https://lede-admin.hellgatenyc.com/wp-content/uploads/sites/43/2023/07/vice.jpg", "image:width": "800", "image:height": "1200"}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/style/media/2024/02/23/wamu-layoffs-dcist-shutdown/','https://chrisamico.newsblur.com/','WAMU shuts down local news site DCist, lays off reporters','The station, a member of the NPR network, acquired DCist in 2018. It now has four journalists, down from 14 last year.','2024-02-23T16:23:23.534000+00:00',NULL,'https://www.washingtonpost.com/style/media/2024/02/23/wamu-layoffs-dcist-shutdown/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/I2LOXXMUET6HSWUZJCL5UZEBV4_size-normalized.jpg&w=1440"}');
 INSERT INTO links VALUES('https://www.nytimes.com/interactive/2024/02/22/magazine/endangered-languages-nyc.html','https://chrisamico.newsblur.com/','The World Capital of Endangered Languages','New York City is home to more threatened languages than anywhere else. One project set out to document them.','2024-02-24T15:06:36.218000+00:00',NULL,'https://www.nytimes.com/interactive/2024/02/22/magazine/endangered-languages-nyc.html','{"type": "article", "image": "https://static01.nyt.com/images/2024/02/25/magazine/25mag-endangered/25mag-endangered-facebookJumbo-v2.jpg", "image:alt": ""}');
+INSERT INTO links VALUES('https://www.titledrops.net/','https://chrisamico.newsblur.com/','Full of Themselves: An analysis of title drops in movies','A title drop is when a character in a movie says the title of the movie they''re in. Here''s a large-scale analysis of 73,921 movies from the last 80 years on how often, when and maybe even why that happens.','2024-03-05T14:18:53.798000+00:00',NULL,'https://www.titledrops.net/','{"image": "https://www.titledrops.net/img/og_image.png"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
