@@ -23,7 +23,7 @@ So, if we want to host our own maps, how do we do it?
 
 Before I dive into this, it's worth remembering what a web map is and how it works. The best free resource on this is [mapschool.io](https://mapschool.io/). Go review that if you need a refresher on projections, rasters versus vectors, heatmaps versus choropleths and other cartography fundamentals. [This explanation of vector tiles](https://github.com/systemed/tilemaker/blob/master/docs/VECTOR_TILES.md) is also worth reading. Maps are complicated and it's ok to feel behind.
 
-### Data for mapping
+## Data for mapping
 
 A map is a representation of data, but what data? There’s a wide range of options, with an increasing array of open and permissively licensed data to draw from. Some key resources that will be particularly useful for self-hosters:
 
@@ -35,7 +35,7 @@ Government sources: **[US Census](https://www.census.gov/)**, **[US Geological S
 
 **[Overture](https://overturemaps.org/)** is a new project that combines OSM, building outlines and point-of-interest (POI) data in an interoperable format. POI data has been especially hard to get until now, because it has the most obvious value to marketers. Google, Mapbox and Foursquare have POI data, but it's expensive and restricted.
 
-### Tiling
+## Tiling
 
 Maps you can pan and zoom work by storing data in square tiles, usually 256 or 512 pixels per side. These can be raster images or vector data, and they can be stored in different archive formats. The main two formats these days are **MBTiles** and **PMTiles**.
 
@@ -57,7 +57,7 @@ The pre-tiled data you download from MapTiler or Protomaps will produce a fairly
 
 All three tools can generate MBTiles or PMTiles.
 
-### Styling and rendering
+## Styling and rendering
 
 At this point, we've found data and split it into tiles. To turn it into an actual map, we need a style and a way to render it in a web browser.
 
@@ -75,7 +75,7 @@ Both MapTiler and Protomaps offer reasonable defaults for a map. This [wildfire 
 
 For further customization, there's [Maputnik], an open-source editor for MapLibre (and Mapbox) styles. Unfortunately, Maputnik [can't work with PMTiles files natively](https://github.com/maplibre/maputnik/issues/807), so it needs an intermediate server that generates `x/y/z` URLs from a PMTiles or MBTiles file.
 
-### Fonts and icons
+## Fonts and icons
 
 Map styles nearly always need fonts and sprite sheets to display things like place names, icons and road shields. This part of the stack is hard to see on its own, and it took me longer than I expected to figure it out, so I'm including a dedicated section here.
 
@@ -91,7 +91,7 @@ If you want to use custom fonts and icons, two tools will generate the files you
 
 [Spreet] has its own [tutorial](https://github.com/flother/spreet?tab=readme-ov-file#tutorial) and lots of examples.
 
-### Hosting and serving
+## Hosting and serving
 
 If you've made it this far, congratulations, you should now have geographic data, turned into tiles, a style to render it and maybe custom fonts and icons. This is a lot, and it's part of the reason there are companies ready to sell you a monthly plan that will do all this for you. There's no shame in paying for a service that saves you time and effort.
 
@@ -101,7 +101,7 @@ If you're using MBTiles, you'll need a server. [Fly.io] will host anything you c
 
 If you generated PMTiles instead, any static file server that can serve [byte-range requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests) with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers will work. The [Protomaps hosting documentation](https://docs.protomaps.com/pmtiles/cloud-storage) lists several options and recommends [Cloudflare R2](https://developers.cloudflare.com/r2/). A small enough tileset will fit on GitHub Pages, which has a total [size limit of 1 GB](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
 
-### Examples
+## Examples
 
 The first time I saw a news organization exploring this approach to self-hosted maps was [Kevin Schaul's work with the Washington Post](https://www.kschaul.com/post/2023/02/16/how-the-post-is-replacing-mapbox-with-open-source-solutions/).
 
