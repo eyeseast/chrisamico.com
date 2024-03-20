@@ -37,7 +37,7 @@ The way you answer those questions today probably won't be the same a year from 
 If you've read this far and you want to make a self-hosted map _today_, I do have something for you. I built [codespaces] on Github with map-tiling dependencies already built.
 
 - [PMTiles + Tippecanoe + Vite + Datasette](https://github.com/eyeseast/self-hosted-maps-codespace): This is what I used in my session. In a few `make` commands, you'll have tiles, fonts and a basic map of Baltimore and all its public trees. I included a basic [Datasette] setup so you can query the tree data independent of the map.
-- [Tilemaker + starter data](https://github.com/eyeseast/tilemaker-map-template): This should get you started with [tilemaker], including the [Natural Earth] data you'll need to render coastlines and populated places.
+- [Tilemaker + starter data](https://github.com/eyeseast/tilemaker-map-template): This should get you started with [tilemaker], including the [Natural Earth](https://www.naturalearthdata.com/) data you'll need to render coastlines and populated places.
 
 Both of these are template repositories, so clone them and use your own data or styles.
 
