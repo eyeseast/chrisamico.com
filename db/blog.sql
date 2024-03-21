@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-21T00:24:40.984094');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-03-16T11:51:34.785000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-21T06:11:07.195453');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-03-21T03:49:49.031000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -645,6 +645,7 @@ INSERT INTO links VALUES('https://www.primalmke.com/blogs/news/wtf-is-ecolgical-
 INSERT INTO links VALUES('https://flaminghydra.com/there-should-be-newspapers-that-we-work-at-where-we-do-this/','https://chrisamico.newsblur.com/','There should be newspapers that we work at where we do this','A conversation with Jonathan Katz','2024-03-11T02:03:14.845000+00:00',NULL,'https://flaminghydra.com/there-should-be-newspapers-that-we-work-at-where-we-do-this/','{"site_name": "Flaming Hydra", "type": "article", "image": "https://flaminghydra.com/content/images/size/w1200/2024/03/serena.jpg", "image:width": "1200", "image:height": "675"}');
 INSERT INTO links VALUES('https://harper.blog/2024/03/11/use-an-llm-to-automagically-generate-meaningful-git-commit-messages/','https://chrisamico.newsblur.com/','Use an llm to automagically generate meaningful git commit messages','I''ve transformed my git commit process by using an AI to automatically generate meaningful messages. This setup involves a nifty integration of the llm CLI and git hooks, saving me time. Now I can fuck off while the robots document my commits','2024-03-13T01:06:52.867000+00:00',NULL,'https://harper.blog/2024/03/11/use-an-llm-to-automagically-generate-meaningful-git-commit-messages/','{"image": "https://harper.blog/images/og.png", "video": "https://harper.blog/images/og.mp4", "video:width": "1280", "video:height": "704", "type": "article"}');
 INSERT INTO links VALUES('https://www.ft.com/content/a7607626-5491-48bd-aa56-5a10cbeeb768','https://chrisamico.newsblur.com/','American politics is undergoing a racial realignment',NULL,'2024-03-16T11:51:34.785000+00:00',NULL,'https://www.ft.com/content/a7607626-5491-48bd-aa56-5a10cbeeb768','{}');
+INSERT INTO links VALUES('https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps','https://chrisamico.newsblur.com/','Open Source Spotlight: Old Insurance Maps — Development Seed',NULL,'2024-03-21T03:49:49.031000+00:00',NULL,'https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
