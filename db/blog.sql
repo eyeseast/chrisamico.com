@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-22T12:11:47.793060');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-22T18:11:04.974169');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-03-21T03:49:49.031000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -646,6 +646,7 @@ INSERT INTO links VALUES('https://flaminghydra.com/there-should-be-newspapers-th
 INSERT INTO links VALUES('https://harper.blog/2024/03/11/use-an-llm-to-automagically-generate-meaningful-git-commit-messages/','https://chrisamico.newsblur.com/','Use an llm to automagically generate meaningful git commit messages','I''ve transformed my git commit process by using an AI to automatically generate meaningful messages. This setup involves a nifty integration of the llm CLI and git hooks, saving me time. Now I can fuck off while the robots document my commits','2024-03-13T01:06:52.867000+00:00',NULL,'https://harper.blog/2024/03/11/use-an-llm-to-automagically-generate-meaningful-git-commit-messages/','{"image": "https://harper.blog/images/og.png", "video": "https://harper.blog/images/og.mp4", "video:width": "1280", "video:height": "704", "type": "article"}');
 INSERT INTO links VALUES('https://www.ft.com/content/a7607626-5491-48bd-aa56-5a10cbeeb768','https://chrisamico.newsblur.com/','American politics is undergoing a racial realignment',NULL,'2024-03-16T11:51:34.785000+00:00',NULL,'https://www.ft.com/content/a7607626-5491-48bd-aa56-5a10cbeeb768','{}');
 INSERT INTO links VALUES('https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps','https://chrisamico.newsblur.com/','Open Source Spotlight: Old Insurance Maps — Development Seed',NULL,'2024-03-21T03:49:49.031000+00:00',NULL,'https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps','{}');
+INSERT INTO links VALUES('https://dicktofel.substack.com/p/what-went-wrong-at-the-center-for','https://www.instapaper.com/liked','What Went Wrong at the Center for Public Integrity?',NULL,'2024-03-21T17:04:28+00:00',NULL,'https://dicktofel.substack.com/p/what-went-wrong-at-the-center-for','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
