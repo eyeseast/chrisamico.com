@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-26T12:11:57.366012');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-03-21T03:49:49.031000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-03-26T18:11:27.900288');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-03-26T16:44:39.951000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -647,6 +647,7 @@ INSERT INTO links VALUES('https://harper.blog/2024/03/11/use-an-llm-to-automagic
 INSERT INTO links VALUES('https://www.ft.com/content/a7607626-5491-48bd-aa56-5a10cbeeb768','https://chrisamico.newsblur.com/','American politics is undergoing a racial realignment',NULL,'2024-03-16T11:51:34.785000+00:00',NULL,'https://www.ft.com/content/a7607626-5491-48bd-aa56-5a10cbeeb768','{}');
 INSERT INTO links VALUES('https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps','https://chrisamico.newsblur.com/','Open Source Spotlight: Old Insurance Maps — Development Seed',NULL,'2024-03-21T03:49:49.031000+00:00',NULL,'https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps','{}');
 INSERT INTO links VALUES('https://dicktofel.substack.com/p/what-went-wrong-at-the-center-for','https://www.instapaper.com/liked','What Went Wrong at the Center for Public Integrity?',NULL,'2024-03-21T17:04:28+00:00',NULL,'https://dicktofel.substack.com/p/what-went-wrong-at-the-center-for','{}');
+INSERT INTO links VALUES('https://andywoodruff.com/posts/2023/eclipse-2024/','https://chrisamico.newsblur.com/','Eclipse 2024 - Andy Woodruff, cartographer','Follow the path of the April 2024 solar eclipse.','2024-03-26T16:44:39.951000+00:00',NULL,'https://andywoodruff.com/posts/2023/eclipse-2024/','{"image": "https://andywoodruff.com/posts/2023/eclipse-2024/images/eclipse_crop.jpg", "type": "article"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
