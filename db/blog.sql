@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-04-02T12:11:47.633271');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-04-01T00:23:40.923000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-04-02T18:10:56.143575');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-04-02T15:09:13.121000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -649,6 +649,7 @@ INSERT INTO links VALUES('https://developmentseed.org/blog/2023-12-01-spotlight-
 INSERT INTO links VALUES('https://dicktofel.substack.com/p/what-went-wrong-at-the-center-for','https://www.instapaper.com/liked','What Went Wrong at the Center for Public Integrity?',NULL,'2024-03-21T17:04:28+00:00',NULL,'https://dicktofel.substack.com/p/what-went-wrong-at-the-center-for','{}');
 INSERT INTO links VALUES('https://andywoodruff.com/posts/2023/eclipse-2024/','https://chrisamico.newsblur.com/','Eclipse 2024 - Andy Woodruff, cartographer','Follow the path of the April 2024 solar eclipse.','2024-03-26T16:44:39.951000+00:00',NULL,'https://andywoodruff.com/posts/2023/eclipse-2024/','{"image": "https://andywoodruff.com/posts/2023/eclipse-2024/images/eclipse_crop.jpg", "type": "article"}');
 INSERT INTO links VALUES('https://simonwillison.net/2024/Mar/30/ocr-pdfs-images/','https://chrisamico.newsblur.com/','Running OCR against PDFs and images directly in your browser','I attended the Story Discovery At Scale data journalism conference at Stanford this week. One of the perennial hot topics at any journalism conference concerns data extraction: how can we …','2024-04-01T00:23:40.923000+00:00',NULL,'https://simonwillison.net/2024/Mar/30/ocr-pdfs-images/','{"image": "https://static.simonwillison.net/static/2024/ocr-card.png", "type": "article", "updated_time": "1711821596"}');
+INSERT INTO links VALUES('https://dankennedy.net/2024/04/01/israel-must-be-held-into-account-for-the-targeting-and-killing-of-journalists/','https://chrisamico.newsblur.com/','Israel must be held to account for the targeting and killing of journalists','CNN media reporter Oliver Darcy wrote an important analysis last week about journalists who have been killed by Israeli forces in the the Gaza war. Citing figures from the Committee to Protect Jour…','2024-04-02T15:09:13.121000+00:00',NULL,'https://dankennedy.net/2024/04/01/israel-must-be-held-into-account-for-the-targeting-and-killing-of-journalists/','{"type": "article", "site_name": "Media Nation", "image": "https://dankennedy.net/wp-content/uploads/2024/04/52980648143_c83a7c7584_k.jpg", "image:width": "2048", "image:height": "1536", "image:alt": "", "locale": "en_US"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
