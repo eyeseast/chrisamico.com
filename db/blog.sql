@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-04-16T18:11:03.462061');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-04-17T00:24:43.242501');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-04-08T13:25:46.890000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
