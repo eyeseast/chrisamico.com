@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-07T06:11:20.879444');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-07T18:11:16.005053');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-05T17:29:36.074000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -661,6 +661,7 @@ INSERT INTO links VALUES('https://combatlearning.substack.com/p/what-makes-the-e
 INSERT INTO links VALUES('https://www.polygon.com/star-wars/2019/5/18/18629598/phantom-menace-star-wars-prequels-expanded-universe-best-books-tv-series-comics','https://chrisamico.newsblur.com/','Star Wars’ Expanded Universe helped rescue Phantom Menace and the prequel trilogy','The Phantom Menace is back in theaters — and it looks different now, after 25 years of support material','2024-05-05T17:29:36.074000+00:00',NULL,'https://www.polygon.com/star-wars/2019/5/18/18629598/phantom-menace-star-wars-prequels-expanded-universe-best-books-tv-series-comics','{"image": "https://cdn.vox-cdn.com/thumbor/ya_o9_PpCqkQk5RZPLHDGjA8ZvE=/108x0:2400x1200/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/16285553/Star_Wars_Episode_1_The_Phantom_Menace_1999_Teaser_2400x1200_526689992658.jpg", "image:alt": "star wars the phantom menace teaser poster", "image:height": "630", "image:width": "1200", "site_name": "Polygon", "type": "article"}');
 INSERT INTO links VALUES('https://www.nytimes.com/2024/05/03/arts/star-wars-films-george-lucas.html?pgtype=Article&action=click&module=RelatedLinks','https://chrisamico.newsblur.com/','How ‘Star Wars’ Fan Edits Saved the Original Movies',NULL,'2024-05-05T13:33:00.125000+00:00',NULL,'https://www.nytimes.com/2024/05/03/arts/star-wars-films-george-lucas.html?pgtype=Article&action=click&module=RelatedLinks','{}');
 INSERT INTO links VALUES('https://www.nytimes.com/2024/05/03/movies/jar-jar-binks-actor-star-wars-ahmed-best.html','https://chrisamico.newsblur.com/','Ahmed Best, the Actor Behind Jar Jar Binks, Is Proud of His ‘Star Wars’ Legacy',NULL,'2024-05-05T13:26:18.698000+00:00',NULL,'https://www.nytimes.com/2024/05/03/movies/jar-jar-binks-actor-star-wars-ahmed-best.html','{}');
+INSERT INTO links VALUES('https://dbushell.com/2024/05/07/modern-wordpress-themes-yikes/','https://www.instapaper.com/liked','Modern WordPress - Yikes! – David Bushell – Freelance Web Design (UK)','The one where I share my dislike for WordPress (again)','2024-05-07T17:45:55+00:00',NULL,'https://dbushell.com/2024/05/07/modern-wordpress-themes-yikes/','{"image": "https://dbushell.com/assets/icons/512x512.png", "site_name": "dbushell.com"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
