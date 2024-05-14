@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-13T18:11:04.487447');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-05T17:29:36.074000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-14T00:25:16.451889');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-13T19:17:34.966000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -662,6 +662,7 @@ INSERT INTO links VALUES('https://www.polygon.com/star-wars/2019/5/18/18629598/p
 INSERT INTO links VALUES('https://www.nytimes.com/2024/05/03/arts/star-wars-films-george-lucas.html?pgtype=Article&action=click&module=RelatedLinks','https://chrisamico.newsblur.com/','How ‘Star Wars’ Fan Edits Saved the Original Movies',NULL,'2024-05-05T13:33:00.125000+00:00',NULL,'https://www.nytimes.com/2024/05/03/arts/star-wars-films-george-lucas.html?pgtype=Article&action=click&module=RelatedLinks','{}');
 INSERT INTO links VALUES('https://www.nytimes.com/2024/05/03/movies/jar-jar-binks-actor-star-wars-ahmed-best.html','https://chrisamico.newsblur.com/','Ahmed Best, the Actor Behind Jar Jar Binks, Is Proud of His ‘Star Wars’ Legacy',NULL,'2024-05-05T13:26:18.698000+00:00',NULL,'https://www.nytimes.com/2024/05/03/movies/jar-jar-binks-actor-star-wars-ahmed-best.html','{}');
 INSERT INTO links VALUES('https://dbushell.com/2024/05/07/modern-wordpress-themes-yikes/','https://www.instapaper.com/liked','Modern WordPress - Yikes! – David Bushell – Freelance Web Design (UK)','The one where I share my dislike for WordPress (again)','2024-05-07T17:45:55+00:00',NULL,'https://dbushell.com/2024/05/07/modern-wordpress-themes-yikes/','{"image": "https://dbushell.com/assets/icons/512x512.png", "site_name": "dbushell.com"}');
+INSERT INTO links VALUES('https://apps.npr.org/plant-hardiness-garden-map/?name=Boston&state=MA&lng=-71.06161064&lat=42.36203075','https://chrisamico.newsblur.com/','The USDA’s gardening zones shifted. This map shows you what’s changed in vivid detail','There''s a good chance your zone shifted when the USDA updated its plant hardiness map in 2023. Zoom in on what that means for your garden.','2024-05-13T19:17:34.966000+00:00',NULL,'https://apps.npr.org/plant-hardiness-garden-map/','{"type": "article", "site_name": "NPR", "image": "https://apps.npr.org/plant-hardiness-garden-map/assets/synced/promo.jpg"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
