@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-15T18:11:13.816934');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-13T19:17:34.966000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-16T00:25:22.103818');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-15T19:30:10.785000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -663,6 +663,7 @@ INSERT INTO links VALUES('https://www.nytimes.com/2024/05/03/arts/star-wars-film
 INSERT INTO links VALUES('https://www.nytimes.com/2024/05/03/movies/jar-jar-binks-actor-star-wars-ahmed-best.html','https://chrisamico.newsblur.com/','Ahmed Best, the Actor Behind Jar Jar Binks, Is Proud of His ‘Star Wars’ Legacy',NULL,'2024-05-05T13:26:18.698000+00:00',NULL,'https://www.nytimes.com/2024/05/03/movies/jar-jar-binks-actor-star-wars-ahmed-best.html','{}');
 INSERT INTO links VALUES('https://dbushell.com/2024/05/07/modern-wordpress-themes-yikes/','https://www.instapaper.com/liked','Modern WordPress - Yikes! – David Bushell – Freelance Web Design (UK)','The one where I share my dislike for WordPress (again)','2024-05-07T17:45:55+00:00',NULL,'https://dbushell.com/2024/05/07/modern-wordpress-themes-yikes/','{"image": "https://dbushell.com/assets/icons/512x512.png", "site_name": "dbushell.com"}');
 INSERT INTO links VALUES('https://apps.npr.org/plant-hardiness-garden-map/?name=Boston&state=MA&lng=-71.06161064&lat=42.36203075','https://chrisamico.newsblur.com/','The USDA’s gardening zones shifted. This map shows you what’s changed in vivid detail','There''s a good chance your zone shifted when the USDA updated its plant hardiness map in 2023. Zoom in on what that means for your garden.','2024-05-13T19:17:34.966000+00:00',NULL,'https://apps.npr.org/plant-hardiness-garden-map/','{"type": "article", "site_name": "NPR", "image": "https://apps.npr.org/plant-hardiness-garden-map/assets/synced/promo.jpg"}');
+INSERT INTO links VALUES('https://www.zachseward.com/migration-is-about-migrants/','https://chrisamico.newsblur.com/','Migration is about migrants','In praise of news organizations that understand whose "crisis" to focus on.','2024-05-15T19:30:10.785000+00:00',NULL,'https://www.zachseward.com/migration-is-about-migrants/','{"site_name": "Zach Seward", "type": "article", "image": "https://www.zachseward.com/content/images/size/w1200/2023/09/Migrant-Crisis-WNBC-4-2.jpg", "image:width": "1200", "image:height": "675"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
