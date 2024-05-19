@@ -55,7 +55,7 @@ Leaflet is an older mapping engine than Mapbox or Maplibre. Leaflet _can_ handle
 
 The core problem is that generating and storing millions of image tiles is slow and expensive. If you need to render a street map using image tiles, running Maptiler's [tileserver-gl](https://github.com/maptiler/tileserver-gl) is probably the best solution. Be sure to put it behind a caching proxy so you're not regenerating image tiles constantly.
 
-Another project I need to look into: [TiTiler](https://developmentseed.org/titiler/), which turns cloud-optimized geotiffs (COGs) into tiles on the fly. This is another problem I haven't needed to solve yet, but maybe you have. To see it in action, check out [OldInsuranceMaps.net](https://oldinsurancemaps.net/) and read [this writeup on Development Seed](https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps).
+Another project I need to look into: [TiTiler](https://developmentseed.org/titiler/), which turns [cloud-optimized geotiffs (COGs)](https://www.cogeo.org/) into tiles on the fly. This is another problem I haven't needed to solve yet, but maybe you have. To see it in action, check out [OldInsuranceMaps.net](https://oldinsurancemaps.net/) and read [this writeup on Development Seed](https://developmentseed.org/blog/2023-12-01-spotlight-oldinsurancemaps).
 
 ## Directions and Isochrones
 
