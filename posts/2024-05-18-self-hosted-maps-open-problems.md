@@ -23,7 +23,7 @@ There are other mapping problems, though, that don't have ready solutions, or ha
 - Geocoding
 - Legends and other bespoke controls
 
-(I posted about this a while ago [on Mastodo](https://journa.host/@chrisamico/112128744346351870) and got a few answers.)
+(I posted about this a while ago [on Mastodon](https://journa.host/@chrisamico/112128744346351870) and got a few answers.)
 
 ## Satellite images
 
