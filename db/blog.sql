@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-19T18:11:09.490045');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-18T19:21:23.926000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-20T00:25:51.720649');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-19T23:14:52.389000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -666,6 +666,8 @@ INSERT INTO links VALUES('https://apps.npr.org/plant-hardiness-garden-map/?name=
 INSERT INTO links VALUES('https://www.zachseward.com/migration-is-about-migrants/','https://chrisamico.newsblur.com/','Migration is about migrants','In praise of news organizations that understand whose "crisis" to focus on.','2024-05-15T19:30:10.785000+00:00',NULL,'https://www.zachseward.com/migration-is-about-migrants/','{"site_name": "Zach Seward", "type": "article", "image": "https://www.zachseward.com/content/images/size/w1200/2023/09/Migrant-Crisis-WNBC-4-2.jpg", "image:width": "1200", "image:height": "675"}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2024/05/16/sober-ai.html','https://chrisamico.newsblur.com/','A Plea for Sober AI','The hype is so loud we can’t appreciate the magic','2024-05-17T02:25:29.542000+00:00',NULL,'https://www.dbreunig.com/2024/05/16/sober-ai.html','{"locale": "en_US", "site_name": "Drew Breunig", "type": "article"}');
 INSERT INTO links VALUES('https://defector.com/the-judgment-of-magneto','https://chrisamico.newsblur.com/','The Judgment Of Magneto | Defector','Somewhere beyond death, in a realm of judgment and pain, a concrete labyrinth filled by countless names, a man walks. He is Jewish, and has been made hard and cruel by his experiences in the Nazi death camps. He’s also a mutant, gifted with the power to manipulate metal and the electromagnetic spectrum. Since his […]','2024-05-18T19:21:23.926000+00:00',NULL,'https://defector.com/the-judgment-of-magneto','{"type": "article", "image": "https://lede-admin.defector.com/wp-content/uploads/sites/28/2024/04/Magneto-1.jpg", "image:width": "1000", "image:height": "2000"}');
+INSERT INTO links VALUES('https://www.vulture.com/2019/06/dark-phoenix-how-the-x-men-magneto-became-jewish.html','https://chrisamico.newsblur.com/','How Magneto Became Jewish','As the X-Men movie saga comes to an end with Dark Phoenix, it’s worth remembering how it began — with the darkest chapter in Jewish history.','2024-05-19T23:14:52.389000+00:00',NULL,'https://www.vulture.com/2019/06/dark-phoenix-how-the-x-men-magneto-became-jewish.html','{"image": "https://pyxis.nymag.com/v1/imgs/cce/d45/a633c21b9cf6db4aa3fa578e4881e01423-dave-cockrum-1.1x.rsocial.w1200.jpg", "site_name": "Vulture", "type": "article"}');
+INSERT INTO links VALUES('https://fog.today/','https://chrisamico.newsblur.com/','Fog Today','Is it sunny at the beach? Check the latest fog conditions in the Bay Area with Fog Today.','2024-05-19T21:30:07.747000+00:00',NULL,'https://fog.today','{"image": "https://fog.today/current.jpg"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
