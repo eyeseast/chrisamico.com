@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-28T12:11:43.728583');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-22T19:29:37.060000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-28T18:10:32.164469');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-28T14:19:54.574000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -673,6 +673,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/business/interactive/20
 INSERT INTO links VALUES('https://protomaps.com/blog/you-might-not-want-pmtiles/','https://chrisamico.newsblur.com/','You Might Not Want PMTiles',replace('PMTiles is the open archive format that underlies the Protomaps ecosystem. It’s a single file that enables deploying an entire world map as a static artifact, making mapping accessible to the widest audience of front-end developers and neogeographers.\nHowever, PMTiles isn’t the right solution for all mapping applications.\nPMTiles is made for web-based viewing of large, mostly static datasets., for example:\nbase maps built from OpenStreetMap data. An interactive exploration of building ages in Seoul by Hanbyul Jo.','\n',char(10)),'2024-05-22T13:44:59.835000+00:00',NULL,'https://protomaps.com/blog/you-might-not-want-pmtiles/','{"type": "article", "image": "https://protomaps.com/blog/you-might-not-want-pmtiles/cover.jpg"}');
 INSERT INTO links VALUES('https://www.bostonglobe.com/2024/05/22/business/gbh-layoffs/?s_campaign=breakingnews:newsletter','https://chrisamico.newsblur.com/','GBH lays off 31 employees, suspends production of 3 TV shows - The Boston Globe','The job losses affected 13 departments and represented 4 percent of the workforce.','2024-05-22T19:29:37.060000+00:00',NULL,'https://www.bostonglobe.com/2024/05/22/business/gbh-layoffs/','{"site_name": "BostonGlobe.com", "type": "article", "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/q4tpevzXjyjB3aMCxCn3kNiL4Ao=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/REZ5WXWRQ3SUB4BNSEJ6JFHJEU.jpg", "pixelID": "884869448226452"}');
 INSERT INTO links VALUES('https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page','https://www.instapaper.com/liked','The Revenge of the Home Page','As social networks become less reliable distributors of the news, consumers of digital journalism are seeking out an older form of online real estate.','2024-05-11T23:31:01+00:00',NULL,'https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page','{"image": "https://media.newyorker.com/photos/66316e08c5215e0db8f8688b/16:9/w_1280,c_limit/Chayka_Homepage_still_edit4.jpg", "site_name": "The New Yorker", "type": "article"}');
+INSERT INTO links VALUES('https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','https://chrisamico.newsblur.com/','Ken Burns: “Be curious, not cool. Insecurity makes liars of us all.”',NULL,'2024-05-28T14:19:54.574000+00:00',NULL,'https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','{"description": ""}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
