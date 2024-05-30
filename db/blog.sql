@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-30T00:25:53.148469');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-28T14:19:54.574000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-05-30T06:11:04.719499');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-30T01:08:38.304000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -674,6 +674,7 @@ INSERT INTO links VALUES('https://protomaps.com/blog/you-might-not-want-pmtiles/
 INSERT INTO links VALUES('https://www.bostonglobe.com/2024/05/22/business/gbh-layoffs/?s_campaign=breakingnews:newsletter','https://chrisamico.newsblur.com/','GBH lays off 31 employees, suspends production of 3 TV shows - The Boston Globe','The job losses affected 13 departments and represented 4 percent of the workforce.','2024-05-22T19:29:37.060000+00:00',NULL,'https://www.bostonglobe.com/2024/05/22/business/gbh-layoffs/','{"site_name": "BostonGlobe.com", "type": "article", "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/q4tpevzXjyjB3aMCxCn3kNiL4Ao=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/REZ5WXWRQ3SUB4BNSEJ6JFHJEU.jpg", "pixelID": "884869448226452"}');
 INSERT INTO links VALUES('https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page','https://www.instapaper.com/liked','The Revenge of the Home Page','As social networks become less reliable distributors of the news, consumers of digital journalism are seeking out an older form of online real estate.','2024-05-11T23:31:01+00:00',NULL,'https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page','{"image": "https://media.newyorker.com/photos/66316e08c5215e0db8f8688b/16:9/w_1280,c_limit/Chayka_Homepage_still_edit4.jpg", "site_name": "The New Yorker", "type": "article"}');
 INSERT INTO links VALUES('https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','https://chrisamico.newsblur.com/','Ken Burns: “Be curious, not cool. Insecurity makes liars of us all.”',NULL,'2024-05-28T14:19:54.574000+00:00',NULL,'https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','{"description": ""}');
+INSERT INTO links VALUES('http://blog.apps.npr.org/2024/05/29/marker-comic.html','https://chrisamico.newsblur.com/','How I make news comics','William L. Moore was murdered on a civil rights protest walk. Here''s how I made a comic about one man''s campaign to create a marker about it.','2024-05-30T01:08:38.304000+00:00',NULL,'http://blog.apps.npr.org/2024/05/29/marker-comic.html','{"type": "article", "image": "http://blog.apps.npr.org/img/posts/2024-05-29-marker-comic/promo.jpg"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
