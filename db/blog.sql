@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-01T18:10:42.731149');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-05-30T01:08:38.304000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-02T00:28:03.366419');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-06-01T22:18:33.553000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -675,6 +675,7 @@ INSERT INTO links VALUES('https://www.bostonglobe.com/2024/05/22/business/gbh-la
 INSERT INTO links VALUES('https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page','https://www.instapaper.com/liked','The Revenge of the Home Page','As social networks become less reliable distributors of the news, consumers of digital journalism are seeking out an older form of online real estate.','2024-05-11T23:31:01+00:00',NULL,'https://www.newyorker.com/culture/infinite-scroll/the-revenge-of-the-home-page','{"image": "https://media.newyorker.com/photos/66316e08c5215e0db8f8688b/16:9/w_1280,c_limit/Chayka_Homepage_still_edit4.jpg", "site_name": "The New Yorker", "type": "article"}');
 INSERT INTO links VALUES('https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','https://chrisamico.newsblur.com/','Ken Burns: “Be curious, not cool. Insecurity makes liars of us all.”',NULL,'2024-05-28T14:19:54.574000+00:00',NULL,'https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','{"description": ""}');
 INSERT INTO links VALUES('http://blog.apps.npr.org/2024/05/29/marker-comic.html','https://chrisamico.newsblur.com/','How I make news comics','William L. Moore was murdered on a civil rights protest walk. Here''s how I made a comic about one man''s campaign to create a marker about it.','2024-05-30T01:08:38.304000+00:00',NULL,'http://blog.apps.npr.org/2024/05/29/marker-comic.html','{"type": "article", "image": "http://blog.apps.npr.org/img/posts/2024-05-29-marker-comic/promo.jpg"}');
+INSERT INTO links VALUES('https://www.grapplearts.com/the-real-benefit-of-training-jiu-jitsu/','https://chrisamico.newsblur.com/','The Real Benefit of Training Jiu-Jitsu',NULL,'2024-06-01T22:18:33.553000+00:00',NULL,'https://www.grapplearts.com/the-real-benefit-of-training-jiu-jitsu/','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
