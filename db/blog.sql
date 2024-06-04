@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-04T12:11:40.122905');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-06-01T22:18:33.553000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-04T18:10:57.328967');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-06-04T17:34:21.755000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -676,6 +676,7 @@ INSERT INTO links VALUES('https://www.newyorker.com/culture/infinite-scroll/the-
 INSERT INTO links VALUES('https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','https://chrisamico.newsblur.com/','Ken Burns: “Be curious, not cool. Insecurity makes liars of us all.”',NULL,'2024-05-28T14:19:54.574000+00:00',NULL,'https://alumni.brandeis.edu/news/2024/commencement/ken-burns-remarks-video.html','{"description": ""}');
 INSERT INTO links VALUES('http://blog.apps.npr.org/2024/05/29/marker-comic.html','https://chrisamico.newsblur.com/','How I make news comics','William L. Moore was murdered on a civil rights protest walk. Here''s how I made a comic about one man''s campaign to create a marker about it.','2024-05-30T01:08:38.304000+00:00',NULL,'http://blog.apps.npr.org/2024/05/29/marker-comic.html','{"type": "article", "image": "http://blog.apps.npr.org/img/posts/2024-05-29-marker-comic/promo.jpg"}');
 INSERT INTO links VALUES('https://www.grapplearts.com/the-real-benefit-of-training-jiu-jitsu/','https://chrisamico.newsblur.com/','The Real Benefit of Training Jiu-Jitsu',NULL,'2024-06-01T22:18:33.553000+00:00',NULL,'https://www.grapplearts.com/the-real-benefit-of-training-jiu-jitsu/','{}');
+INSERT INTO links VALUES('https://chinadigitaltimes.net/2024/06/censorship-surveillance-and-detentions-in-hong-kong-ahead-of-35th-anniversary-of-tiananmen-massacre/','https://chrisamico.newsblur.com/','Censorship, Surveillance, and Detentions in Hong Kong Ahead of 35th Anniversary of Tiananmen Massacre','For decades on June 4, Hongkongers rallied in their thousands at the city’s Victoria Park to commemorate the anniversary of the 1989 Tiananmen Massacre. Hong Kong was the only location in China where such large-scale public vigils could take place. But following the imposition of the 2020 National Security Law, authorities have prohibited the annual […]','2024-06-04T17:34:21.755000+00:00',NULL,'https://chinadigitaltimes.net/2024/06/censorship-surveillance-and-detentions-in-hong-kong-ahead-of-35th-anniversary-of-tiananmen-massacre/','{"locale": "en_US", "type": "article", "site_name": "China Digital Times (CDT)", "image": "https://chinadigitaltimes.net/wp-content/uploads/2021/08/CDT-logo.png", "image:width": "186", "image:height": "177", "image:type": "image/png"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
