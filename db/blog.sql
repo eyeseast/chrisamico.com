@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-10T12:11:32.927998');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-06-06T00:48:21.750000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-10T18:11:05.490330');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-06-10T15:45:19.671000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -678,6 +678,7 @@ INSERT INTO links VALUES('http://blog.apps.npr.org/2024/05/29/marker-comic.html'
 INSERT INTO links VALUES('https://www.grapplearts.com/the-real-benefit-of-training-jiu-jitsu/','https://chrisamico.newsblur.com/','The Real Benefit of Training Jiu-Jitsu',NULL,'2024-06-01T22:18:33.553000+00:00',NULL,'https://www.grapplearts.com/the-real-benefit-of-training-jiu-jitsu/','{}');
 INSERT INTO links VALUES('https://chinadigitaltimes.net/2024/06/censorship-surveillance-and-detentions-in-hong-kong-ahead-of-35th-anniversary-of-tiananmen-massacre/','https://chrisamico.newsblur.com/','Censorship, Surveillance, and Detentions in Hong Kong Ahead of 35th Anniversary of Tiananmen Massacre','For decades on June 4, Hongkongers rallied in their thousands at the city’s Victoria Park to commemorate the anniversary of the 1989 Tiananmen Massacre. Hong Kong was the only location in China where such large-scale public vigils could take place. But following the imposition of the 2020 National Security Law, authorities have prohibited the annual […]','2024-06-04T17:34:21.755000+00:00',NULL,'https://chinadigitaltimes.net/2024/06/censorship-surveillance-and-detentions-in-hong-kong-ahead-of-35th-anniversary-of-tiananmen-massacre/','{"locale": "en_US", "type": "article", "site_name": "China Digital Times (CDT)", "image": "https://chinadigitaltimes.net/wp-content/uploads/2021/08/CDT-logo.png", "image:width": "186", "image:height": "177", "image:type": "image/png"}');
 INSERT INTO links VALUES('https://www.cjr.org/the_media_today/qa_xiao_qiang_anniversary_tiananmen_china_free_expression.php','https://chrisamico.newsblur.com/','Q&amp;A: Xiao Qiang on the anniversary of Tiananmen Square and the right to information in China',NULL,'2024-06-06T00:48:21.750000+00:00',NULL,'https://www.cjr.org/the_media_today/qa_xiao_qiang_anniversary_tiananmen_china_free_expression.php','{}');
+INSERT INTO links VALUES('https://www.cnbc.com/2024/06/06/supreme-court-justices-millions-dollars-gifts-clarence-thomas.html','https://chrisamico.newsblur.com/','Supreme Court Justice Clarence Thomas accepted gifts worth millions of dollars over 20 years, analysis finds','The justice took gifts worth a total nearly 10 times the value of all gifts received by his fellow justices during the same time, according to a new analysis. ','2024-06-10T15:45:19.671000+00:00',NULL,'https://www.cnbc.com/2024/06/06/supreme-court-justices-millions-dollars-gifts-clarence-thomas.html','{"type": "article", "site_name": "CNBC", "image": "https://image.cnbcfm.com/api/v1/image/106873214-16192052930271-2021-04-23T185916Z-150551797-RC2U1N9O1IM4-RTRMADP-3-USA-COURT-jpg?v=1683643767&w=1920&h=1080"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
