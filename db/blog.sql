@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-27T00:26:08.177580');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-06-25T01:41:39.871000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-06-27T06:11:11.543619');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-06-27T01:34:50.487000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -682,6 +682,7 @@ INSERT INTO links VALUES('https://www.cnbc.com/2024/06/06/supreme-court-justices
 INSERT INTO links VALUES('https://www.theatlantic.com/technology/archive/2024/06/electric-car-battery-longevity-right-to-repair/678641/','https://chrisamico.newsblur.com/','EVs Could Last Nearly Forever—If Car Companies Let Them','An electric car capable of running for 1 million miles is within reach.','2024-06-15T02:11:51.944000+00:00',NULL,'https://www.theatlantic.com/technology/archive/2024/06/electric-car-battery-longevity-right-to-repair/678641/','{"site_name": "The Atlantic", "locale": "en_US", "type": "article", "image": "https://cdn.theatlantic.com/thumbor/FLpRuP_zrOOOAnVDhQXdmFBbPD0=/0x43:2000x1085/1200x625/media/img/mt/2024/06/EVs_infinite/original.png"}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/weather/interactive/2023/heat-waves-map-us-tracker/','https://chrisamico.newsblur.com/','Where extreme heat will pose the biggest threat: Look up your city','See in maps how heat waves and dangerous temperatures will affect your city this summer. Track the temperatures and extreme heat wave risk in your area.','2024-06-18T14:40:40.577000+00:00',NULL,'https://www.washingtonpost.com/weather/interactive/2023/heat-waves-map-us-tracker/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/55MQWKE7HZBMHBDBQ4MKRXBPOI.jpg&w=1200"}');
 INSERT INTO links VALUES('https://pudding.cool/2024/06/climate-zones','https://chrisamico.newsblur.com/','Climate Zones',NULL,'2024-06-25T01:41:39.871000+00:00',NULL,'https://pudding.cool/2024/06/climate-zones','{}');
+INSERT INTO links VALUES('https://latenighter.com/news/paramount-axes-comedy-central-website-show-clips-library/','https://chrisamico.newsblur.com/','Paramount Axes Comedy Central Site, 25+ Years of Daily Show Clips Gone','One of the richest repositories of late-night videos—including 25 years of clips from ''The Daily Show'' and the entire run of ''The Colbert Report''—is no longer.','2024-06-27T01:34:50.487000+00:00',NULL,'https://latenighter.com/news/paramount-axes-comedy-central-website-show-clips-library/','{"locale": "en_US", "type": "article", "site_name": "LateNighter", "image": "https://latenighter.com/wp-content/uploads/2024/06/dailyshow.jpg", "image:width": "1500", "image:height": "1000", "image:type": "image/jpeg"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
