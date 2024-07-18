@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-07-18T12:11:54.590756');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-07-17T15:25:34.580000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-07-18T18:11:28.077116');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-07-18T14:02:54.668000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -686,6 +686,7 @@ INSERT INTO links VALUES('https://latenighter.com/news/paramount-axes-comedy-cen
 INSERT INTO links VALUES('https://www.nytimes.com/2024/06/15/upshot/congestion-pricing-cities-history.html','https://chrisamico.newsblur.com/','The Momentous Decision New York Almost Made',NULL,'2024-06-27T13:17:41.572000+00:00',NULL,'https://www.nytimes.com/2024/06/15/upshot/congestion-pricing-cities-history.html','{}');
 INSERT INTO links VALUES('https://jtarchie.com/posts/2024-07-02-optimizing-large-scale-openstreetmap-data-with-sqlite','https://chrisamico.newsblur.com/','Optimizing Large-Scale OpenStreetMap Data with SQLite',NULL,'2024-07-04T02:21:50.362000+00:00',NULL,'https://jtarchie.com/posts/2024-07-02-optimizing-large-scale-openstreetmap-data-with-sqlite','{}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/world/2024/07/17/hong-kong-wall-street-journal-press/','https://chrisamico.newsblur.com/','Wall Street Journal fires Hong Kong reporter who headed embattled press club ','The Hong Kong Journalists Association has been accused in recent weeks by state-run media outlets in Hong Kong and China of destabilizing the city.','2024-07-17T15:25:34.580000+00:00',NULL,'https://www.washingtonpost.com/world/2024/07/17/hong-kong-wall-street-journal-press/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7HRK3WFMIHKLTQO7ON4CQQRJAQ.JPG&w=1440"}');
+INSERT INTO links VALUES('https://www.polygon.com/24196597/free-george-r-r-martin-grrm-winds-of-winter-game-of-thrones-book-deadline','https://chrisamico.newsblur.com/','Free George R. R. Martin from The Winds of Winter','It might be time to let go.','2024-07-18T14:02:54.668000+00:00',NULL,'https://www.polygon.com/24196597/free-george-r-r-martin-grrm-winds-of-winter-game-of-thrones-book-deadline','{"image": "https://cdn.vox-cdn.com/thumbor/UDL5LKwCu_WYWstsSlV-JC5GXRo=/0x256:2500x1565/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25528529/grrm_prison.jpg", "image:alt": "A graphic depicting George R.R. Martin behind bars", "image:height": "630", "image:width": "1200", "site_name": "Polygon", "type": "article"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
