@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-07-28T00:30:48.642287');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-07-21T17:46:16.625000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-07-28T06:11:22.997998');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-07-28T02:01:06.537000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -689,6 +689,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/world/2024/07/17/hong-k
 INSERT INTO links VALUES('https://www.polygon.com/24196597/free-george-r-r-martin-grrm-winds-of-winter-game-of-thrones-book-deadline','https://chrisamico.newsblur.com/','Free George R. R. Martin from The Winds of Winter','It might be time to let go.','2024-07-18T14:02:54.668000+00:00',NULL,'https://www.polygon.com/24196597/free-george-r-r-martin-grrm-winds-of-winter-game-of-thrones-book-deadline','{"image": "https://cdn.vox-cdn.com/thumbor/UDL5LKwCu_WYWstsSlV-JC5GXRo=/0x256:2500x1565/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25528529/grrm_prison.jpg", "image:alt": "A graphic depicting George R.R. Martin behind bars", "image:height": "630", "image:width": "1200", "site_name": "Polygon", "type": "article"}');
 INSERT INTO links VALUES('https://samwho.dev/load-balancing/','https://chrisamico.newsblur.com/','Load Balancing','A bottom-up, animated guide to HTTP load balancing algorithms.','2024-07-21T17:46:16.625000+00:00',NULL,'https://samwho.dev/load-balancing/','{"image": "https://samwho.dev/images/load-balancing-card.png?h=2703ab1eefd58d7ba55b", "type": "article", "published_date": "2023-04-10", "author": "Sam Rose"}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/style/media/2024/07/16/51st-local-news-dcist-wamu/?fbclid=IwZXh0bgNhZW0CMTAAAR0bmt6o_jGaNdgqpMfh59XYVv4wMSroJW4P3-EkSWLuxnWothY3AxZi5Ck_aem_2fD09X0sWxIoE3pzhDPyVw','https://chrisamico.newsblur.com/','Former DCist staff launch the 51st, new local news site for Washington','The 51st is a worker-run newsroom that will attempt to fill a niche its founders say opened when WAMU closed DCist.','2024-07-21T17:35:36.703000+00:00',NULL,'https://www.washingtonpost.com/style/media/2024/07/16/51st-local-news-dcist-wamu/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TG2GWOXR4BDDQY5YZOC6B5UMCY.jpg&w=1440"}');
+INSERT INTO links VALUES('https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/','https://chrisamico.newsblur.com/','AI crawlers need to be more respectful','We talk a bit about the AI crawler abuse we are seeing at Read the Docs, and warn that this behavior is not sustainable.','2024-07-28T02:01:06.537000+00:00',NULL,'https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/','{"site_name": "Read the Docs", "type": "article", "image": "https://about.readthedocs.com/images/headers/ai-crawlers.jpg"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
