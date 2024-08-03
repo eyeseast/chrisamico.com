@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-08-02T18:11:45.247398');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-07-29T12:55:12.029000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-08-03T00:27:18.115104');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-08-02T22:32:08.165000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -691,6 +691,7 @@ INSERT INTO links VALUES('https://samwho.dev/load-balancing/','https://chrisamic
 INSERT INTO links VALUES('https://www.washingtonpost.com/style/media/2024/07/16/51st-local-news-dcist-wamu/?fbclid=IwZXh0bgNhZW0CMTAAAR0bmt6o_jGaNdgqpMfh59XYVv4wMSroJW4P3-EkSWLuxnWothY3AxZi5Ck_aem_2fD09X0sWxIoE3pzhDPyVw','https://chrisamico.newsblur.com/','Former DCist staff launch the 51st, new local news site for Washington','The 51st is a worker-run newsroom that will attempt to fill a niche its founders say opened when WAMU closed DCist.','2024-07-21T17:35:36.703000+00:00',NULL,'https://www.washingtonpost.com/style/media/2024/07/16/51st-local-news-dcist-wamu/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TG2GWOXR4BDDQY5YZOC6B5UMCY.jpg&w=1440"}');
 INSERT INTO links VALUES('https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/','https://chrisamico.newsblur.com/','AI crawlers need to be more respectful','We talk a bit about the AI crawler abuse we are seeing at Read the Docs, and warn that this behavior is not sustainable.','2024-07-28T02:01:06.537000+00:00',NULL,'https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/','{"site_name": "Read the Docs", "type": "article", "image": "https://about.readthedocs.com/images/headers/ai-crawlers.jpg"}');
 INSERT INTO links VALUES('https://www.wsj.com/sports/olympics/olympics-fencing-star-wars-princess-bride-15a27542?st=ozigfygsyvutpdy&reflink=desktopwebshare_permalink','https://chrisamico.newsblur.com/','They Watched ‘Star Wars.’ It’s Why They’re in the Olympics.',NULL,'2024-07-29T12:55:12.029000+00:00',NULL,'https://www.wsj.com/sports/olympics/olympics-fencing-star-wars-princess-bride-15a27542?st=ozigfygsyvutpdy&reflink=desktopwebshare_permalink','{}');
+INSERT INTO links VALUES('https://www.dbreunig.com/2024/07/31/towards-standardizing-place.html','https://chrisamico.newsblur.com/','Towards Standardizing Place','Overture’s Global Entity Reference System (GERS) could revolutionize geospatial data by standardizing ‘place’, making geospatial intelligence more accessible through simple data joins rather than complex mapping tools.','2024-08-02T22:32:08.165000+00:00',NULL,'https://www.dbreunig.com/2024/07/31/towards-standardizing-place.html','{"locale": "en_US", "site_name": "Drew Breunig", "image": "/img/overture_explore.png", "type": "article"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
