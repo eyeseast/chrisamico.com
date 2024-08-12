@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-08-11T18:11:39.315055');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-08-02T22:32:08.165000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-08-12T00:29:19.260165');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-08-11T21:57:17.942000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -692,6 +692,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/style/media/2024/07/16/
 INSERT INTO links VALUES('https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/','https://chrisamico.newsblur.com/','AI crawlers need to be more respectful','We talk a bit about the AI crawler abuse we are seeing at Read the Docs, and warn that this behavior is not sustainable.','2024-07-28T02:01:06.537000+00:00',NULL,'https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/','{"site_name": "Read the Docs", "type": "article", "image": "https://about.readthedocs.com/images/headers/ai-crawlers.jpg"}');
 INSERT INTO links VALUES('https://www.wsj.com/sports/olympics/olympics-fencing-star-wars-princess-bride-15a27542?st=ozigfygsyvutpdy&reflink=desktopwebshare_permalink','https://chrisamico.newsblur.com/','They Watched ‘Star Wars.’ It’s Why They’re in the Olympics.',NULL,'2024-07-29T12:55:12.029000+00:00',NULL,'https://www.wsj.com/sports/olympics/olympics-fencing-star-wars-princess-bride-15a27542?st=ozigfygsyvutpdy&reflink=desktopwebshare_permalink','{}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2024/07/31/towards-standardizing-place.html','https://chrisamico.newsblur.com/','Towards Standardizing Place','Overture’s Global Entity Reference System (GERS) could revolutionize geospatial data by standardizing ‘place’, making geospatial intelligence more accessible through simple data joins rather than complex mapping tools.','2024-08-02T22:32:08.165000+00:00',NULL,'https://www.dbreunig.com/2024/07/31/towards-standardizing-place.html','{"locale": "en_US", "site_name": "Drew Breunig", "image": "/img/overture_explore.png", "type": "article"}');
+INSERT INTO links VALUES('https://blog.systemed.net/post/18','https://chrisamico.newsblur.com/','The early days of OpenStreetMap | Système D.',NULL,'2024-08-11T21:57:17.942000+00:00',NULL,'https://blog.systemed.net/post/18','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
