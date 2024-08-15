@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-08-14T18:11:24.716188');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-08-15T00:27:21.244172');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-08-11T21:57:17.942000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -695,6 +695,7 @@ INSERT INTO links VALUES('https://www.dbreunig.com/2024/07/31/towards-standardiz
 INSERT INTO links VALUES('https://blog.systemed.net/post/18','https://chrisamico.newsblur.com/','The early days of OpenStreetMap | Système D.',NULL,'2024-08-11T21:57:17.942000+00:00',NULL,'https://blog.systemed.net/post/18','{}');
 INSERT INTO links VALUES('https://variety.com/2024/digital/news/mtv-news-website-archives-pulled-offline-1236047163/','https://www.instapaper.com/liked','MTV News Website Goes Dark, Archives Pulled Offline','The website of the already-defunct MTV News has been fully pulled offline.','2024-06-25T19:08:15+00:00',NULL,'https://variety.com/2024/digital/news/mtv-news-website-archives-pulled-offline-1236047163/','{"type": "article", "site_name": "Variety", "image": "https://variety.com/wp-content/uploads/2017/06/mtv-news.jpg?w=1000&h=563&crop=1", "image:width": "1000", "image:height": "563", "image:alt": "MTV News", "locale": "en_US"}');
 INSERT INTO links VALUES('https://www.bostonglobe.com/2024/08/14/metro/boston-exam-school-applications-decline/','https://www.instapaper.com/liked','Applications to Boston’s exam schools have tumbled by half over four years. Here’s what’s behind the drop. - The Boston Globe','The smaller applicant pools come as BPS has made significant strides in increasing the racial, socioeconomic, and geographic diversity of students offered exam school admission.','2024-08-14T14:10:24+00:00',NULL,'https://www.bostonglobe.com/2024/08/14/metro/boston-exam-school-applications-decline/','{"site_name": "BostonGlobe.com", "type": "article", "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/djLW-6ex3rvnU2WTKoIKf7tlVuo=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/7OMBDSZ6QMEOEQLRRECWEM5EX4.jpg", "pixelID": "884869448226452"}');
+INSERT INTO links VALUES('https://www.platformer.news/meta-llama-3-zuckerberg-open-source-ai/','https://www.instapaper.com/liked','Meta unleashes its Llama','The company''s open-source AI is now roughly on par with rivals from OpenAI and Google. Should we worry?','2024-08-14T14:33:05+00:00',NULL,'https://www.platformer.news/meta-llama-3-zuckerberg-open-source-ai/','{"site_name": "Platformer", "type": "article", "image": "https://www.platformer.news/content/images/size/w1200/2024/07/b8c5c58d_39f0_49b5_aea5_848fcf389609.webp", "image:width": "1200", "image:height": "675"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
