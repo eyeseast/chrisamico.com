@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-08T12:12:04.049950');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-08-22T14:12:06.234000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-08T18:11:55.367836');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-09-08T14:37:54.896000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -701,6 +701,7 @@ INSERT INTO links VALUES('https://www.scientificamerican.com/article/neurodiverg
 INSERT INTO links VALUES('https://www.washingtonpost.com/politics/2024/08/21/with-six-words-michelle-obama-rewires-americas-conversation-race/','https://chrisamico.newsblur.com/','Column | With six words, Michelle Obama rewires America’s conversation on race','Most of us, Michelle Obama said, “will never benefit from the affirmative action of generational wealth.”','2024-08-22T14:12:06.234000+00:00',NULL,'https://www.washingtonpost.com/politics/2024/08/21/with-six-words-michelle-obama-rewires-americas-conversation-race/','{"site_name": "Washington Post", "type": "article", "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/08-21-2024/t_b9c290c0e64d4c9a9da1154cfce0de66_name_1___1920x1080___30p_00_00_58_02_Still018.jpg&w=1440"}');
 INSERT INTO links VALUES('https://www.fightprimer.com/cji-and-the-invention-of-pitcraft-lessons-from-the-craig-jones-invitational','https://chrisamico.newsblur.com/','CJI and The Invention of Pitcraft — The Fight Primer',NULL,'2024-08-22T14:01:09.088000+00:00',NULL,'https://www.fightprimer.com/cji-and-the-invention-of-pitcraft-lessons-from-the-craig-jones-invitational','{"site_name": "The Fight Primer", "type": "website", "image": "http://static1.squarespace.com/static/5999f691be42d6f75fa626d6/t/66c6144a1952550b38f75328/1724257357498/CJI+Pit+Header.png?format=1500w", "image:width": "1112", "image:height": "710"}');
 INSERT INTO links VALUES('https://www.nytimes.com/2024/08/23/opinion/tim-walz-son-gus.html','https://www.instapaper.com/liked','Opinion | My Son and Gus Walz Deserve a Champion Like Tim Walz',NULL,'2024-08-25T02:07:15+00:00',NULL,'https://www.nytimes.com/2024/08/23/opinion/tim-walz-son-gus.html','{}');
+INSERT INTO links VALUES('https://dicktofel.substack.com/p/lessons-from-the-california-journalism','https://chrisamico.newsblur.com/','Lessons from the California Journalism Legislative Debacle',NULL,'2024-09-08T14:37:54.896000+00:00',NULL,'https://dicktofel.substack.com/p/lessons-from-the-california-journalism','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
