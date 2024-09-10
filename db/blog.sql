@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-10T12:13:03.917225');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-10T18:11:35.637836');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-09-09T21:45:45.924000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -703,6 +703,7 @@ INSERT INTO links VALUES('https://www.fightprimer.com/cji-and-the-invention-of-p
 INSERT INTO links VALUES('https://www.nytimes.com/2024/08/23/opinion/tim-walz-son-gus.html','https://www.instapaper.com/liked','Opinion | My Son and Gus Walz Deserve a Champion Like Tim Walz',NULL,'2024-08-25T02:07:15+00:00',NULL,'https://www.nytimes.com/2024/08/23/opinion/tim-walz-son-gus.html','{}');
 INSERT INTO links VALUES('https://dicktofel.substack.com/p/lessons-from-the-california-journalism','https://chrisamico.newsblur.com/','Lessons from the California Journalism Legislative Debacle',NULL,'2024-09-08T14:37:54.896000+00:00',NULL,'https://dicktofel.substack.com/p/lessons-from-the-california-journalism','{}');
 INSERT INTO links VALUES('https://www.bostonglobe.com/2024/09/09/business/private-schools-brookline-cambridge-newton-public/?s_campaign=breakingnews:newsletter','https://chrisamico.newsblur.com/','In Newton, Brookline, and Cambridge, more parents are sending their kids to private school. Why? - The Boston Globe','The trend comes at a tough time for public schools and could impact culture and competitiveness.','2024-09-09T21:45:45.924000+00:00',NULL,'https://www.bostonglobe.com/2024/09/09/business/private-schools-brookline-cambridge-newton-public/','{"site_name": "BostonGlobe.com", "type": "article", "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/bX_WbV2YLw8VQ2n0IhwpxWT67bE=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/GZ3TBWJA2A7ONHWWTJZ5TW24HI.jpg", "pixelID": "884869448226452"}');
+INSERT INTO links VALUES('https://www.404media.co/what-we-learned-in-our-first-year-of-404-media/','https://www.instapaper.com/liked','What We Learned In Our First Year of 404 Media','In August 2023, we launched 404 Media with a novel idea: pay journalists to do journalism. Here we are, a year later.','2024-08-23T14:30:50+00:00',NULL,'https://www.404media.co/what-we-learned-in-our-first-year-of-404-media/','{"site_name": "404 Media", "type": "article", "image": "https://www.404media.co/content/images/size/w1200/2024/08/404-07.jpg", "image:width": "1200", "image:height": "800"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
