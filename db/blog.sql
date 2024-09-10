@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-09T18:11:44.554696');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-09-08T14:37:54.896000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-10T00:29:43.733266');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-09-09T21:45:45.924000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -702,6 +702,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/politics/2024/08/21/wit
 INSERT INTO links VALUES('https://www.fightprimer.com/cji-and-the-invention-of-pitcraft-lessons-from-the-craig-jones-invitational','https://chrisamico.newsblur.com/','CJI and The Invention of Pitcraft — The Fight Primer',NULL,'2024-08-22T14:01:09.088000+00:00',NULL,'https://www.fightprimer.com/cji-and-the-invention-of-pitcraft-lessons-from-the-craig-jones-invitational','{"site_name": "The Fight Primer", "type": "website", "image": "http://static1.squarespace.com/static/5999f691be42d6f75fa626d6/t/66c6144a1952550b38f75328/1724257357498/CJI+Pit+Header.png?format=1500w", "image:width": "1112", "image:height": "710"}');
 INSERT INTO links VALUES('https://www.nytimes.com/2024/08/23/opinion/tim-walz-son-gus.html','https://www.instapaper.com/liked','Opinion | My Son and Gus Walz Deserve a Champion Like Tim Walz',NULL,'2024-08-25T02:07:15+00:00',NULL,'https://www.nytimes.com/2024/08/23/opinion/tim-walz-son-gus.html','{}');
 INSERT INTO links VALUES('https://dicktofel.substack.com/p/lessons-from-the-california-journalism','https://chrisamico.newsblur.com/','Lessons from the California Journalism Legislative Debacle',NULL,'2024-09-08T14:37:54.896000+00:00',NULL,'https://dicktofel.substack.com/p/lessons-from-the-california-journalism','{}');
+INSERT INTO links VALUES('https://www.bostonglobe.com/2024/09/09/business/private-schools-brookline-cambridge-newton-public/?s_campaign=breakingnews:newsletter','https://chrisamico.newsblur.com/','In Newton, Brookline, and Cambridge, more parents are sending their kids to private school. Why? - The Boston Globe','The trend comes at a tough time for public schools and could impact culture and competitiveness.','2024-09-09T21:45:45.924000+00:00',NULL,'https://www.bostonglobe.com/2024/09/09/business/private-schools-brookline-cambridge-newton-public/','{"site_name": "BostonGlobe.com", "type": "article", "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/bX_WbV2YLw8VQ2n0IhwpxWT67bE=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/GZ3TBWJA2A7ONHWWTJZ5TW24HI.jpg", "pixelID": "884869448226452"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
