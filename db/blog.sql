@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-16T12:13:10.367806');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-09-16T00:46:54.033000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-09-16T18:11:32.404869');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-09-16T14:24:22.918000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -706,6 +706,7 @@ INSERT INTO links VALUES('https://www.bostonglobe.com/2024/09/09/business/privat
 INSERT INTO links VALUES('https://www.404media.co/what-we-learned-in-our-first-year-of-404-media/','https://www.instapaper.com/liked','What We Learned In Our First Year of 404 Media','In August 2023, we launched 404 Media with a novel idea: pay journalists to do journalism. Here we are, a year later.','2024-08-23T14:30:50+00:00',NULL,'https://www.404media.co/what-we-learned-in-our-first-year-of-404-media/','{"site_name": "404 Media", "type": "article", "image": "https://www.404media.co/content/images/size/w1200/2024/08/404-07.jpg", "image:width": "1200", "image:height": "800"}');
 INSERT INTO links VALUES('https://williammoss.substack.com/p/the-great-luncheon-meat-disaster','https://chrisamico.newsblur.com/','The Great Luncheon Meat Disaster of ''24',NULL,'2024-09-14T22:57:01.107000+00:00',NULL,'https://williammoss.substack.com/p/the-great-luncheon-meat-disaster','{}');
 INSERT INTO links VALUES('https://defector.com/neither-elon-musk-nor-anybody-else-will-ever-colonize-mars','https://chrisamico.newsblur.com/','Neither Elon Musk Nor Anybody Else Will Ever Colonize Mars | Defector','Mars does not have a magnetosphere. Any discussion of humans ever settling the red planet can stop right there, but of course it never does. Do you have a low-cost plan for, uh, creating a gigantic active dynamo at Mars’s dead core? No? Well. It’s fine. I’m sure you have some other workable, sustainable plan […]','2024-09-16T00:46:54.033000+00:00',NULL,'https://defector.com/neither-elon-musk-nor-anybody-else-will-ever-colonize-mars','{"type": "article", "image": "https://lede-admin.defector.com/wp-content/uploads/sites/28/2024/09/mars.jpg", "image:width": "800", "image:height": "1450"}');
+INSERT INTO links VALUES('https://pythonspeed.com/articles/intro-rust-python-extensions/','https://chrisamico.newsblur.com/','Let’s build and optimize a Rust extension for Python','Python code too slow? You can quickly create a Rust extension to speed it up.','2024-09-16T14:24:22.918000+00:00',NULL,'https://pythonspeed.com/articles/intro-rust-python-extensions/','{"locale": "en_US", "site_name": "Python⇒Speed", "image": "https://pythonspeed.com/assets/titles/intro-rust-python-extensions.png", "type": "article"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
