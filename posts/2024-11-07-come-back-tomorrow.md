@@ -1,6 +1,7 @@
 ---
 title: Come back tomorrow
-summary: "There's a Pulitzer to be won in this courthouse every day," an attorney said. What does that mean?
+summary: >
+  "There's a Pulitzer to be won in this courthouse every day," an attorney said. What does that mean?
 ---
 
 When my wife Laura started [Homicide Watch DC](http://www.homicidewatch.org/), she spent a day in DC Superior Court listening to the regular rituals of cases in progress -- status hearings, presentments and arraignments, jury selection if anything had gotten that far, though it rarely does.
