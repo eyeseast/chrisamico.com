@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-11-21T12:12:55.788050');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-11-18T00:25:57.410000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-11-21T18:11:16.242805');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-11-21T13:59:55.508000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -739,6 +739,7 @@ INSERT INTO links VALUES('https://www.npr.org/2014/01/01/258384937/crossroads-an
 INSERT INTO links VALUES('https://www.dbreunig.com/2024/10/18/the-3-ai-use-cases-gods-interns-and-cogs.html','https://chrisamico.newsblur.com/','The 3 AI Use Cases: Gods, Interns, and Cogs','Simplifying and navigating the AI noise by segmenting everything into 3 big use cases.','2024-11-13T22:19:08.262000+00:00',NULL,'https://www.dbreunig.com/2024/10/18/the-3-ai-use-cases-gods-interns-and-cogs.html','{"locale": "en_US", "site_name": "Drew Breunig", "type": "article", "image": "/img/sf_beach_og.jpg"}');
 INSERT INTO links VALUES('https://www.grapplearts.com/bjj-in-the-nineties-a-time-capsule/','https://chrisamico.newsblur.com/','BJJ in the Nineties, a Time Capsule!',NULL,'2024-11-18T00:25:57.410000+00:00',NULL,'https://www.grapplearts.com/bjj-in-the-nineties-a-time-capsule/','{}');
 INSERT INTO links VALUES('https://bloodyelbow.com/2015/05/08/limb-control-rethinking-position-before-submission/','https://www.instapaper.com/liked','Limb Control: Rethinking ''Position before Submission''','Note: This is a guest post by Reilly Bodycomb, with T.P. Grant as a co-author. Reilly represented the United States in the 2008 Sambo World Championships, was','2024-10-28T18:28:40+00:00',NULL,'https://bloodyelbow.com/2015/05/08/limb-control-rethinking-position-before-submission/','{"locale": "en_US", "type": "article", "site_name": "Bloody Elbow", "image": "https://bloodyelbow.com/wp-content/uploads/1/2023/03/BE-logo-1024x576.jpg", "image:secure_url": "https://bloodyelbow.com/wp-content/uploads/1/2023/03/BE-logo-1024x576.jpg", "image:width": "1024", "image:height": "576", "image:alt": "Bloody Elbow logo", "image:type": "image/jpeg"}');
+INSERT INTO links VALUES('https://xkcd.com/3014/','https://chrisamico.newsblur.com/','Arizona Chess',NULL,'2024-11-21T13:59:55.508000+00:00',NULL,'https://xkcd.com/3014/','{"site_name": "xkcd", "image": "https://imgs.xkcd.com/comics/arizona_chess_2x.png"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
