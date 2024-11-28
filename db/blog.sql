@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-11-28T12:13:10.379427');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-11-27T13:47:25.628000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-11-28T18:11:13.270770');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-11-28T16:19:47.499000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -741,6 +741,7 @@ INSERT INTO links VALUES('https://www.grapplearts.com/bjj-in-the-nineties-a-time
 INSERT INTO links VALUES('https://bloodyelbow.com/2015/05/08/limb-control-rethinking-position-before-submission/','https://www.instapaper.com/liked','Limb Control: Rethinking ''Position before Submission''','Note: This is a guest post by Reilly Bodycomb, with T.P. Grant as a co-author. Reilly represented the United States in the 2008 Sambo World Championships, was','2024-10-28T18:28:40+00:00',NULL,'https://bloodyelbow.com/2015/05/08/limb-control-rethinking-position-before-submission/','{"locale": "en_US", "type": "article", "site_name": "Bloody Elbow", "image": "https://bloodyelbow.com/wp-content/uploads/1/2023/03/BE-logo-1024x576.jpg", "image:secure_url": "https://bloodyelbow.com/wp-content/uploads/1/2023/03/BE-logo-1024x576.jpg", "image:width": "1024", "image:height": "576", "image:alt": "Bloody Elbow logo", "image:type": "image/jpeg"}');
 INSERT INTO links VALUES('https://xkcd.com/3014/','https://chrisamico.newsblur.com/','Arizona Chess',NULL,'2024-11-21T13:59:55.508000+00:00',NULL,'https://xkcd.com/3014/','{"site_name": "xkcd", "image": "https://imgs.xkcd.com/comics/arizona_chess_2x.png"}');
 INSERT INTO links VALUES('http://blog.apps.npr.org/2024/11/26/slippy-maps.html','https://chrisamico.newsblur.com/','Self-hosted slippy maps, for novices (like me)','How we built our own explorable tile map without paying a fortune.','2024-11-27T13:47:25.628000+00:00',NULL,'http://blog.apps.npr.org/2024/11/26/slippy-maps.html','{"type": "article", "image": "http://blog.apps.npr.org/img/posts/2024-11-26-slippy-maps/walker-title.jpg"}');
+INSERT INTO links VALUES('https://apnews.com/article/alaska-turkeys-dropped-from-airplanes-9865b07e98826a77dd3570c679600f1a?utm_campaign=TrueAnthem&utm_medium=AP&utm_source=Twitter','https://chrisamico.newsblur.com/','''It''s a bird! It''s a plane!'' In Alaska, it''s both, with a pilot tossing turkeys to rural homes',NULL,'2024-11-28T16:19:47.499000+00:00',NULL,'https://apnews.com/article/alaska-turkeys-dropped-from-airplanes-9865b07e98826a77dd3570c679600f1a?utm_campaign=TrueAnthem&utm_medium=AP&utm_source=Twitter','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
