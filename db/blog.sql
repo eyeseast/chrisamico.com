@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-12-09T12:14:08.373576');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-11-28T16:19:47.499000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2024-12-09T18:11:18.614257');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2024-12-09T15:12:44.626000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -742,6 +742,7 @@ INSERT INTO links VALUES('https://bloodyelbow.com/2015/05/08/limb-control-rethin
 INSERT INTO links VALUES('https://xkcd.com/3014/','https://chrisamico.newsblur.com/','Arizona Chess',NULL,'2024-11-21T13:59:55.508000+00:00',NULL,'https://xkcd.com/3014/','{"site_name": "xkcd", "image": "https://imgs.xkcd.com/comics/arizona_chess_2x.png"}');
 INSERT INTO links VALUES('http://blog.apps.npr.org/2024/11/26/slippy-maps.html','https://chrisamico.newsblur.com/','Self-hosted slippy maps, for novices (like me)','How we built our own explorable tile map without paying a fortune.','2024-11-27T13:47:25.628000+00:00',NULL,'http://blog.apps.npr.org/2024/11/26/slippy-maps.html','{"type": "article", "image": "http://blog.apps.npr.org/img/posts/2024-11-26-slippy-maps/walker-title.jpg"}');
 INSERT INTO links VALUES('https://apnews.com/article/alaska-turkeys-dropped-from-airplanes-9865b07e98826a77dd3570c679600f1a?utm_campaign=TrueAnthem&utm_medium=AP&utm_source=Twitter','https://chrisamico.newsblur.com/','''It''s a bird! It''s a plane!'' In Alaska, it''s both, with a pilot tossing turkeys to rural homes',NULL,'2024-11-28T16:19:47.499000+00:00',NULL,'https://apnews.com/article/alaska-turkeys-dropped-from-airplanes-9865b07e98826a77dd3570c679600f1a?utm_campaign=TrueAnthem&utm_medium=AP&utm_source=Twitter','{}');
+INSERT INTO links VALUES('https://pudding.cool/2024/11/sitters-standers/','https://chrisamico.newsblur.com/','Sitters and Standers','The American worker divide: Those who sit, and those who stand','2024-12-09T15:12:44.626000+00:00',NULL,'https://pudding.cool/2024/11/sitters-standers','{"site_name": "The Pudding", "type": "article", "locale": "en_US", "image": "https://pudding.cool/2024/11/sitters-standers/assets/social-facebook.jpg", "image:type": "image/jpeg", "image:width": "1200", "image:height": "628"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
