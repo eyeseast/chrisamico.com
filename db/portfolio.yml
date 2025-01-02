@@ -4,13 +4,13 @@ sections:
   - title: Narrative and features
     links:
       - title: What if you could hear climate change? Listen to music based on a century of rainfall data
-        url: https://www.usatoday.com/in-depth/news/investigations/2021/11/30/music-rainfall-climate-change/6354880001/
+        url: https://web.archive.org/web/20230714203252/https://www.usatoday.com/in-depth/news/investigations/2021/11/30/music-rainfall-climate-change/6354880001/
         publication: USA TODAY
         date: Nov. 30, 2021
         description: Climate change is altering rainfall patterns in the United States. I conceived of this presentation using sound to tell the story. Three composers from Full Sail University created original pieces of music using rainfall data from the investigation. I worked with the musicians on the concept and built the audio-playing charts in the story. The charts use Svelte and D3.
 
       - title: Draining the Forests
-        url: https://www.azcentral.com/in-depth/news/2021/11/20/us-forest-service-water-management-limited-oversight-diversions/8446212002/
+        url: https://web.archive.org/web/20230714203354/https://www.azcentral.com/in-depth/news/2021/11/20/us-forest-service-water-management-limited-oversight-diversions/8446212002/
         publication: USA TODAY Network
         date: Nov. 20, 2021
         description: I built a series of narrative maps in this investigation to help explain how mismanagement of water rights contributes to worsening drought. I worked with editors to design each step in the narrative and built a workflow allowing continuous updates as the story came together. The maps use Mapbox and my own [Ulysses-JS](https://github.com/eyeseast/ulysses-js) framework.
@@ -22,7 +22,7 @@ sections:
         description: This is the story of three children growing up in the Marshall Islands, knowing they might be among the last to do so. I developed the overall technical architecture for the project using Svelte, ArchieML and Tarbell. I built an editing workflow (using ArchieML in a GoogleDoc) to manage assets throughout the project and taught reporters to use it. I built about half the interactive slides.
 
       - title: Poisoned Cities, Deadly Border
-        url: https://www.desertsun.com/poisoned-cities/air/
+        url: https://web.archive.org/web/20240914205556/https://www.desertsun.com/poisoned-cities/air/
         publication: USA TODAY Network
         date: Dec. 5, 2018
         description: In designing this experience around a sprawling investigation of pollution on the US-Mexico border, we broke the story into fragments and let readers choose where to start based on how much time they had. I built the overall site architecture in Svelte and designed a mini-CMS using ArchieML.
@@ -36,17 +36,17 @@ sections:
     description: How do audiences connect with the data that reporters use? The projects below allow users to see the local impact of national stories, forging a deeper connection with our journalism. All use Svelte and Mapbox to create a fast interface that works seamlessly on mobile and desktop.
     links:
       - title: More than 200 U.S. dams have failed in rain storms since 2000. See if your community is at risk
-        url: https://www.usatoday.com/storytelling/database-rating-dam-condition-climate-change-heavy-rain/
+        url: https://web.archive.org/web/20240926031505/https://www.usatoday.com/storytelling/database-rating-dam-condition-climate-change-heavy-rain/
         publication: USA TODAY
         date: Nov. 17, 2022
 
       - title: "NURSING HOME RATINGS: See how they fared during COVID's winter surge, 2020-21"
-        url: https://www.usatoday.com/storytelling/nursing-homes-covid-deaths-database-lookup/
+        url: https://web.archive.org/web/20240223200543/https://www.usatoday.com/storytelling/nursing-homes-covid-deaths-database-lookup/
         publication: USA TODAY
         date: March 10, 2022
 
       - title: See how precipitation has changed in your community
-        url: https://www.usatoday.com/storytelling/news/investigation/rainfall-lookup/
+        url: https://web.archive.org/web/20240506015655/https://www.usatoday.com/storytelling/news/investigation/rainfall-lookup/
         publication: USA TODAY
         date: Nov. 30, 2021
 
