@@ -1,21 +1,22 @@
-{% extends "_base.html" %} {% block content %}
+{% extends "_base.html" %}
+{% block content %}
 <main id="links">
 	{% for section in sections %}
 	<h2>{{ section.title }}</h2>
 	<div class="description">
-		{% if section.description %} {{ section.description|markdown|safe }}{% endif %}
+		{% if section.description %}{{ section.description|markdown|safe }}{% endif %}
 	</div>
-	{% for link in section.links %}
-	<div class="link">
-		<h3><a href="{{ link.url }}">{{ link.title }}</a></h3>
-		<div class="date quiet">
-			{{ link.date|date }} | {% if link.publication %} {{ link.publication }} {% else %}
-			{{ link.url|urlparse }} {% endif %}
+		{% for link in section.links %}
+		<div class="link">
+			<h3><a href="{{ link.url }}">{{ link.title }}</a></h3>
+			<div class="date quiet">
+				{{ link.date|date }} | {% if link.publication %} {{ link.publication }} {% else %}
+				{{ link.url|urlparse }} {% endif %}
+			</div>
+			<div class="description">{{ link.description|d('', True)|markdown|safe }}</div>
 		</div>
-		<div class="description">{{ link.description|d('', True)|markdown|safe }}</div>
-	</div>
-
-	{% endfor %} {% endfor %}
+		{% endfor %}
+	{% endfor %}
 	<div class="end">
 		<a href="{{ url_for('post_index') }}">Blog</a> |
 		<a href="{{ url_for('index') }}">Home</a>

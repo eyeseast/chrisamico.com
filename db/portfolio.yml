@@ -31,9 +31,14 @@ sections:
         url: https://www.pbs.org/wgbh/frontline/interactive/inheritance/
         publication: FRONTLINE
         date: Oct. 29, 2015
+        description: This is the story of Ken Dornstein making sense of the loss of his brother David, who died in the Lockerbie Bombing in 1988. I helped construct the overall story, built the framework to tell it and implemented most of the final design. The project won an Emmy and Peabody Facebook award.
 
   - title: Connecting users to investigations
-    description: How do audiences connect with the data that reporters use? The projects below allow users to see the local impact of national stories, forging a deeper connection with our journalism. All use Svelte and Mapbox to create a fast interface that works seamlessly on mobile and desktop.
+    description: |
+      How do audiences connect with the data that reporters use? The projects below allow users to see the local impact of national stories, forging a deeper connection with our journalism. All use Svelte and Mapbox to create a fast interface that works seamlessly on mobile and desktop.
+
+      _These are archived links, because Gannett turned off the platform that supported these stories._
+
     links:
       - title: More than 200 U.S. dams have failed in rain storms since 2000. See if your community is at risk
         url: https://web.archive.org/web/20240926031505/https://www.usatoday.com/storytelling/database-rating-dam-condition-climate-change-heavy-rain/
