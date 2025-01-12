@@ -188,6 +188,8 @@ def post_detail(date, slug):
 
     post_og = dict(OG)
     post_og["title"] = post["title"]
+    if post.get("summary"):
+        post_og["description"] = post["summary"]
 
     return render_template("post_detail.html", post=post, OG=post_og)
 

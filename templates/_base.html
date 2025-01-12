@@ -9,9 +9,13 @@
 
 		<title>{% block title %}{{ OG.title }}{% endblock title %}</title>
 
-		{% block opengraph %} {% for key, value in OG.items() %}
+		{% block opengraph %} 
+		{% for key, value in OG.items() %}
 		<meta property="og:{{ key }}" content="{{ value }}" />
-		{% endfor %} {% endblock opengraph %} {% block css %}
+		{% endfor %}
+		{% endblock opengraph %} 
+		
+		{% block css %}
 		<link
 			rel="stylesheet"
 			href="{{ url_for('static', filename='normalize.css', t=timestamp) }}" />
