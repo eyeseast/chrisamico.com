@@ -3,6 +3,8 @@ title: Working on latest fire
 summary: In fire season, what do our users need from us?
 ---
 
+![A satellite image showing smoke from wildfires across Southern California, from NASA Earth Observatory](https://eoimages.gsfc.nasa.gov/images/imagerecords/153000/153793/palisadesfire_msi_20250107.jpg)
+
 California is on fire, again. I grew up in the suburbs north of Los Angeles and have family scattered around the Bay Area. Almost every year, I watch as part of the state burns, hoping no one I know is too close.
 
 Following fire news is hard, too hard, whether it's an immediate emergency or a pang of fear from the other side of the country. Matt Pearce [just ran into this in this](https://mattdpearce.substack.com/p/fires-and-the-facts), in his first fire season outside a newsroom.
@@ -32,3 +34,5 @@ Some of these needs are in conflict, or at least difficult to serve at the same 
 Part of why covering fires is hard, especially in the social media era, is that people need different things from media, and no single news source can serve them all. Post a story about a current fire, and someone on BlueSky/X/Mastodon will complain that you're not talking about climate change. Write a big picture look at policy choices and it gets mixed into friends' safety check-ins on Facebook. Instagram and Threads are so algorithm-driven that certain use-cases aren't even worth chasing.
 
 The only advice I can offer is to be clear-eyed about what problem you're attacking, and tune out the noise. This is why [Watch Duty](https://app.watchduty.org/) is [having a moment](https://gizmodo.com/watch-duty-hits-1-on-apple-app-store-as-wildfires-rage-in-california-2000547740).
+
+_Image courtesy of [NASA Earth Observatory](https://earthobservatory.nasa.gov/images/153793/fires-tear-through-los-angeles)._
