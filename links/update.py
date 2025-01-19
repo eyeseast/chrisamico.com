@@ -38,8 +38,13 @@ def main(*urls):
 
 def normalize(table, entry, feed_details, client):
     log.info("%s: %s", feed_details.title, entry.title)
-    og = OpenGraph.fetch(entry["link"], client=client)
     row = extract_entry_fields(table, entry, feed_details)
+
+    try:
+        og = OpenGraph.fetch(entry["link"], client=client)
+    except Exception as e:
+        log.error(e)
+        return row
 
     if og.get("url"):
         row["link"] = og.pop("url")
