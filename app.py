@@ -267,7 +267,8 @@ def txt_urls():
 def json_cols(rows, columns):
     for row in rows:
         for column in columns:
-            row[column] = json.loads(row[column])
+            if row[column]:
+                row[column] = json.loads(row[column])
         yield row
 
 
