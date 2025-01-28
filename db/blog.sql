@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-01-27T18:11:14.927207');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-01-27T16:11:41.400000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-01-28T00:31:03.035409');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-01-28T00:22:18.188000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -755,6 +755,7 @@ INSERT INTO links VALUES('https://anderegg.ca/2025/01/11/wordpress-is-in-trouble
 INSERT INTO links VALUES('https://words.schwanksta.com/blue-skies-and-open-roads/','https://chrisamico.newsblur.com/','Blue skies and open roads','Given the collapse of social media platforms, you should at least own your own domain — and put things on it!','2025-01-19T21:41:29.849000+00:00',NULL,'https://words.schwanksta.com/blue-skies-and-open-roads/','{"site_name": "Words on the Web", "type": "article", "image": "https://words.schwanksta.com/content/images/2025/01/IMG_0489-1.jpeg", "image:width": "1200", "image:height": "900"}');
 INSERT INTO links VALUES('https://www.404media.co/decentralized-social-media-is-the-only-alternative-to-the-tech-oligarchy/','https://chrisamico.newsblur.com/','Decentralized Social Media Is the Only Alternative to the Tech Oligarchy','The TikTok ban and Donald Trump''s rise to power show how fragile our social media accounts are. We must normalize and invest in decentralized social media.','2025-01-24T00:41:11.007000+00:00',NULL,'https://www.404media.co/decentralized-social-media-is-the-only-alternative-to-the-tech-oligarchy/','{"site_name": "404 Media", "type": "article", "image": "https://www.404media.co/content/images/size/w1200/2025/01/CleanShot-2025-01-21-at-09.29.18@2x.png", "image:width": "1200", "image:height": "787"}');
 INSERT INTO links VALUES('https://docs.fused.io/blog/fire-ratings/','https://chrisamico.newsblur.com/','Calculating Fire Ratings with Overture Buildings and Places | Fused','TL;DR Chris Amico shows how to combine Overture Maps data with fire perimeters to analyze wildfire impact on buildings and businesses.','2025-01-27T16:11:41.400000+00:00',NULL,'https://docs.fused.io/blog/fire-ratings/','{"locale": "en", "image": "https://fused-magic.s3.us-west-2.amazonaws.com/blog-assets/social_amico.png", "type": "article"}');
+INSERT INTO links VALUES('https://thescoop.org/archives/2025/01/27/llm-extraction-challenge-fundraising-emails/index.html','https://chrisamico.newsblur.com/','LLM Extraction Challenge: Fundraising Emails – Derek Willis',NULL,'2025-01-28T00:22:18.188000+00:00',NULL,'https://thescoop.org/archives/2025/01/27/llm-extraction-challenge-fundraising-emails/index.html','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
