@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-01T12:11:19.322836');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-01T02:22:25.418000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-01T18:11:00.424960');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-01T17:48:44.975000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -757,6 +757,8 @@ INSERT INTO links VALUES('https://www.404media.co/decentralized-social-media-is-
 INSERT INTO links VALUES('https://docs.fused.io/blog/fire-ratings/','https://chrisamico.newsblur.com/','Calculating Fire Ratings with Overture Buildings and Places | Fused','TL;DR Chris Amico shows how to combine Overture Maps data with fire perimeters to analyze wildfire impact on buildings and businesses.','2025-01-27T16:11:41.400000+00:00',NULL,'https://docs.fused.io/blog/fire-ratings/','{"locale": "en", "image": "https://fused-magic.s3.us-west-2.amazonaws.com/blog-assets/social_amico.png", "type": "article"}');
 INSERT INTO links VALUES('https://thescoop.org/archives/2025/01/27/llm-extraction-challenge-fundraising-emails/index.html','https://chrisamico.newsblur.com/','LLM Extraction Challenge: Fundraising Emails – Derek Willis',NULL,'2025-01-28T00:22:18.188000+00:00',NULL,'https://thescoop.org/archives/2025/01/27/llm-extraction-challenge-fundraising-emails/index.html','{}');
 INSERT INTO links VALUES('https://www.bostonglobe.com/2025/01/31/metro/trans-lgbtq-health-public-cdc-massachusetts-sti-equity/?s_campaign=breakingnews:newsletter','https://chrisamico.newsblur.com/','Critical data on disease transmission, LGBTQ+ health vanishes from government websites - The Boston Globe','Included in the purge is information on child abuse and treatment and prevention of HIV.','2025-02-01T02:22:25.418000+00:00',NULL,'https://www.bostonglobe.com/2025/01/31/metro/trans-lgbtq-health-public-cdc-massachusetts-sti-equity/','{"site_name": "BostonGlobe.com", "type": "article", "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/GD3MGEUQQRDZ476R3FCZXB3DZY.jpg?auth=26704f9c7fb9ef658a0795731afd09c7cbc23fec8bbbeab1467f188d9404ffd0&width=1440", "pixelID": "884869448226452"}');
+INSERT INTO links VALUES('https://dansinker.com/posts/2025-02-1-write-it-down/','https://chrisamico.newsblur.com/','Write it Down',NULL,'2025-02-01T17:48:44.975000+00:00',NULL,'https://dansinker.com/posts/2025-02-1-write-it-down/','{"image": "/images/headshot.webp"}');
+INSERT INTO links VALUES('https://thefightinglife.substack.com/p/hope-is-a-road-in-the-country','https://chrisamico.newsblur.com/','Hope is a road in the country',NULL,'2025-02-01T17:38:35.587000+00:00',NULL,'https://thefightinglife.substack.com/p/hope-is-a-road-in-the-country','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
