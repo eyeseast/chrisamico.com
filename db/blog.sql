@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-03T12:12:19.685863');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-02T19:58:20.089000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-03T18:11:11.710049');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-03T17:57:40.412000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -761,6 +761,7 @@ INSERT INTO links VALUES('https://dansinker.com/posts/2025-02-1-write-it-down/',
 INSERT INTO links VALUES('https://thefightinglife.substack.com/p/hope-is-a-road-in-the-country','https://chrisamico.newsblur.com/','Hope is a road in the country',NULL,'2025-02-01T17:38:35.587000+00:00',NULL,'https://thefightinglife.substack.com/p/hope-is-a-road-in-the-country','{}');
 INSERT INTO links VALUES('https://www.reuters.com/graphics/CALIFORNIA-WILDFIRE/SPEED/akpeewrodpr/','https://chrisamico.newsblur.com/','LA’s Palisades, Eaton and Hughes fires show a larger trend in wildfire speed','The Palisades, Eaton and Hughes fires were some of the fastest on record. Their destruction shows the significance of speed in wildfire preparedness.','2025-02-01T19:23:25.161000+00:00',NULL,'https://www.reuters.com/graphics/CALIFORNIA-WILDFIRE/SPEED/akpeewrodpr/','{"type": "article", "image": "https://www.reuters.com/graphics/CALIFORNIA-WILDFIRE/SPEED/akpeewrodpr/cdn/images/reuters-graphics.png", "site_name": "Reuters"}');
 INSERT INTO links VALUES('https://apnews.com/article/independent-journalists-trump-local-news-a60b49c97058d14f1b2e36cdc771d8f7','https://chrisamico.newsblur.com/','The power of independent journalism: From her Brooklyn apartment, she ''scooped'' the nation''s media',NULL,'2025-02-02T19:58:20.089000+00:00',NULL,'https://apnews.com/article/independent-journalists-trump-local-news-a60b49c97058d14f1b2e36cdc771d8f7','{}');
+INSERT INTO links VALUES('https://werd.io/2025/i-want-you-to-do-these-four-things-right-now','https://chrisamico.newsblur.com/','I want you to do these four things right now','Four simple steps to keep yourself safe online.','2025-02-03T17:57:40.412000+00:00',NULL,'https://werd.io/2025/i-want-you-to-do-these-four-things-right-now','{"type": "article", "site_name": "Werd I/O", "image": "https://werd.io/file/679e8c10e2ce8d65470c7fe2/thumb.jpg"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
