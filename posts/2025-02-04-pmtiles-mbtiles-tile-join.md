@@ -24,7 +24,11 @@ Here's how to get a local tile extract into MBTiles:
 
 ```sh
 # extract tiles from a Protomaps daily build
-pmtiles extract https://build.protomaps.com/20250120.pmtiles public/base.pmtiles --bbox="-121.916742,32.141279,-113.611078,35.642196" --maxzoom 12
+pmtiles extract \
+    https://build.protomaps.com/20250120.pmtiles \
+    public/base.pmtiles \
+    --bbox="-121.916742,32.141279,-113.611078,35.642196" \
+    --maxzoom 12
 
 # convert to MBTiles
 tile-join -o public/base.mbtiles public/base.pmtiles

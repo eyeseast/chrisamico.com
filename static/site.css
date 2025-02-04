@@ -160,6 +160,9 @@ img {
 /* pygment */
 pre {
 	line-height: 125%;
+	text-wrap: pretty;
+	word-break: break-word;
+	padding: 0.75em;
 }
 td.linenos .normal {
 	color: inherit;
