@@ -14,9 +14,9 @@ However, there are a couple contexts where I still want MBTiles. I can drop an M
 
 It's that second context that got me figuring out how to turn PMTiles into MBTiles. I'm working on rebuilding my [Datasette GIS stack](https://github.com/eyeseast/spatial-data-cooking-show), which currently uses [Leaflet](https://leafletjs.com/) and image tiles.
 
-The answer, it turns out, was already installed: `tile-join`, part of [Tippecanoe](https://github.com/felt/tippecanoe?tab=readme-ov-file#tile-join), can read MBTiles _or_ PMTiles and also output either format. The examples only refer to MBTiles, but either format works, as input or output.
-
 Leaflet is great, but image tiles are significantly harder to generate than vector tiles, even though it's an older approach. There's just more tooling now. Since I started working on self-hosted maps, I've wanted to move [datasette-geojson-map](https://github.com/eyeseast/datasette-geojson-map). The biggest issue is tiles.
+
+The answer, it turns out, was already installed: `tile-join`, part of [Tippecanoe](https://github.com/felt/tippecanoe?tab=readme-ov-file#tile-join), can read MBTiles _or_ PMTiles and also output either format. The examples only refer to MBTiles, but either format works, as input or output.
 
 When I'm using PMTiles, I rely heavily on the [free Protomaps daily planet build](https://docs.protomaps.com/basemaps/downloads), and I use `pmtiles extract` to pull down the area I want. But Datasette is already serving data from SQLite (because that's its whole purpose) and it would be nice to just have everything in one place. There's even a [tile server plugin](https://datasette.io/plugins/datasette-tiles), though it currently ownly works with image tiles.
 
