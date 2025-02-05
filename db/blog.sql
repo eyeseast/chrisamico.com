@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-05T12:12:43.493339');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-03T17:57:40.412000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-05T18:11:22.534672');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-05T17:29:34.204000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -762,6 +762,7 @@ INSERT INTO links VALUES('https://thefightinglife.substack.com/p/hope-is-a-road-
 INSERT INTO links VALUES('https://www.reuters.com/graphics/CALIFORNIA-WILDFIRE/SPEED/akpeewrodpr/','https://chrisamico.newsblur.com/','LA’s Palisades, Eaton and Hughes fires show a larger trend in wildfire speed','The Palisades, Eaton and Hughes fires were some of the fastest on record. Their destruction shows the significance of speed in wildfire preparedness.','2025-02-01T19:23:25.161000+00:00',NULL,'https://www.reuters.com/graphics/CALIFORNIA-WILDFIRE/SPEED/akpeewrodpr/','{"type": "article", "image": "https://www.reuters.com/graphics/CALIFORNIA-WILDFIRE/SPEED/akpeewrodpr/cdn/images/reuters-graphics.png", "site_name": "Reuters"}');
 INSERT INTO links VALUES('https://apnews.com/article/independent-journalists-trump-local-news-a60b49c97058d14f1b2e36cdc771d8f7','https://chrisamico.newsblur.com/','The power of independent journalism: From her Brooklyn apartment, she ''scooped'' the nation''s media',NULL,'2025-02-02T19:58:20.089000+00:00',NULL,'https://apnews.com/article/independent-journalists-trump-local-news-a60b49c97058d14f1b2e36cdc771d8f7','{}');
 INSERT INTO links VALUES('https://werd.io/2025/i-want-you-to-do-these-four-things-right-now','https://chrisamico.newsblur.com/','I want you to do these four things right now','Four simple steps to keep yourself safe online.','2025-02-03T17:57:40.412000+00:00',NULL,'https://werd.io/2025/i-want-you-to-do-these-four-things-right-now','{"type": "article", "site_name": "Werd I/O", "image": "https://werd.io/file/679e8c10e2ce8d65470c7fe2/thumb.jpg"}');
+INSERT INTO links VALUES('https://www.404media.co/doge-employees-ordered-to-stop-using-slack-while-agency-transitions-to-a-records-system-not-subject-to-foia/','https://chrisamico.newsblur.com/','DOGE Employees Ordered to Stop Using Slack While Agency Transitions to a Records System Not Subject to FOIA','Employees at Elon Musk''s agency have been told "OMB is asking us to stop generating new slack messages starting now."','2025-02-05T17:29:34.204000+00:00',NULL,'https://www.404media.co/doge-employees-ordered-to-stop-using-slack-while-agency-transitions-to-a-records-system-not-subject-to-foia/','{"site_name": "404 Media", "type": "article", "image": "https://www.404media.co/content/images/size/w1200/2025/02/CleanShot-2025-02-05-at-08.43.52@2x.png", "image:width": "1200", "image:height": "808"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
