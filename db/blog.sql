@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-13T12:12:45.355935');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-08T02:06:41.682000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-02-13T18:11:24.585700');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-02-13T16:55:41.889000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -768,6 +768,7 @@ INSERT INTO links VALUES('https://www.pcgamer.com/gaming-industry/wordpress-wp-e
 INSERT INTO links VALUES('https://www.theatlantic.com/ideas/archive/2025/01/hitler-germany-constitution-authoritarianism/681233/','https://www.instapaper.com/liked','How Hitler Dismantled a Democracy in 53 Days','He used the constitution to shatter the constitution.','2025-02-07T01:15:23+00:00',NULL,'https://www.theatlantic.com/ideas/archive/2025/01/hitler-germany-constitution-authoritarianism/681233/','{"site_name": "The Atlantic", "locale": "en_US", "type": "article", "image": "https://cdn.theatlantic.com/thumbor/stCKJo5IvvZF51hm5aOijEW0eTQ=/0x53:2496x1353/1200x625/media/img/mt/2025/01/KWC54P/original.jpg"}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2025/02/04/a-gentle-intro-to-running-a-local-llm.html','https://chrisamico.newsblur.com/','A Gentle Intro to Running a Local LLM','Open, small LLMs have gotten good enough that non-technical people can benefit from having a local chatbot on their machine.','2025-02-08T02:06:41.682000+00:00',NULL,'https://www.dbreunig.com/2025/02/04/a-gentle-intro-to-running-a-local-llm.html','{"locale": "en_US", "site_name": "Drew Breunig", "image": "/img/laptop_header.jpg", "type": "article"}');
 INSERT INTO links VALUES('https://macwright.com/2025/02/06/the-web-is-already-multiplayer.html','https://chrisamico.newsblur.com/','The web is already multiplayer',NULL,'2025-02-08T01:20:12.160000+00:00',NULL,'https://macwright.com/2025/02/06/the-web-is-already-multiplayer','{"site_name": "macwright.com", "email": "tom@macwright.com", "type": "website"}');
+INSERT INTO links VALUES('https://nieman.harvard.edu/nieman-foundation-curator-ann-marie-lipinski-to-step-down/','https://chrisamico.newsblur.com/','Nieman Foundation curator Ann Marie Lipinski to step down - Nieman Foundation','Lipinski steered Nieman through a period of historic change for the news industry and deepened collaboration with the Harvard community','2025-02-13T16:55:41.889000+00:00',NULL,'https://nieman.harvard.edu/nieman-foundation-curator-ann-marie-lipinski-to-step-down/','{"locale": "en_US", "type": "article", "site_name": "Nieman Foundation", "image": "https://nieman.harvard.edu/app/uploads/2025/02/aml_retire.jpg", "image:width": "1200", "image:height": "675", "image:type": "image/jpeg"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
