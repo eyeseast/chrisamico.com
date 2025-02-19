@@ -3,7 +3,7 @@ title: Learning Rust by porting a small Python library
 summary: How much can I learn from a one-file project? Lots.
 ---
 
-I'm going down a rabbit hole on Rust. After converting my little [Fanatics scraper](https://chrisamico.com/blog/2025-02-09/fanatics-scraper-rust/), I wanted another small project that would let me solve all the small problems that come up when learning a new language.
+I'm going down a rabbit hole on Rust. After converting my little [Fanatics scraper](https://chrisamico.com/blog/2025-02-09/fanatics-scraper-rust/), I wanted another small project that would let me solve all the novel problems that come up when learning a new language.
 
 [ListCrunch](https://github.com/MuckRock/listcrunch) is a Python library for compressing lists into a short string representation. [Dylan Freedman](https://github.com/freedmand) wrote it as part of [DocumentCloud's](https://www.documentcloud.org) processing pipeline, and to the best of my knowledge, DocumentCloud is the only place it's used.
 
