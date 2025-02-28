@@ -27,6 +27,12 @@ sections:
         date: Dec. 5, 2018
         description: In designing this experience around a sprawling investigation of pollution on the US-Mexico border, we broke the story into fragments and let readers choose where to start based on how much time they had. I built the overall site architecture in Svelte and designed a mini-CMS using ArchieML.
 
+      - title: To Catch a Terrorist
+        url: https://www.pbs.org/wgbh/frontline/interactive/to-catch-a-terrorist/
+        publication: FRONTLINE
+        date: Nov. 12, 2016
+        description: This is the story of one terrorism suspect's journey from France to Syria and back. I was the lead editor on this piece and oversaw the visual design.
+
       - title: Inheritance
         url: https://www.pbs.org/wgbh/frontline/interactive/inheritance/
         publication: FRONTLINE
