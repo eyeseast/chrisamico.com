@@ -5,7 +5,7 @@ summary: Archive the inputs. Archive the outputs.
 
 We live in an unfortunate era of disappearing culture.
 
-This week, FiveThirtyEight became the latest news site to be shut down and turned off, its old URL redirecting to the ABC News politics archive. A site that changed political coverage in the United States and beyond is just gone. Former staffers now looking for new jobs can't even link to their old work. This is both a tragedy and unnecessary cruelty by a media conglomerate that wouldn't even notice the hosting costs on its balance sheet.
+This week, FiveThirtyEight became the latest news site to be shut down and turned off, its old URL redirecting to the ABC News politics archive. A site that changed political coverage in the United States and beyond is just gone. Former staffers looking for new jobs will now struggle to link to their old work. This is both a tragedy and unnecessary cruelty by a media conglomerate that wouldn't even notice the hosting costs on its balance sheet.
 
 It's also a [familiar story](https://www.muckrock.com/news/archives/2024/mar/06/for-the-record-the-battle-to-preserve-the-online-archives-of-now-shuttered-newsrooms/).
 
