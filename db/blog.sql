@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-03-30T18:11:11.133683');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-03-30T12:46:51.822000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-03-31T00:36:18.447692');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-03-30T23:23:04.668000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -785,6 +785,7 @@ INSERT INTO links VALUES('https://www.doomsdayscenario.co/p/the-five-scandals-an
 INSERT INTO links VALUES('https://religiondispatches.org/dont-take-the-bait-kristi-noem-and-fascisms-sadistic-eroticization-of-power/','https://www.instapaper.com/liked','Don''t Take the Bait — Kristi Noem and Fascism''s Sadistic Eroticization of Power',NULL,'2025-03-29T14:40:22+00:00',NULL,'https://religiondispatches.org/dont-take-the-bait-kristi-noem-and-fascisms-sadistic-eroticization-of-power/','{}');
 INSERT INTO links VALUES('https://bjjdoc.com/2025/03/27/new-survey-details-how-long-it-takes-to-reach-each-belt-in-jiu-jitsu/','https://chrisamico.newsblur.com/','New survey details how long it takes to reach each belt in Jiu-Jitsu','  A comprehensive new survey has shed light on the actual time it takes practitioners to advance through the ranks of Brazilian Jiu-Jitsu, challenging many common assumptions about belt progression…','2025-03-29T21:42:14.898000+00:00',NULL,'https://bjjdoc.com/2025/03/27/new-survey-details-how-long-it-takes-to-reach-each-belt-in-jiu-jitsu/','{"locale": "en_US", "type": "article", "site_name": "BJJDOC", "image": "https://bjjdoc.com/wp-content/uploads/2025/03/dd-1.jpg", "image:width": "1960", "image:height": "860", "image:type": "image/jpeg"}');
 INSERT INTO links VALUES('https://www.thecrimson.com/article/2025/3/29/harvard-cmes-director-departure/','https://chrisamico.newsblur.com/','Harvard Dismisses Leaders of Center for Middle Eastern Studies | News | The Harvard Crimson','Interim Harvard Dean of Social Science David M. Cutler ’87 dismissed the director of the Center for Middle Eastern Studies, professor of Turkish Studies Cemal Kafadar, and its associate director, History professor Rosie Bsheer, on Wednesday, according to a faculty member familiar with the situation.','2025-03-30T12:46:51.822000+00:00',NULL,'https://www.thecrimson.com/article/2025/3/29/harvard-cmes-director-departure/','{"image": "https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2017/01/24/195101_1319860.jpg.1999x1750_q95_crop-smart_upscale.jpg", "type": "Post"}');
+INSERT INTO links VALUES('https://williammoss.substack.com/p/getting-rid-of-a-python','https://chrisamico.newsblur.com/','Getting Rid of a Python',NULL,'2025-03-30T23:23:04.668000+00:00',NULL,'https://williammoss.substack.com/p/getting-rid-of-a-python','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
