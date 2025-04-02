@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-04-01T18:11:40.366907');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-03-30T23:23:04.668000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-04-02T00:34:20.961786');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-04-01T20:15:38.848000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -787,6 +787,7 @@ INSERT INTO links VALUES('https://bjjdoc.com/2025/03/27/new-survey-details-how-l
 INSERT INTO links VALUES('https://www.thecrimson.com/article/2025/3/29/harvard-cmes-director-departure/','https://chrisamico.newsblur.com/','Harvard Dismisses Leaders of Center for Middle Eastern Studies | News | The Harvard Crimson','Interim Harvard Dean of Social Science David M. Cutler ’87 dismissed the director of the Center for Middle Eastern Studies, professor of Turkish Studies Cemal Kafadar, and its associate director, History professor Rosie Bsheer, on Wednesday, according to a faculty member familiar with the situation.','2025-03-30T12:46:51.822000+00:00',NULL,'https://www.thecrimson.com/article/2025/3/29/harvard-cmes-director-departure/','{"image": "https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2017/01/24/195101_1319860.jpg.1999x1750_q95_crop-smart_upscale.jpg", "type": "Post"}');
 INSERT INTO links VALUES('https://williammoss.substack.com/p/getting-rid-of-a-python','https://chrisamico.newsblur.com/','Getting Rid of a Python',NULL,'2025-03-30T23:23:04.668000+00:00',NULL,'https://williammoss.substack.com/p/getting-rid-of-a-python','{}');
 INSERT INTO links VALUES('https://www.cjr.org/news/center-for-public-integrity-shutting-down.php','https://www.instapaper.com/liked','Center for Public Integrity is shutting down',NULL,'2025-04-01T17:45:24+00:00',NULL,'https://www.cjr.org/news/center-for-public-integrity-shutting-down.php','{}');
+INSERT INTO links VALUES('https://www.fightprimer.com/farewell-big-george-hope-i-got-this-one-right','https://chrisamico.newsblur.com/','Farewell, Big George — The Fight Primer',NULL,'2025-04-01T20:15:38.848000+00:00',NULL,'https://www.fightprimer.com/farewell-big-george-hope-i-got-this-one-right','{"site_name": "The Fight Primer", "type": "website", "image": "http://static1.squarespace.com/static/5999f691be42d6f75fa626d6/t/67e58787b9673100d709eb26/1743095687717/Farewell+Big+George.png?format=1500w", "image:width": "1024", "image:height": "654"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
