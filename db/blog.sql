@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-04-08T00:33:43.787163');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-04-06T17:17:35.950000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-04-08T06:11:30.406159');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-04-08T00:57:37.418000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -791,6 +791,7 @@ INSERT INTO links VALUES('https://www.fightprimer.com/farewell-big-george-hope-i
 INSERT INTO links VALUES('https://www.cjr.org/news/john-thornton-cofounder-texas-tribune-american-journalism-project-dies-at-59.php','https://chrisamico.newsblur.com/','John Thornton, Cofounder of Texas Tribune and American Journalism Project, Dies at 59',NULL,'2025-04-02T02:29:54.260000+00:00',NULL,'https://www.cjr.org/news/john-thornton-cofounder-texas-tribune-american-journalism-project-dies-at-59.php','{}');
 INSERT INTO links VALUES('https://dankennedy.net/2025/04/06/mississippi-today-will-not-have-to-turn-over-confidential-documents-as-a-judge-dismisses-ex-governors-libel-suit/','https://chrisamico.newsblur.com/','Mississippi Today will not have to turn over confidential documents as a judge dismisses ex-governor’s libel suit','The nonprofit news organization Mississippi Today will not have to turn over confidential internal documents, as a judge has dismissed a libel suit brought by former Gov. Phil Bryant, Grant McLaugh…','2025-04-06T17:17:35.950000+00:00',NULL,'https://dankennedy.net/2025/04/06/mississippi-today-will-not-have-to-turn-over-confidential-documents-as-a-judge-dismisses-ex-governors-libel-suit/','{"type": "article", "site_name": "Media Nation", "image": "https://dankennedy.net/wp-content/uploads/2025/04/Mississippi_Governor_Phil_Bryant_upon_the_visit_at_the_Presidential_Office_of_the_Republic_of_China_20190827.jpg", "image:width": "2048", "image:height": "1365", "image:alt": "", "locale": "en_US"}');
 INSERT INTO links VALUES('https://www.thebulwark.com/p/the-american-age-is-over','https://chrisamico.newsblur.com/','The American Age Is Over','Emergency Triad: The United States commits imperial suicide.','2025-04-06T13:52:01.213000+00:00',NULL,'https://www.thebulwark.com/p/the-american-age-is-over','{"type": "article", "image": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9a2a4b3c-f73f-4873-a7ca-9e8a6a46a929_1352x876.png"}');
+INSERT INTO links VALUES('https://www.zachseward.com/what-was-quartz/','https://chrisamico.newsblur.com/','What was Quartz?','2012–2025','2025-04-08T00:57:37.418000+00:00',NULL,'https://www.zachseward.com/what-was-quartz/','{"site_name": "Zach Seward", "type": "article", "image": "https://www.zachseward.com/content/images/size/w1200/2025/04/tumblr_ofd5rbeAOZ1sj980eo4_1280.jpg", "image:width": "1200", "image:height": "800"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
