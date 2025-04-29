@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-04-28T18:11:31.920539');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-04-17T02:33:54.763000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-04-29T00:35:04.771628');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-04-28T20:11:28.594000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -795,6 +795,7 @@ INSERT INTO links VALUES('https://www.zachseward.com/what-was-quartz/','https://
 INSERT INTO links VALUES('https://huntnewsnu.com/85741/editorial/op-ed-we-your-professors-believe-our-universities-are-worth-fighting-for/','https://chrisamico.newsblur.com/','Op-ed: We, your professors, believe our universities are worth fighting for','Professors, students, Bostonians — we all benefit from our universities in the realm of higher education today, but our institutions are doomed to fall unless we fight for them.  You may be healthy today because of treatment at a Boston hospital relying on research funded by the National Institutes of Health. You may love and...','2025-04-08T19:17:18.583000+00:00',NULL,'https://huntnewsnu.com/85741/editorial/op-ed-we-your-professors-believe-our-universities-are-worth-fighting-for/','{"locale": "en_US", "type": "article", "site_name": "The Huntington News", "image": "https://huntnewsnu.com/wp-content/uploads/2025/04/GlobalExpansion_8_21_23_JessicaXing_10.jpg", "image:width": "2001", "image:height": "1331", "image:type": "image/jpeg", "image:secure_url": "https://huntnewsnu.com/wp-content/uploads/2025/04/GlobalExpansion_8_21_23_JessicaXing_10.jpg"}');
 INSERT INTO links VALUES('https://dankennedy.net/2025/04/16/what-went-wrong-at-houston-landing-maybe-it-never-clearly-defined-its-mission/','https://chrisamico.newsblur.com/','What went wrong at Houston Landing? Maybe it never clearly defined its mission.','There was something about Houston Landing that never quite made sense. It was a large digital startup in a city already served by the Houston Chronicle, whose corporate owner, Hearst, enjoys a repu…','2025-04-17T02:33:54.763000+00:00',NULL,'https://dankennedy.net/2025/04/16/what-went-wrong-at-houston-landing-maybe-it-never-clearly-defined-its-mission/','{"type": "article", "site_name": "Media Nation", "image": "https://dankennedy.net/wp-content/uploads/2025/04/houston-texas-2609030-1.jpg", "image:width": "2000", "image:height": "1333", "image:alt": "", "locale": "en_US"}');
 INSERT INTO links VALUES('https://apnews.com/article/los-angeles-times-ai-opinion-insights-ca632edd01d836ec26d27e47c0169927','https://chrisamico.newsblur.com/','Don''t like a columnist''s opinion? Los Angeles Times offers an AI-generated opposing viewpoint',NULL,'2025-04-16T23:16:38.185000+00:00',NULL,'https://apnews.com/article/los-angeles-times-ai-opinion-insights-ca632edd01d836ec26d27e47c0169927','{}');
+INSERT INTO links VALUES('https://xkcd.com/3081/','https://chrisamico.newsblur.com/','PhD Timeline',NULL,'2025-04-28T20:11:28.594000+00:00',NULL,'https://xkcd.com/3081/','{"site_name": "xkcd", "image": "https://imgs.xkcd.com/comics/phd_timeline_2x.png"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
