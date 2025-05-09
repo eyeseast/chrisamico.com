@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-05-08T18:11:21.642607');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-04-30T14:19:05.337000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-05-09T00:49:30.725058');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-05-09T00:27:24.093000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -798,6 +798,7 @@ INSERT INTO links VALUES('https://apnews.com/article/los-angeles-times-ai-opinio
 INSERT INTO links VALUES('https://xkcd.com/3081/','https://chrisamico.newsblur.com/','PhD Timeline',NULL,'2025-04-28T20:11:28.594000+00:00',NULL,'https://xkcd.com/3081/','{"site_name": "xkcd", "image": "https://imgs.xkcd.com/comics/phd_timeline_2x.png"}');
 INSERT INTO links VALUES('https://thegrapplerswatch.substack.com/p/the-truth-about-default-gold-warriors','https://chrisamico.newsblur.com/','The Truth About Default Gold Warriors',NULL,'2025-04-30T14:19:05.337000+00:00',NULL,'https://thegrapplerswatch.substack.com/p/the-truth-about-default-gold-warriors','{}');
 INSERT INTO links VALUES('https://www.washingtonpost.com/travel/2025/04/23/snowy-owls-raptors-boston-airport/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQ1NDY3MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ2ODQ5NTk5LCJpYXQiOjE3NDU0NjcyMDAsImp0aSI6IjFjNTFiMmQzLWRlMDAtNGEyMC05NTJiLTQ0ZDg3ZTYzMTkzNiIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90cmF2ZWwvMjAyNS8wNC8yMy9zbm93eS1vd2xzLXJhcHRvcnMtYm9zdG9uLWFpcnBvcnQvIn0.rjT1xwQy3Fj81qNVlWzu1hg9m2Q6fyrrMqR8BWKWois','https://www.instapaper.com/liked','The ‘owl man’ is busy at Boston Logan Airport',NULL,'Thu, 01 May 2025 00:25:51 GMT',NULL,'https://www.washingtonpost.com/travel/2025/04/23/snowy-owls-raptors-boston-airport/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQ1NDY3MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ2ODQ5NTk5LCJpYXQiOjE3NDU0NjcyMDAsImp0aSI6IjFjNTFiMmQzLWRlMDAtNGEyMC05NTJiLTQ0ZDg3ZTYzMTkzNiIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS90cmF2ZWwvMjAyNS8wNC8yMy9zbm93eS1vd2xzLXJhcHRvcnMtYm9zdG9uLWFpcnBvcnQvIn0.rjT1xwQy3Fj81qNVlWzu1hg9m2Q6fyrrMqR8BWKWois',NULL);
+INSERT INTO links VALUES('https://www.netflix.com/tudum/articles/death-by-lightning-tv-series-adaptation','https://chrisamico.newsblur.com/','Everything to Know About Death by Lightning','James Garfield’s presidency comes to life in a new series starring Michael Shannon and Matthew Macfadyen.','2025-05-09T00:27:24.093000+00:00',NULL,'https://www.netflix.com/tudum/articles/death-by-lightning-tv-series-adaptation','{"type": "article", "image": "https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQcvN7xzmNQVvU6x47wdyN4TLBNuccoQs4mxMvl5Ak8WrcWQ0smnoxV556WP7k-LGL2Y5rszpo7K45yA6D2V-jsPw9rJgTxn8rXtah5VsYt0waBONlNPU9xm1Cgfi05PWrBP8CFHLyih8jj34JmXdGhua_Eo.jpg?r=e42", "image:alt": "Michael Shannon as James Garfield in ‘Death by Lightning.’", "site_name": "Netflix Tudum"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
