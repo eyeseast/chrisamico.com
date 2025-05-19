@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-05-19T12:14:40.120120');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-05-12T23:10:41.299000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-05-19T18:11:34.946397');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-05-19T14:33:38.290000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -801,6 +801,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/travel/2025/04/23/snowy
 INSERT INTO links VALUES('https://www.netflix.com/tudum/articles/death-by-lightning-tv-series-adaptation','https://chrisamico.newsblur.com/','Everything to Know About Death by Lightning','James Garfield’s presidency comes to life in a new series starring Michael Shannon and Matthew Macfadyen.','2025-05-09T00:27:24.093000+00:00',NULL,'https://www.netflix.com/tudum/articles/death-by-lightning-tv-series-adaptation','{"type": "article", "image": "https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQcvN7xzmNQVvU6x47wdyN4TLBNuccoQs4mxMvl5Ak8WrcWQ0smnoxV556WP7k-LGL2Y5rszpo7K45yA6D2V-jsPw9rJgTxn8rXtah5VsYt0waBONlNPU9xm1Cgfi05PWrBP8CFHLyih8jj34JmXdGhua_Eo.jpg?r=e42", "image:alt": "Michael Shannon as James Garfield in ‘Death by Lightning.’", "site_name": "Netflix Tudum"}');
 INSERT INTO links VALUES('https://www.wsj.com/world/europe/pope-leo-xiv-conclave-election-robert-prevost-0eb0f255?st=DK8fa1&reflink=desktopwebshare_permalink','https://www.instapaper.com/liked','How an American Cardinal Beat the Odds to Become Pope',NULL,'2025-05-11T21:36:25+00:00',NULL,'https://www.wsj.com/world/europe/pope-leo-xiv-conclave-election-robert-prevost-0eb0f255?st=DK8fa1&reflink=desktopwebshare_permalink','{}');
 INSERT INTO links VALUES('https://observer.co.uk/news/first-person/article/laurie-penny-autism','https://chrisamico.newsblur.com/','‘I came out as autistic. Everyone said: That explains a lot’ | The Observer','An autism diagnosis helped Laurie Penny make sense of their experiences, but its real value was in helping them understand the rest of society','2025-05-12T23:10:41.299000+00:00',NULL,'https://observer.co.uk/news/first-person/article/laurie-penny-autism','{"image": "https://cdn.observer.co.uk/media/original_images/17064.jpeg", "image:alt": "‘I came out as autistic. Everyone said: That explains a lot’ | The Observer", "image:secure_url": "https://cdn.observer.co.uk/media/original_images/17064.jpeg", "site_name": "The Observer"}');
+INSERT INTO links VALUES('https://snyder.substack.com/p/twenty-lessons-read-by-john-lithgow','https://chrisamico.newsblur.com/','Twenty Lessons, read by John Lithgow',NULL,'2025-05-19T14:33:38.290000+00:00',NULL,'https://snyder.substack.com/p/twenty-lessons-read-by-john-lithgow','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
