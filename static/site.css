@@ -80,6 +80,11 @@ img {
 	max-width: 100%;
 }
 
+figcaption {
+	color: var(--quiet);
+	margin-top: 0.75em;
+}
+
 /* desktop */
 @media (min-width: 768px) {
 	.container {
