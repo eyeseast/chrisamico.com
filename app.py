@@ -173,8 +173,10 @@ def post_index():
     files = sorted(Path("posts").glob("*.md"), reverse=True)
     posts = map(frontmatter.load, files)
     posts = [process_post(post, filename) for post, filename in zip(posts, files)]
+    og = dict(OG)
+    og["url"] = OG["url"] + url_for("post_index")
 
-    return render_template("post_index.html", posts=posts)
+    return render_template("post_index.html", posts=posts, OG=og)
 
 
 @app.route("/blog/<date>/<slug>/")
@@ -188,6 +190,7 @@ def post_detail(date, slug):
 
     post_og = dict(OG)
     post_og["title"] = post["title"]
+    post_og["url"] = OG["url"] + url_for("post_detail", date=date, slug=slug)
     if post.get("summary"):
         post_og["description"] = post["summary"]
 
