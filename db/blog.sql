@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-07-10T00:37:41.058431');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-07-08T13:21:01.644000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-07-10T06:13:06.650334');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-07-10T01:21:35.942000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -814,6 +814,7 @@ INSERT INTO links VALUES('https://newsletter.anamariecox.com/archive/substack-di
 INSERT INTO links VALUES('https://slate.com/news-and-politics/2025/06/scotus-analysis-amy-coney-barrett-texas-babies-stateless.html','https://chrisamico.newsblur.com/','The United States Is About to Embark on a Terrifying Experiment in Mass Statelessness','This scenario, until recently, might have read like a dystopian projection. But after the court’s decision on Friday, it is no longer hypothetical.','2025-06-28T17:22:03.732000+00:00',NULL,'https://slate.com/news-and-politics/2025/06/scotus-analysis-amy-coney-barrett-texas-babies-stateless.html','{"image": "https://compote.slate.com/images/696aedd1-4d88-44e9-8fa7-809bcde2d6d2.png?crop=1560%2C1040%2Cx0%2Cy0&width=1560", "image:width": "1560", "site_name": "Slate Magazine", "type": "article"}');
 INSERT INTO links VALUES('https://ballsandstrikes.org/scotus/trump-v-casa-opinion-recap/','https://chrisamico.newsblur.com/','Trump v CASA: The Republican Justices Are Doing What the Republican President Asks | Balls and Strikes',NULL,'2025-06-28T16:16:58.349000+00:00',NULL,'https://ballsandstrikes.org/scotus/trump-v-casa-opinion-recap/','{}');
 INSERT INTO links VALUES('http://www.holovaty.com/writing/chatgpt-fake-feature/','https://chrisamico.newsblur.com/','Adding a feature because ChatGPT incorrectly thinks it exists',NULL,'2025-07-08T13:21:01.644000+00:00',NULL,'http://www.holovaty.com/writing/chatgpt-fake-feature/','{}');
+INSERT INTO links VALUES('https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/#atom-entries','https://chrisamico.newsblur.com/','The lethal trifecta for AI agents: private data, untrusted content, and external communication','If you are a user of LLM systems that use tools (you can call them “AI agents” if you like) it is critically important that you understand the risk of …','2025-07-10T01:21:35.942000+00:00',NULL,'https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/','{"site_name": "Simon Willison’s Weblog", "image": "https://static.simonwillison.net/static/2025/lethaltrifecta.jpg", "type": "article", "updated_time": "1750080043"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
