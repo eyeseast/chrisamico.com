@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-07-20T00:43:25.167526');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-07-17T14:13:16.015000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-07-20T06:12:12.792707');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-07-20T02:59:17.286000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -820,6 +820,7 @@ INSERT INTO links VALUES('https://www.theguardian.com/film/2025/jul/03/back-to-t
 INSERT INTO links VALUES('https://www.smithsonianmag.com/smart-news/early-women-were-hunters-not-just-gatherers-study-suggests-180982459/','https://www.instapaper.com/liked','Early Women Were Hunters, Not Just Gatherers, Study Suggests','Regardless of maternal status, women hunted in almost 80 percent of recent and present-day foraging societies in a new study','2025-07-14T00:33:42+00:00',NULL,'https://www.smithsonianmag.com/smart-news/early-women-were-hunters-not-just-gatherers-study-suggests-180982459/','{"image": "https://th-thumbnailer.cdn-si-edu.com/z05_wlUvhLvwguzfZrb0hP3ddTo=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d0/b5/d0b5b51b-8cea-4109-9236-b863913ca08e/gettyimages-681901635.jpg", "image:alt": "Women in foraging societies may have been just as skillful hunters as men were, but researchers have historically dismissed their hunting contributions.", "site_name": "Smithsonian Magazine", "type": "article", "article:author": "Margaret Osborne"}');
 INSERT INTO links VALUES('https://simonwillison.net/2025/Jul/13/django-birthday/#atom-entries','https://chrisamico.newsblur.com/','Happy 20th birthday Django! Here’s my talk on Django Origins from Django’s 10th','Today is the 20th anniversary of the first commit to the public Django repository! Ten years ago we threw a multi-day 10th birthday party for Django back in its birthtown …','2025-07-14T15:02:58.789000+00:00',NULL,'https://simonwillison.net/2025/Jul/13/django-birthday/','{"site_name": "Simon Willison’s Weblog", "image": "https://static.simonwillison.net/static/2025/django-birthday-title.jpg", "type": "article", "updated_time": "1752432433"}');
 INSERT INTO links VALUES('https://www.cnn.com/2025/07/17/media/pbs-npr-trump-rescission-devastating-public-media','https://chrisamico.newsblur.com/','Trump’s victory over PBS and NPR ‘bias’ will be ‘devastating’ for rural areas, station leaders say | CNN Business',NULL,'2025-07-17T14:13:16.015000+00:00',NULL,'https://www.cnn.com/2025/07/17/media/pbs-npr-trump-rescission-devastating-public-media','{"image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2200462173.jpg?c=16x9&q=w_800,c_fill", "type": "article", "site_name": "CNN"}');
+INSERT INTO links VALUES('https://williammoss.substack.com/p/the-kiss-cam-of-annihilation','https://chrisamico.newsblur.com/','The Kiss-Cam of Annihilation',NULL,'2025-07-20T02:59:17.286000+00:00',NULL,'https://williammoss.substack.com/p/the-kiss-cam-of-annihilation','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
