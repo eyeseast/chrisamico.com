@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-07-26T00:37:48.866294');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-07-20T02:59:17.286000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-07-26T06:12:25.909353');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-07-26T01:04:49.563000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -821,6 +821,7 @@ INSERT INTO links VALUES('https://www.smithsonianmag.com/smart-news/early-women-
 INSERT INTO links VALUES('https://simonwillison.net/2025/Jul/13/django-birthday/#atom-entries','https://chrisamico.newsblur.com/','Happy 20th birthday Django! Here’s my talk on Django Origins from Django’s 10th','Today is the 20th anniversary of the first commit to the public Django repository! Ten years ago we threw a multi-day 10th birthday party for Django back in its birthtown …','2025-07-14T15:02:58.789000+00:00',NULL,'https://simonwillison.net/2025/Jul/13/django-birthday/','{"site_name": "Simon Willison’s Weblog", "image": "https://static.simonwillison.net/static/2025/django-birthday-title.jpg", "type": "article", "updated_time": "1752432433"}');
 INSERT INTO links VALUES('https://www.cnn.com/2025/07/17/media/pbs-npr-trump-rescission-devastating-public-media','https://chrisamico.newsblur.com/','Trump’s victory over PBS and NPR ‘bias’ will be ‘devastating’ for rural areas, station leaders say | CNN Business',NULL,'2025-07-17T14:13:16.015000+00:00',NULL,'https://www.cnn.com/2025/07/17/media/pbs-npr-trump-rescission-devastating-public-media','{"image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2200462173.jpg?c=16x9&q=w_800,c_fill", "type": "article", "site_name": "CNN"}');
 INSERT INTO links VALUES('https://williammoss.substack.com/p/the-kiss-cam-of-annihilation','https://chrisamico.newsblur.com/','The Kiss-Cam of Annihilation',NULL,'2025-07-20T02:59:17.286000+00:00',NULL,'https://williammoss.substack.com/p/the-kiss-cam-of-annihilation','{}');
+INSERT INTO links VALUES('https://www.washingtonpost.com/opinions/interactive/2025/stephen-colbert-cancelled-late-night-show-cbs/','https://chrisamico.newsblur.com/','Is late-night television dead?',NULL,'2025-07-26T01:04:49.563000Z',NULL,'https://www.washingtonpost.com/opinions/interactive/2025/stephen-colbert-cancelled-late-night-show-cbs/',NULL);
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
