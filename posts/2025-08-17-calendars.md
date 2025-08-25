@@ -3,7 +3,7 @@ title: Your news site needs a calendar
 summary: Writing articles about things that happened is a recipe for despair
 ---
 
-For most of 2008, I worked as a freelancer for Bay Area News Group, covering weekend shifts at two East Bay papers and covering whatever I could for its network of shrinking weeklies.
+For most of 2008, I worked as a freelancer for Bay Area News Group, covering weekend shifts at two East Bay papers and picking up whatever stories I could for its network of shrinking weeklies.
 
 Most of this was events coverage, highlighting community groups doing fundraisers and running festivals. None of it was the kind of glamorous reporting I expected to be doing, but I liked the people I met and the work they did was usually important. These days, they probably have a harder time getting attention.
 
