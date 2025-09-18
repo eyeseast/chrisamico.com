@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-09-18T12:14:44.527066');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-09-17T13:56:36.653000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-09-18T18:12:21.215511');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-09-18T13:57:28.374000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -837,6 +837,7 @@ INSERT INTO links VALUES('https://comicbookclublive.com/2025/07/12/superman-fina
 INSERT INTO links VALUES('https://protomaps.com/blog/mapterhorn-terrain/','https://chrisamico.newsblur.com/','Mapterhorn - Terrain for Web Mapping',replace('The Protomaps project is the PMTiles format, its tooling, and a 120GB basemap vector cartographic tileset created from OpenStreetMap and other open data sources. PMTiles is not limited to storing vector data - it’s also used for raster data, like scans of historical paper maps.\nMapping apps often don’t just need to show vectors of buildings, boundaries and places. Some apps need elevation data, since interesting places on Earth aren’t flat!','\n',char(10)),'2025-09-02T19:05:30.989000+00:00',NULL,'https://protomaps.com/blog/mapterhorn-terrain/','{"type": "article"}');
 INSERT INTO links VALUES('https://www.poynter.org/reporting-editing/2025/how-to-foia-chatgpt-logs-government-public-records/','https://chrisamico.newsblur.com/','Is your mayor using ChatGPT? Here’s how to FOIA around and find out - Poynter',NULL,'2025-09-17T13:56:36.653000+00:00',NULL,'https://www.poynter.org/reporting-editing/2025/how-to-foia-chatgpt-logs-government-public-records/','{}');
 INSERT INTO links VALUES('https://www.pbump.net/o/the-climate-of-fear-is-self-imposed/','https://chrisamico.newsblur.com/','The climate of fear is self-imposed','I am not generally in the habit of criticizing the editorial decisions of The Washington Post, my employer for 11 years and an institution that continues to do good, important work in covering the unwinding of American democracy. But I think the paper''s assessment of the putative debate over Donald...','2025-09-17T13:42:24.011000+00:00',NULL,'https://www.pbump.net/o/the-climate-of-fear-is-self-imposed/','{"type": "article", "image": "https://www.pbump.net/o/wp-content/uploads/2025/09/306-NT-316H-1_001.jpg", "locale": "en_US", "site_name": "pbump"}');
+INSERT INTO links VALUES('https://skyfall.dev/posts/slack','https://chrisamico.newsblur.com/','Slack is extorting us with a $195k/yr bill increase','An open letter, or something','2025-09-18T13:57:28.374000+00:00',NULL,'https://skyfall.dev/posts/slack','{"site_name": "Mahad Kalam", "image": "https://skyfall.dev//posts/slack/og.png", "type": "website", "locale": "en_US"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
