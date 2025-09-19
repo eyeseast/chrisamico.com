@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-09-18T18:12:21.215511');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-09-18T13:57:28.374000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-09-19T00:34:39.836884');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-09-18T23:23:38.288000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -838,6 +838,7 @@ INSERT INTO links VALUES('https://protomaps.com/blog/mapterhorn-terrain/','https
 INSERT INTO links VALUES('https://www.poynter.org/reporting-editing/2025/how-to-foia-chatgpt-logs-government-public-records/','https://chrisamico.newsblur.com/','Is your mayor using ChatGPT? Here’s how to FOIA around and find out - Poynter',NULL,'2025-09-17T13:56:36.653000+00:00',NULL,'https://www.poynter.org/reporting-editing/2025/how-to-foia-chatgpt-logs-government-public-records/','{}');
 INSERT INTO links VALUES('https://www.pbump.net/o/the-climate-of-fear-is-self-imposed/','https://chrisamico.newsblur.com/','The climate of fear is self-imposed','I am not generally in the habit of criticizing the editorial decisions of The Washington Post, my employer for 11 years and an institution that continues to do good, important work in covering the unwinding of American democracy. But I think the paper''s assessment of the putative debate over Donald...','2025-09-17T13:42:24.011000+00:00',NULL,'https://www.pbump.net/o/the-climate-of-fear-is-self-imposed/','{"type": "article", "image": "https://www.pbump.net/o/wp-content/uploads/2025/09/306-NT-316H-1_001.jpg", "locale": "en_US", "site_name": "pbump"}');
 INSERT INTO links VALUES('https://skyfall.dev/posts/slack','https://chrisamico.newsblur.com/','Slack is extorting us with a $195k/yr bill increase','An open letter, or something','2025-09-18T13:57:28.374000+00:00',NULL,'https://skyfall.dev/posts/slack','{"site_name": "Mahad Kalam", "image": "https://skyfall.dev//posts/slack/og.png", "type": "website", "locale": "en_US"}');
+INSERT INTO links VALUES('https://simonwillison.net/2025/Sep/18/agents/#atom-entries','https://chrisamico.newsblur.com/','I think “agent” may finally have a widely enough agreed upon definition to be useful jargon now','I’ve noticed something interesting over the past few weeks: I’ve started using the term “agent” in conversations where I don’t feel the need to then define it, roll my eyes …','2025-09-18T23:23:38.288000+00:00',NULL,'https://simonwillison.net/2025/Sep/18/agents/','{"site_name": "Simon Willison’s Weblog", "image": "https://static.simonwillison.net/static/2025/agents-meme-card.jpg", "type": "article", "updated_time": "1758222722"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
