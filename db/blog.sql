@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-10-02T00:33:30.611099');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-09-29T19:50:48.201000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-10-02T06:12:26.243366');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-10-02T02:13:28.462000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -840,6 +840,7 @@ INSERT INTO links VALUES('https://www.pbump.net/o/the-climate-of-fear-is-self-im
 INSERT INTO links VALUES('https://skyfall.dev/posts/slack','https://chrisamico.newsblur.com/','Slack is extorting us with a $195k/yr bill increase','An open letter, or something','2025-09-18T13:57:28.374000+00:00',NULL,'https://skyfall.dev/posts/slack','{"site_name": "Mahad Kalam", "image": "https://skyfall.dev//posts/slack/og.png", "type": "website", "locale": "en_US"}');
 INSERT INTO links VALUES('https://simonwillison.net/2025/Sep/18/agents/#atom-entries','https://chrisamico.newsblur.com/','I think “agent” may finally have a widely enough agreed upon definition to be useful jargon now','I’ve noticed something interesting over the past few weeks: I’ve started using the term “agent” in conversations where I don’t feel the need to then define it, roll my eyes …','2025-09-18T23:23:38.288000+00:00',NULL,'https://simonwillison.net/2025/Sep/18/agents/','{"site_name": "Simon Willison’s Weblog", "image": "https://static.simonwillison.net/static/2025/agents-meme-card.jpg", "type": "article", "updated_time": "1758222722"}');
 INSERT INTO links VALUES('https://lucumr.pocoo.org/2025/9/29/90-percent/','https://chrisamico.newsblur.com/','90%','AI is writing 90% of the code I was in charge of','2025-09-29T19:50:48.201000+00:00',NULL,'https://lucumr.pocoo.org/2025/9/29/90-percent/','{"image": "https://lucumr.pocoo.org/social/2025-09-29-90-percent-social.png", "site_name": "Armin Ronacher''s Thoughts and Writings", "type": "article"}');
+INSERT INTO links VALUES('https://www.404media.co/how-ruby-went-off-the-rails/','https://chrisamico.newsblur.com/','How Ruby Went Off the Rails','What happened to RubyGems, Bundler, and the Open Source drama that controls the internet infrastructure.','2025-10-02T02:13:28.462000+00:00',NULL,'https://www.404media.co/how-ruby-went-off-the-rails/','{"site_name": "404 Media", "type": "article", "image": "https://images.unsplash.com/photo-1639189728127-eabab9a524cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDR8fHJ1Ynl8ZW58MHx8fHwxNzU5MTAxNzYwfDA&ixlib=rb-4.1.0&q=80&w=2000", "image:width": "1200", "image:height": "800"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
