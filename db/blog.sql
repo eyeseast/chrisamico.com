@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-10-28T00:34:37.783347');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-10-23T15:25:56.726000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2025-10-28T06:13:26.445953');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2025-10-28T00:42:30.963000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -854,6 +854,7 @@ INSERT INTO links VALUES('https://apnews.com/article/pentagon-press-access-hegse
 INSERT INTO links VALUES('https://www.npr.org/2025/10/17/nx-s1-5575254/spacex-starshield-starlink-signal?utm_medium=social&utm_term=nprnews&utm_source=bsky.app&utm_campaign=npr','https://chrisamico.newsblur.com/','A classified network of SpaceX satellites is emitting a mysterious signal','An amateur satellite tracker stumbled across the signal, which is coming from Starshield satellites in a "hidden" part of the radio spectrum.','2025-10-21T12:56:34.441000+00:00',NULL,'https://www.npr.org/2025/10/17/nx-s1-5575254/spacex-starshield-starlink-signal','{"type": "article", "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/580x326+0+123/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F73%2Fd3%2F1eaf5fb346d281f2e6f4125404a8%2Fnro-prolif-architecture.jpg", "site_name": "NPR"}');
 INSERT INTO links VALUES('https://www.seattletimes.com/sports/mariners/the-mariners-most-magical-season-in-recent-memory-was-not-enough-will-it-ever-be/','https://chrisamico.newsblur.com/','This magical Mariners season wasn’t enough. Will it ever be?',NULL,'2025-10-21T19:41:22.171000+00:00',NULL,'https://www.seattletimes.com/sports/mariners/the-mariners-most-magical-season-in-recent-memory-was-not-enough-will-it-ever-be/','{}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2025/10/20/speeds-and-swarms.html','https://chrisamico.newsblur.com/','Glimpses of the Future: Speed & Swarms','When coding models are faster and concurrent, the distance between thought and code shrinks. You can preview this future by trying out Qwen 3 Coder on Cerebras or claude-on-rails.','2025-10-23T15:25:56.726000+00:00',NULL,'https://www.dbreunig.com/2025/10/20/speeds-and-swarms.html','{"locale": "en_US", "site_name": "Drew Breunig", "image": "/img/fast_tempo.jpg", "type": "article"}');
+INSERT INTO links VALUES('https://macwright.com/2025/10/21/what-if-they-dont-want-to.html','https://chrisamico.newsblur.com/','What if people don''t want to create things',NULL,'2025-10-28T00:42:30.963000+00:00',NULL,'https://macwright.com/2025/10/21/what-if-they-dont-want-to.html','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
