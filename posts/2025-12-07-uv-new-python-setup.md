@@ -5,6 +5,8 @@ summary: uv is in, everything else is out.
 
 I'm at the point where I'm migrating all my projects to [uv](https://docs.astral.sh/uv/), and new Python projects don't use any other package manager.
 
+I finally got around to migrating _this site_ to use it, using the very handy [migrate-to-uv](https://github.com/mkniewallner/migrate-to-uv) tool. So it's time to update my recommended Python setup.
+
 My [old Python setup](https://chrisamico.com/blog/2023-01-14/python-setup/) was very much built around the complications of managing environments and dependencies, and the conflicting set of tools to deal with those two problems. There are still a few places where I'll use [pipx](https://pipx.pypa.io/stable/), but otherwise everything is on `uv`.
 
 This guide is still aimed at a recent Apple or Linux computer, or [WSL](https://learn.microsoft.com/en-us/windows/wsl/) if you're on Windows. I'm writing this on a MacBook Pro with an M2 chip, if that matters to you.
