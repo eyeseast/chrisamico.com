@@ -24,24 +24,16 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs checkout
 
-      # Setup Python (faster than using Python container)
-      - name: python
-        uses: actions/setup-python@v5
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
         with:
-          python-version: "3.11"
+          enable-cache: true
 
-      - name: pipenv
-        run: |
-          python -m pip install --upgrade pipenv wheel
+      - name: Set up Python
+        run: uv python install
 
-      - id: cache-pipenv
-        uses: actions/cache@v4
-        with:
-          path: ~/.local/share/virtualenvs
-          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
-
-      - name: install
-        run: pipenv sync
+      - name: Install
+        run: uv sync --locked --all-extras --dev
 
       - name: rebuild
         run: make rebuild
@@ -56,14 +48,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: "dist/"
-
-      # - name: post
-      #   env:
-      #     MASTODON_AUTH: ${{ secrets.MASTODON_AUTH }}
-      #   run: |-
-      #     mkdir -p ~/.config/toot
-      #     echo $MASTODON_AUTH > ~/.config/toot/config.json
-      #     make post
 
       - name: export
         run: make dump

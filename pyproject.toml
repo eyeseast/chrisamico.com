@@ -1,0 +1,30 @@
+[project]
+name = "chrisamico.com"
+version = "0.0.1"
+requires-python = ">=3.11"
+dependencies = [
+    "bs4",
+    "datasette",
+    "feed-to-sqlite",
+    "python-dateutil",
+    "flask",
+    "frozen-flask",
+    "markdown",
+    "httpx",
+    "sqlite-utils",
+    "python-frontmatter",
+    "pygments",
+    "feedgen",
+    "toot",
+    "werkzeug<3",
+]
+
+[dependency-groups]
+dev = ["ipython"]
+
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"

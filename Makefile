@@ -9,32 +9,32 @@ FEEDS = \
  https://www.instapaper.com/starred/rss/13475/qUh7yaOUGOSQeANThMyxXdYnho
 
 install:
-	pipenv sync
+	uv sync
 
 rebuild:
 	sqlite3 $(BLOG_DB) < $(BLOG_BACKUP) 
-	pipenv run sqlite-utils enable-wal $(BLOG_DB)
+	uv run sqlite-utils enable-wal $(BLOG_DB)
 
 update:
-	pipenv run ./links/update.py $(FEEDS)
+	uv run ./links/update.py $(FEEDS)
 
 freeze:
-	pipenv run ./app.py freeze
-	pipenv run sqlite-utils rows $(BLOG_DB) $(LINKS_TABLE) --csv > $(LINKS_CSV)
+	uv run ./app.py freeze
+	uv run sqlite-utils rows $(BLOG_DB) $(LINKS_TABLE) --csv > $(LINKS_CSV)
 
 post:
-	pipenv run ./links/mastodon.py
+	uv run ./links/mastodon.py
 
 dump:
 	sqlite3 $(BLOG_DB) .dump > $(BLOG_BACKUP)
 
 run:
-	pipenv run datasette serve --metadata metadata.yml db/*.db
+	uv run datasette serve --metadata metadata.yml db/*.db
 
 shell:
-	pipenv run ipython
+	uv run ipython
 
 preview:
-	pipenv run ./app.py
+	uv run ./app.py
 
 .Phony: install rebuild update freeze run
