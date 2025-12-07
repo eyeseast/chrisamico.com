@@ -22,7 +22,7 @@ This guide is still aimed at a recent Apple or Linux computer, or [WSL](https://
 
 You probably don't need both `uv` and `pipx`. I have a bunch of existing tools I installed with `pipx`, and those work fine, so I haven't migrated them to `uvx`.
 
-There is one set of tools that stays on `pipx`, though: Datasette and its SQLite toolchain. Simon Willison built those to install their own plugins, using `datasette install <plugin>` or `llm install <plugin>`. Those use `pip` internally and sometimes `uv` can cause problems upgrading, so I've kept them on `pipx`.
+There is one set of tools that stays on `pipx`, though: [Datasette](https://datasette.io/) and its [SQLite toolchain](https://datasette.io/tools). [Simon Willison](https://simonwillison.net/) built those to install their own plugins, using `datasette install <plugin>` or `llm install <plugin>`. Those use `pip` internally and sometimes `uv` can cause problems upgrading, so I've kept them on `pipx`.
 
 ## Installing the right Python
 
