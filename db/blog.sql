@@ -9,7 +9,7 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2026-02-20T18:22:12.242285');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2026-02-21T00:46:04.710611');
 INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2026-02-19T14:36:38.747000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
@@ -897,6 +897,7 @@ INSERT INTO links VALUES('https://www.universalhub.com/2026/ice-grabs-somebody-r
 INSERT INTO links VALUES('https://simonwillison.net/2026/Feb/15/cognitive-debt/#atom-blogmarks','https://chrisamico.newsblur.com/','How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt','This piece by Margaret-Anne Storey is the best explanation of the term cognitive debt I''ve seen so far. Cognitive debt, a term gaining traction recently, instead communicates the notion that …','2026-02-17T14:58:11.731000+00:00','2026-02-17T14:58:11.731000+00:00','https://simonwillison.net/2026/Feb/15/cognitive-debt/','{"site_name": "Simon Willison’s Weblog", "type": "article", "updated_time": "1771132811"}');
 INSERT INTO links VALUES('https://simonwillison.net/2026/Feb/15/deep-blue/#atom-entries','https://chrisamico.newsblur.com/','Deep Blue','We coined a new term on the Oxide and Friends podcast last month (primary credit to Adam Leventhal) covering the sense of psychological ennui leading into existential dread that many …','2026-02-18T14:09:25.272000+00:00','2026-02-18T14:09:25.272000+00:00','https://simonwillison.net/2026/Feb/15/deep-blue/','{"site_name": "Simon Willison’s Weblog", "image": "https://static.simonwillison.net/static/2026/deep-blue-card.jpg", "type": "article", "updated_time": "1771189604"}');
 INSERT INTO links VALUES('https://www.dbreunig.com/2026/02/06/the-rise-of-spec-driven-development.html','https://chrisamico.newsblur.com/','The Rise of Spec Driven Development','Writing about AI, geo, culture, media, data, and the ways they interact.','2026-02-19T14:36:38.747000+00:00','2026-02-19T14:36:38.747000+00:00','https://www.dbreunig.com/2026/02/06/the-rise-of-spec-driven-development.html','{"locale": "en_US", "site_name": "Drew Breunig", "image": "/img/free_puppies.jpg", "type": "article"}');
+INSERT INTO links VALUES('https://www.wsj.com/politics/policy/spy-sheikh-secret-stake-trump-crypto-tahnoon-ea4d97e8','https://www.instapaper.com/liked','‘Spy Sheikh’ Bought Secret Stake in Trump Company','Four days before Donald Trump’s inauguration last year, lieutenants to an Abu Dhabi royal secretly signed a deal with the Trump family to purchase a 49% stake…','2026-02-06T03:12:12+00:00','2026-02-06T03:12:12+00:00','https://www.wsj.com/politics/policy/spy-sheikh-secret-stake-trump-crypto-tahnoon-ea4d97e8','{}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
