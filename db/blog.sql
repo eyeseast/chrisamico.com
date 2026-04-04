@@ -9,8 +9,8 @@ CREATE TABLE [feeds] (
    [updated] TEXT
 );
 INSERT INTO feeds VALUES('http://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'http://chrisamico.newsblur.com/','chrisamico','2021-07-06T14:30:43Z');
-INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2026-04-04T12:22:04.156533');
-INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2026-03-29T18:32:52.914000Z');
+INSERT INTO feeds VALUES('https://www.instapaper.com/liked','Instapaper: Starred','','https://www.instapaper.com/liked',NULL,'2026-04-04T18:18:55.926169');
+INSERT INTO feeds VALUES('https://chrisamico.newsblur.com/','chrisamico''s blurblog',NULL,'https://chrisamico.newsblur.com/','chrisamico','2026-04-04T14:21:45.395000Z');
 CREATE TABLE [links] (
    [id] TEXT PRIMARY KEY,
    [feed] TEXT REFERENCES [feeds]([id]),
@@ -908,6 +908,7 @@ INSERT INTO links VALUES('https://www.washingtonpost.com/dc-md-va/2026/03/12/ufc
 INSERT INTO links VALUES('https://astral.sh/blog/openai','https://chrisamico.newsblur.com/','Astral to join OpenAI','Astral has entered into an agreement to join OpenAI as part of the Codex team.','2026-03-19T20:33:45.321000+00:00','2026-03-19T20:33:45.321000+00:00','https://astral.sh/blog/openai','{"image": "https://astral.sh/static/OpenGraph/Astral.jpg"}');
 INSERT INTO links VALUES('https://www.scientificamerican.com/article/the-autism-spectrum-isnt-a-sliding-scale-39-traits-show-the-complexity/','https://chrisamico.newsblur.com/','What 39 traits reveal about the autism spectrum','The autism spectrum is big, vibrant and complicated, a new graphic of 39 traits shows','2026-03-28T13:37:12.960000+00:00','2026-03-28T13:37:12.960000+00:00','https://www.scientificamerican.com/article/the-autism-spectrum-isnt-a-sliding-scale-39-traits-show-the-complexity/','{"image": "https://static.scientificamerican.com/dam/m/8f40c156929c883/original/saw0426Gsci31_leadImage.png?m=1773170529.425&w=1200", "site_name": "Scientific American", "image:alt": "Cropped image of a row of three colorful sunburst charts.", "type": "article", "locale": "en_US"}');
 INSERT INTO links VALUES('https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-entries','https://chrisamico.newsblur.com/','Thoughts on OpenAI acquiring Astral and uv/ruff/ty','The big news this morning: Astral to join OpenAI (on the Astral blog) and OpenAI to acquire Astral (the OpenAI announcement). Astral are the company behind uv, ruff, and ty—three …','2026-03-29T18:32:52.914000+00:00','2026-03-29T18:32:52.914000+00:00','https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/','{"site_name": "Simon Willison’s Weblog", "type": "article", "updated_time": "1773938715"}');
+INSERT INTO links VALUES('https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-entries','https://chrisamico.newsblur.com/','The Axios supply chain attack used individually targeted social engineering','The Axios team have published a full postmortem on the supply chain attack which resulted in a malware dependency going out in a release the other day, and it involved …','2026-04-04T14:21:45.395000+00:00','2026-04-04T14:21:45.395000+00:00','https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/','{"site_name": "Simon Willison’s Weblog", "type": "article", "updated_time": "1775224493"}');
 CREATE TABLE [mastodon] (
    [link_id] TEXT REFERENCES [links]([id]),
    [posted] TEXT,
