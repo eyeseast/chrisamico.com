@@ -149,6 +149,14 @@ figcaption {
 		width: 1.5em;
 	}
 
+	.social li.bluesky a:before {
+		background-image: url("./img/Bluesky_Logo.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 1em;
+		width: 1.5em;
+	}
+
 	.social li.blog a:before {
 		content: "📓";
 		height: 1em;

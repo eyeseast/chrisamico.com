@@ -55,6 +55,7 @@ CONTACT = {
     "twitter": "https://twitter.com/eyeseast",
     "github": "https://github.com/eyeseast",
     "linkedin": "https://www.linkedin.com/in/chrisamico/",
+    "bluesky": "https://bsky.app/profile/chrisamico.bsky.social",
     "name": "Chris Amico",
     "tagline": "Journalist & programmer",
 }
