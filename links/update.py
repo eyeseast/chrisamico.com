@@ -63,7 +63,7 @@ def normalize(table, entry, feed_details, client):
             row[key] = og.pop(key)
 
     row["published"] = safe_date(row.get("published"))
-    row["updated"] = safe_date(row.get("updated"))
+    row["updated"] = safe_date(row.get("updated"), row["published"])
 
     row["og"] = dict(og)
 
@@ -75,7 +75,7 @@ def safe_date(s, default=None):
         return default
 
     try:
-        return parse(s)
+        return parse(s).isoformat()
     except:
         return default
 

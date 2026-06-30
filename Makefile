@@ -17,6 +17,8 @@ rebuild:
 
 update:
 	uv run ./links/update.py $(FEEDS)
+	uv run sqlite-utils convert $(BLOG_DB) links published 'r.parsedatetime(value)'
+	uv run sqlite-utils convert $(BLOG_DB) links updated 'r.parsedatetime(value)'
 
 freeze:
 	uv run ./app.py freeze
