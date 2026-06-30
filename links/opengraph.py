@@ -1,6 +1,7 @@
 """
 Parse a URL and return OG values
 """
+
 import re
 import httpx
 from bs4 import BeautifulSoup
@@ -57,18 +58,20 @@ class OpenGraph:
         return self._og.pop(key)
 
     @classmethod
-    def fetch(Cls, url, *, client=None, **defaults):
+    def fetch(cls, url, *, client=None, **defaults):
         """
         Fetch and parse html from a url
         """
         if client is None:
-            client = httpx.Client()
+            client = httpx.Client(
+                headers={"user-agent": "chrisamico.com"}, follow_redirects=True
+            )
 
         r = client.get(url)
         if r.status_code > 400:
             return {}
-        
-        return Cls(r.content, **defaults)
+
+        return cls(r.content, **defaults)
 
     def parse(self):
         "Extract og values from html"
@@ -76,7 +79,7 @@ class OpenGraph:
         metas = soup.find_all("meta", property=OG_RE)
 
         for meta in metas:
-            key = meta["property"].lstrip("og:")
+            key = str(meta.get("property", "")).lstrip("og:")
             self._og[key] = meta.get("content")
 
 

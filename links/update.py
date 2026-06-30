@@ -2,6 +2,7 @@
 """
 Update links table using feed-to-sqlite with a normalize function that fetches OpenGraph tags
 """
+
 import logging
 import sys
 from pathlib import Path
@@ -23,7 +24,11 @@ TABLE_NAME = "links"
 
 
 def main(*urls):
-    with httpx.Client(timeout=30) as client:
+    with httpx.Client(
+        timeout=30,
+        headers={"user-agent": "chrisamico.com"},
+        follow_redirects=True,
+    ) as client:
         for url in urls:
             log.info("Loading feed: %s", url)
             ingest_feed(
