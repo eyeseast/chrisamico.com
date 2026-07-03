@@ -57,7 +57,7 @@ CONTACT = {
     "linkedin": "https://www.linkedin.com/in/chrisamico/",
     "bluesky": "https://bsky.app/profile/chrisamico.bsky.social",
     "name": "Chris Amico",
-    "tagline": "Journalist & programmer",
+    "tagline": "All media is interactive.",
 }
 
 POST_FILENAME_RE = re.compile(
