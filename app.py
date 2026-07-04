@@ -48,7 +48,7 @@ OG = {
     "type": "website",
     "author": "Chris Amico",
     "url": "https://chrisamico.com",
-    "description": "Journalist & programmer",
+    "description": "All media is interactive.",
 }
 
 CONTACT = {
