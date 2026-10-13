@@ -16,7 +16,7 @@ dependencies = [
     "pygments",
     "feedgen",
     "toot",
-    "werkzeug<3",
+    "werkzeug<4",
 ]
 
 [dependency-groups]
